@@ -1,0 +1,27 @@
+{
+  "name": "exit-exam-quiz-bot",
+  "version": "1.0.0",
+  "description": "Telegram Quiz Bot for University Exit Exam preparation using Telegraf",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "telegram",
+    "quiz",
+    "telegraf",
+    "nodejs",
+    "exit-exam"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "type": "commonjs"
+}
