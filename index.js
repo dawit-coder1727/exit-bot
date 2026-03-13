@@ -7,11 +7,6 @@ const { InMemorySessionStore } = require('./sessionStore');
 // ====== Basic config and setup ======
 const BOT_TOKEN = process.env.BOT_TOKEN;
 
-if (!BOT_TOKEN) {
-  console.error('❌ BOT_TOKEN is missing in .env');
-  process.exit(1);
-}
-
 const bot = new Telegraf(BOT_TOKEN);
 const sessionStore = new InMemorySessionStore();
 
@@ -292,3 +287,19 @@ http.createServer((req, res) => {
 }).listen(process.env.PORT || 3000);
 
 console.log("Port listener added!");
+// --- RENDER HEALTH CHECK SERVER ---
+const http = require('http');
+ port = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end('Bot is running!');
+}).listen(port, () => {
+  console.log(`🚀 Health check server listening on port ${port}`);
+});
+bot.launch().then(() => {
+  console.log('✅ Telegram bot launched successfully!');
+}).catch((err) => {
+  console.error('❌ Failed to launch bot:', err);
+});
+// ----------------------------------
