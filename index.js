@@ -101,9 +101,9 @@ async function sendScoreSummary(ctx, session) {
   // Optionally, offer to start over
   await ctx.reply(
     'Would you like to start again?',
-    Markup.inlineKeyboard([
-      [Markup.button.callback('🔁 Restart', 'restart')]
-    ])
+Markup.inlineKeyboard([
+  [Markup.button.callback('🔄 Restart', 'restart')]
+])
   );
 }
 
