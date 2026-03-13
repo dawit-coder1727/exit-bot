@@ -1,4 +1,3 @@
-// src/index.js
 
 require('dotenv').config();
 const { Telegraf, Markup } = require('telegraf');
@@ -268,7 +267,16 @@ bot.on('text', async (ctx) => {
     'Use /start to begin the quiz and then choose your department and chapter.'
   );
 });
+const http = require('http');
 
+const port = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end('Bot is running');
+}).listen(port);
+
+console.log(`Server is running on port ${port}`);
 // ====== Start bot ======
 bot.launch().then(() => {
   console.log('🤖 Bot is running...');
