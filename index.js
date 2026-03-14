@@ -280,7 +280,6 @@ bot.launch().then(() => {
 // Enable graceful stop
 process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
-const http = require('http');
 http.createServer((req, res) => {
   res.write('Bot is live!');
   res.end();
