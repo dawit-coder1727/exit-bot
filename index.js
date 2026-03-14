@@ -37,9 +37,20 @@ function getTotalQuestions(deptId, chapterId) {
 
 // Build inline keyboards
 function buildDepartmentsKeyboard() {
-    const departments = getDepartments();
-    const buttons = departments.map((dept) => Markup.button.callback(dept.name, `dept:${dept.id}`));
-    return Markup.inlineKeyboard(buttons.map((b) => [b]));
+  const departments = getDepartments();
+  
+  // እዚህ ጋር ነው ጥንቃቄው፤ name እና id መኖሩን ቼክ ያደርጋል
+  const validDepts = departments.filter(dept => dept && dept.name && dept.id);
+
+  if (validDepts.length === 0) {
+    return Markup.inlineKeyboard([[Markup.button.callback('No Departments Found', 'none')]]);
+  }
+
+  const buttons = validDepts.map((dept) =>
+    Markup.button.callback(String(dept.name), `dept:${dept.id}`)
+  );
+
+  return Markup.inlineKeyboard(buttons.map((b) => [b]));
 }
 
 function buildChaptersKeyboard(deptId) {
