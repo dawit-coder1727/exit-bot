@@ -1,179 +1,214 @@
 require('dotenv').config();
 const { Telegraf, Markup } = require('telegraf');
-const path = require('path');
-const http = require('http'); // HTTP አንድ ጊዜ ብቻ እዚህ ተገልጿል
-const questionsData = require('./questions.json');
+const express = require('express');
+const rawQuestionsData = require('./questions.json');
 const { InMemorySessionStore } = require('./sessionStore');
 
-// ====== Basic config and setup ======
-const BOT_TOKEN = process.env.BOT_TOKEN;
-
-// Token ከሌለ ለ Render ስህተት እንዳይሰጥ እዚህ ጋር እንከላከላለን
-if (!BOT_TOKEN) {
-    console.error('⚠️ BOT_TOKEN is missing in environment variables!');
+// Data normalization (run once at startup)
+function flattenQuestionsArray(arr) {
+    if (!Array.isArray(arr)) return [];
+    const flat = [];
+    for (const item of arr) {
+        if (!item) continue;
+        if (Array.isArray(item)) {
+            for (const q of item) {
+                if (q && q.question && Array.isArray(q.options)) {
+                    flat.push(q);
+                }
+            }
+        } else if (item.question && Array.isArray(item.options)) {
+            flat.push(item);
+        }
+    }
+    return flat;
 }
 
-const bot = new Telegraf(BOT_TOKEN || '');
-const sessionStore = new InMemorySessionStore();
+function normalizeQuestionsData(data) {
+    if (!data || !Array.isArray(data.departments)) {
+        return { departments: [] };
+    }
 
-// ====== Helper functions to work with questions ======
+    return {
+        ...data,
+        departments: data.departments.map((dept) => {
+            if (!dept) return dept;
+            const normalized = { ...dept };
+            if (Array.isArray(dept.chapters)) {
+                normalized.chapters = dept.chapters.map((chapter) =>
+                    chapter && Array.isArray(chapter.questions)
+                        ? { ...chapter, questions: flattenQuestionsArray(chapter.questions) }
+                        : chapter
+                );
+            }
+            return normalized;
+        }),
+    };
+}
+
+const questionsData = normalizeQuestionsData(rawQuestionsData);
+
+const BOT_TOKEN = process.env.BOT_TOKEN;
+const URL = process.env.EXTERNAL_URL; 
+const PORT = process.env.PORT || 3000;
+
+const bot = new Telegraf(BOT_TOKEN);
+const sessionStore = new InMemorySessionStore();
+const app = express();
+
+// Helper functions
 function getDepartments() { return questionsData.departments || []; }
 function getDepartmentById(deptId) { return getDepartments().find((d) => d.id === deptId); }
+
 function getChapterById(deptId, chapterId) {
-    const department = getDepartmentById(deptId);
-    if (!department) return null;
-    return department.chapters.find((c) => c.id === chapterId);
+    const dept = getDepartmentById(deptId);
+    if (!dept || !dept.chapters) return null;
+    return dept.chapters.find((c) => c.id === chapterId);
 }
+
 function getQuestion(deptId, chapterId, index) {
     const chapter = getChapterById(deptId, chapterId);
-    if (!chapter) return null;
+    if (!chapter || !Array.isArray(chapter.questions)) return null;
     return chapter.questions[index] || null;
 }
+
 function getTotalQuestions(deptId, chapterId) {
     const chapter = getChapterById(deptId, chapterId);
-    if (!chapter) return 0;
+    if (!chapter || !Array.isArray(chapter.questions)) return 0;
     return chapter.questions.length;
 }
 
-// Build inline keyboards
+// Keyboard Builders
 function buildDepartmentsKeyboard() {
-  const departments = getDepartments();
-  
-  // እዚህ ጋር ነው ጥንቃቄው፤ name እና id መኖሩን ቼክ ያደርጋል
-  const validDepts = departments.filter(dept => dept && dept.name && dept.id);
-
-  if (validDepts.length === 0) {
-    return Markup.inlineKeyboard([[Markup.button.callback('No Departments Found', 'none')]]);
-  }
-
-  const buttons = validDepts.map((dept) =>
-    Markup.button.callback(String(dept.name), `dept:${dept.id}`)
-  );
-
-  return Markup.inlineKeyboard(buttons.map((b) => [b]));
+    const departments = getDepartments();
+    const buttons = departments.map((dept) => Markup.button.callback(dept.name, `dept:${dept.id}`));
+    return Markup.inlineKeyboard(buttons.map((b) => [b]));
 }
 
 function buildChaptersKeyboard(deptId) {
     const department = getDepartmentById(deptId);
-    if (!department) return Markup.inlineKeyboard([]);
-    const buttons = department.chapters.map((ch) => Markup.button.callback(ch.name, `chap:${deptId}:${ch.id}`));
+    if (!department || !department.chapters) return Markup.inlineKeyboard([]);
+    const buttons = department.chapters.map((chap) => Markup.button.callback(chap.name, `chap:${deptId}:${chap.id}`));
     return Markup.inlineKeyboard(buttons.map((b) => [b]));
 }
 
 function buildOptionsKeyboard(question) {
-    const buttons = question.options.map((opt, index) => Markup.button.callback(opt, `ans:${index}`));
+    const buttons = question.options.map((opt, idx) => Markup.button.callback(opt, `ans:${idx}`));
     return Markup.inlineKeyboard(buttons.map((b) => [b]));
 }
 
-// ====== Quiz flow helpers ======
 async function sendQuestion(ctx, session) {
     const question = getQuestion(session.departmentId, session.chapterId, session.currentQuestionIndex);
-    if (!question) {
-        await ctx.reply('No more questions available for this chapter.');
-        await sendScoreSummary(ctx, session);
-        return;
-    }
-    const questionText = `Question ${session.currentQuestionIndex + 1}/${session.totalQuestions}\n\n${question.question}`;
-    await ctx.reply(questionText, buildOptionsKeyboard(question));
+    if (!question) return;
+    const text = `Question ${session.currentQuestionIndex + 1}/${session.totalQuestions}\n\n${question.question}`;
+    await ctx.reply(text, buildOptionsKeyboard(question));
 }
 
 async function sendScoreSummary(ctx, session) {
-    const message = `✅ Quiz finished!\n\nYour score: ${session.score}/${session.totalQuestions}`;
-    await ctx.reply(message);
-    await ctx.reply('Would you like to start again?', Markup.inlineKeyboard([[Markup.button.callback('🔄 Restart', 'restart')]]));
+    const scoreText = `🏆 Quiz Finished!\n\nYour Score: ${session.score}/${session.totalQuestions}`;
+    await ctx.reply(scoreText, Markup.inlineKeyboard([Markup.button.callback('Restart', 'restart')]));
 }
 
-// ====== Command & action handlers ======
+// Handlers
 bot.start(async (ctx) => {
-    const userId = ctx.from.id;
-    sessionStore.resetSession(userId);
-    const welcomeMessage = '👋 Welcome to the University Exit Exam Prep Bot!\n\nSelect your department to begin practicing quiz questions.';
-    await ctx.reply(welcomeMessage, buildDepartmentsKeyboard());
+    try {
+        if (!ctx.from) return;
+        sessionStore.resetSession(ctx.from.id);
+        await ctx.reply(
+            '👋 Welcome to the University Exit Exam Prep Bot!\n\nSelect your department:',
+            buildDepartmentsKeyboard()
+        );
+    } catch (err) {
+        console.error(err);
+        await ctx.reply('😕 Something went wrong starting the bot. Please try /start again.');
+    }
 });
 
 bot.action(/^dept:/, async (ctx) => {
     try {
-        const userId = ctx.from.id;
+        if (!ctx.callbackQuery || !ctx.callbackQuery.data || !ctx.from) return;
         const [, deptId] = ctx.callbackQuery.data.split(':');
         const department = getDepartmentById(deptId);
-        if (!department) { await ctx.answerCbQuery('Department not found'); return; }
-        const session = sessionStore.getSession(userId);
-        session.departmentId = deptId;
-        sessionStore.saveSession(userId, session);
-        await ctx.answerCbQuery(`Selected: ${department.name}`);
-        await ctx.editMessageText(`You selected *${department.name}*.\nNow choose a chapter:`, { parse_mode: 'Markdown', ...buildChaptersKeyboard(deptId) });
+        if (!department) return ctx.answerCbQuery('Department not found');
+        await ctx.answerCbQuery();
+        await ctx.editMessageText(`Selected: *${department.name}*\nChoose a chapter:`, { parse_mode: 'Markdown', ...buildChaptersKeyboard(deptId) });
     } catch (err) { console.error(err); }
 });
 
 bot.action(/^chap:/, async (ctx) => {
     try {
-        const userId = ctx.from.id;
+        if (!ctx.callbackQuery || !ctx.callbackQuery.data || !ctx.from) return;
         const [, deptId, chapterId] = ctx.callbackQuery.data.split(':');
-        const department = getDepartmentById(deptId);
         const chapter = getChapterById(deptId, chapterId);
-        if (!department || !chapter) { await ctx.answerCbQuery('Chapter not found'); return; }
-        const session = sessionStore.getSession(userId);
+        if (!chapter) return ctx.answerCbQuery('Chapter not found');
+        const session = sessionStore.getSession(ctx.from.id);
         session.departmentId = deptId;
         session.chapterId = chapterId;
         session.currentQuestionIndex = 0;
         session.score = 0;
         session.totalQuestions = getTotalQuestions(deptId, chapterId);
-        sessionStore.saveSession(userId, session);
-        await ctx.answerCbQuery(`Chapter: ${chapter.name}`);
-        await ctx.editMessageText(`Department: *${department.name}*\nChapter: *${chapter.name}*\n\nLet's start the quiz!`, { parse_mode: 'Markdown' });
+
+        if (!session.totalQuestions) {
+            await ctx.answerCbQuery('No questions in this chapter yet.');
+            await ctx.reply('⚠️ No questions found in this chapter yet. Please choose another chapter.');
+            return;
+        }
+
+        sessionStore.saveSession(ctx.from.id, session);
+        await ctx.answerCbQuery();
+        await ctx.editMessageText(`Starting Quiz: *${chapter.name}*`, { parse_mode: 'Markdown' });
         await sendQuestion(ctx, session);
     } catch (err) { console.error(err); }
 });
 
 bot.action(/^ans:/, async (ctx) => {
     try {
-        const userId = ctx.from.id;
-        const session = sessionStore.getSession(userId);
-        if (!session.departmentId || !session.chapterId) { await ctx.answerCbQuery('Please start a quiz first using /start'); return; }
-        const [, optionIndexStr] = ctx.callbackQuery.data.split(':');
-        const selectedIndex = parseInt(optionIndexStr, 10);
+        if (!ctx.callbackQuery || !ctx.callbackQuery.data || !ctx.from) return;
+        const session = sessionStore.getSession(ctx.from.id);
+        if (!session || !session.chapterId) return ctx.answerCbQuery('Session expired. Use /start');
+
+        const [, optIdx] = ctx.callbackQuery.data.split(':');
+        const selected = parseInt(optIdx, 10);
         const question = getQuestion(session.departmentId, session.chapterId, session.currentQuestionIndex);
-        if (!question) { await ctx.answerCbQuery('No question found.'); return; }
-        const isCorrect = selectedIndex === question.correctOptionIndex;
-        if (isCorrect) { session.score += 1; await ctx.answerCbQuery('✅ Correct!'); } else { await ctx.answerCbQuery('❌ Wrong'); }
-        session.currentQuestionIndex += 1;
-        sessionStore.saveSession(userId, session);
-        try { await ctx.editMessageReplyMarkup(); } catch (e) {}
-        const explanationMessage = `${isCorrect ? '✅ Correct!' : '❌ Wrong.'}\n\n*Explanation:*\n${question.explanation}`;
-        await ctx.reply(explanationMessage, { parse_mode: 'Markdown' });
-        if (session.currentQuestionIndex < session.totalQuestions) { await sendQuestion(ctx, session); } else { await sendScoreSummary(ctx, session); }
+
+        if (!question) {
+            await sendScoreSummary(ctx, session);
+            return;
+        }
+
+        const isCorrect = selected === question.correctOptionIndex;
+        if (isCorrect) session.score++;
+        await ctx.answerCbQuery(isCorrect ? '✅ Correct!' : '❌ Wrong');
+        const explanation = question.explanation || 'No explanation provided.';
+        await ctx.reply(`${isCorrect ? '✅ *Correct!*' : '❌ *Wrong.*'}\n\n*Explanation:*\n${explanation}`, { parse_mode: 'Markdown' });
+
+        session.currentQuestionIndex++;
+        sessionStore.saveSession(ctx.from.id, session);
+        if (session.currentQuestionIndex < session.totalQuestions) {
+            await sendQuestion(ctx, session);
+        } else {
+            await sendScoreSummary(ctx, session);
+        }
     } catch (err) { console.error(err); }
 });
 
 bot.action('restart', async (ctx) => {
-    const userId = ctx.from.id;
-    sessionStore.resetSession(userId);
-    await ctx.answerCbQuery('Restarting...');
-    await ctx.reply('Please select your department again to restart the quiz.', buildDepartmentsKeyboard());
+    try {
+        if (!ctx.from) return;
+        sessionStore.resetSession(ctx.from.id);
+        await ctx.reply('Select your department:', buildDepartmentsKeyboard());
+    } catch (err) { console.error(err); }
 });
 
-bot.on('text', async (ctx) => {
-    await ctx.reply('Use /start to begin the quiz and then choose your department and chapter.');
-});
+// Webhook and Express Setup
+app.use(express.json());
+app.get('/', (req, res) => res.send('OK'));
 
-// ====== RENDER HEALTH CHECK & BOT LAUNCH ======
-const PORT = process.env.PORT || 3000;
-
-// Render እንዳያጠፋው የሚከፈት HTTP Server
-http.createServer((req, res) => {
-    res.writeHead(200);
-    res.end('Bot is live and healthy!');
-}).listen(PORT, () => {
-    console.log(`🚀 Server listening on port ${PORT}`);
-});
-
-// ቦቱን ማስነሻ (አንድ ጊዜ ብቻ)
-if (BOT_TOKEN) {
-    bot.launch().then(() => {
-        console.log('🤖 Bot is running on Telegram...');
-    }).catch(err => console.error('❌ Launch Error:', err));
+if (URL) {
+    const secretPath = `/telegraf/${bot.secretPathComponent()}`;
+    bot.telegram.setWebhook(`${URL}${secretPath}`);
+    app.use(bot.webhookCallback(secretPath));
+} else {
+    bot.launch();
 }
 
-// Enable graceful stop
-process.once('SIGINT', () => bot.stop('SIGINT'));
-process.once('SIGTERM', () => bot.stop('SIGTERM'));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
