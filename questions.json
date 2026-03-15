@@ -296,23 +296,119 @@
               "correctOptionIndex": 0,
               "explanation": "First Normal Form (1NF) requires that all attributes are atomic and there are no repeating groups or multi-valued attributes."
             },
-            [
-              { "id": "db-q6", "question": "Which SQL clause is used to filter records?", "options": ["GROUP BY", "ORDER BY", "WHERE", "SELECT"], "correctOptionIndex": 2, "explanation": "The WHERE clause is used to extract only those records that fulfill a specified condition." },
-              { "id": "db-q7", "question": "What is 'Data Redundancy'?", "options": ["Data security", "Duplication of data", "Data loss", "Data backup"], "correctOptionIndex": 1, "explanation": "Data redundancy occurs when the same piece of data is stored in two or more separate places." },
-              { "id": "db-q8", "question": "Which join returns all records from the left table even if there are no matches?", "options": ["INNER JOIN", "RIGHT JOIN", "LEFT JOIN", "FULL JOIN"], "correctOptionIndex": 2, "explanation": "A LEFT JOIN returns all rows from the left table and the matched rows from the right table." },
-              { "id": "db-q9", "question": "What is a 'Unique Key'?", "options": ["Allows duplicates", "Does not allow nulls", "Identifies records uniquely (allows one null)", "Same as Foreign Key"], "correctOptionIndex": 2, "explanation": "A Unique Key ensures all values in a column are different, but unlike a Primary Key, it can accept one NULL value." },
-              { "id": "db-q10", "question": "Which SQL command is used to delete a database table?", "options": ["DELETE", "REMOVE", "DROP", "TRUNCATE"], "correctOptionIndex": 2, "explanation": "DROP TABLE removes the entire table structure and data from the database permanently." },
-              { "id": "db-q11", "question": "What is 'Metadata'?", "options": ["Large data", "Data about data", "Hidden data", "Encrypted data"], "correctOptionIndex": 1, "explanation": "Metadata describes the properties of data, such as its type, size, and creation date." },
-              { "id": "db-q12", "question": "What does ACID stand for?", "options": ["Atomicity, Consistency, Isolation, Durability", "Access, Control, Integrity, Data", "Auto, Clear, Index, Delete", "None"], "correctOptionIndex": 0, "explanation": "ACID properties ensure that database transactions are processed reliably." },
-              { "id": "db-q13", "question": "Which command is used to save changes in a database permanently?", "options": ["SAVE", "COMMIT", "ROLLBACK", "GRANT"], "correctOptionIndex": 1, "explanation": "COMMIT is used to save all changes made during the current transaction." },
-              { "id": "db-q14", "question": "A 'View' in SQL is:", "options": ["A physical table", "A virtual table", "A database backup", "A report"], "correctOptionIndex": 1, "explanation": "A View is a virtual table based on the result-set of an SQL statement." },
-              { "id": "db-q15", "question": "Which aggregate function is used to find the number of rows?", "options": ["SUM()", "AVG()", "COUNT()", "MAX()"], "correctOptionIndex": 2, "explanation": "COUNT() returns the number of records that match a specific criterion." },
-              { "id": "db-q16", "question": "What is 'Normalization'?", "options": ["Increasing data", "Organizing data to reduce redundancy", "Deleting data", "Copying data"], "correctOptionIndex": 1, "explanation": "Normalization is the process of structuring a database to reduce data duplication and improve integrity." },
-              { "id": "db-q17", "question": "Which SQL command is used to add a new column to a table?", "options": ["UPDATE", "INSERT", "ALTER TABLE", "CREATE"], "correctOptionIndex": 2, "explanation": "ALTER TABLE is used to modify the structure of an existing table, such as adding a column." },
-              { "id": "db-q18", "question": "What is a 'Candidate Key'?", "options": ["A secondary key", "A set of keys that can uniquely identify a row", "A key that links tables", "None"], "correctOptionIndex": 1, "explanation": "A Candidate Key is a column or set of columns that can potentially serve as the primary key." },
-              { "id": "db-q19", "question": "What is the result of a 'Cross Join'?", "options": ["Filtered data", "Cartesian product of both tables", "Matching records only", "No data"], "correctOptionIndex": 1, "explanation": "A CROSS JOIN produces a result set where every row from the first table is joined with every row from the second table." },
-              { "id": "db-q20", "question": "In SQL, 'GRANT' is a ______ command.", "options": ["DDL", "DML", "DCL", "TCL"], "correctOptionIndex": 2, "explanation": "DCL (Data Control Language) includes commands like GRANT and REVOKE to manage permissions." }
-            ]
+            {
+              "id": "cs-db-q5",
+              "question": "What is a 'Primary Key'?",
+              "options": ["A key that allows null values", "A unique identifier for each record in a table", "A key used to link two tables", "A temporary key"],
+              "correctOptionIndex": 1,
+              "explanation": "A Primary Key uniquely identifies each record in a database table and cannot contain NULL values."
+            },
+              {
+                "id": "cs-db-q6",
+                "question": "Which SQL clause is used to filter records?",
+                "options": ["GROUP BY", "ORDER BY", "WHERE", "SELECT"],
+                "correctOptionIndex": 2,
+                "explanation": "The WHERE clause is used to extract only those records that fulfill a specified condition."
+              },
+              {
+                "id": "cs-db-q7",
+                "question": "What is 'Data Redundancy'?",
+                "options": ["Data security", "Duplication of data", "Data loss", "Data backup"],
+                "correctOptionIndex": 1,
+                "explanation": "Data redundancy occurs when the same piece of data is stored in two or more separate places."
+              },
+              {
+                "id": "cs-db-q8",
+                "question": "Which join returns all records from the left table even if there are no matches?",
+                "options": ["INNER JOIN", "RIGHT JOIN", "LEFT JOIN", "FULL JOIN"],
+                "correctOptionIndex": 2,
+                "explanation": "A LEFT JOIN returns all rows from the left table and the matched rows from the right table."
+              },
+              {
+                "id": "cs-db-q9",
+                "question": "What is a 'Unique Key'?",
+                "options": ["Allows duplicates", "Does not allow nulls", "Identifies records uniquely (allows one null)", "Same as Foreign Key"],
+                "correctOptionIndex": 2,
+                "explanation": "A Unique Key ensures all values in a column are different, but unlike a Primary Key, it can accept one NULL value."
+              },
+              {
+                "id": "cs-db-q10",
+                "question": "Which SQL command is used to delete a database table?",
+                "options": ["DELETE", "REMOVE", "DROP", "TRUNCATE"],
+                "correctOptionIndex": 2,
+                "explanation": "DROP TABLE removes the entire table structure and data from the database permanently."
+              },
+              {
+                "id": "cs-db-q11",
+                "question": "What is 'Metadata'?",
+                "options": ["Large data", "Data about data", "Hidden data", "Encrypted data"],
+                "correctOptionIndex": 1,
+                "explanation": "Metadata describes the properties of data, such as its type, size, and creation date."
+              },
+              {
+                "id": "cs-db-q12",
+                "question": "What does ACID stand for?",
+                "options": ["Atomicity, Consistency, Isolation, Durability", "Access, Control, Integrity, Data", "Auto, Clear, Index, Delete", "None"],
+                "correctOptionIndex": 0,
+                "explanation": "ACID properties ensure that database transactions are processed reliably."
+              },
+              {
+                "id": "cs-db-q13",
+                "question": "Which command is used to save changes in a database permanently?",
+                "options": ["SAVE", "COMMIT", "ROLLBACK", "GRANT"],
+                "correctOptionIndex": 1,
+                "explanation": "COMMIT is used to save all changes made during the current transaction."
+              },
+              {
+                "id": "cs-db-q14",
+                "question": "A 'View' in SQL is:",
+                "options": ["A physical table", "A virtual table", "A database backup", "A report"],
+                "correctOptionIndex": 1,
+                "explanation": "A View is a virtual table based on the result-set of an SQL statement."
+              },
+              {
+                "id": "cs-db-q15",
+                "question": "Which aggregate function is used to find the number of rows?",
+                "options": ["SUM()", "AVG()", "COUNT()", "MAX()"],
+                "correctOptionIndex": 2,
+                "explanation": "COUNT() returns the number of records that match a specific criterion."
+              },
+              {
+                "id": "cs-db-q16",
+                "question": "What is 'Normalization'?",
+                "options": ["Increasing data", "Organizing data to reduce redundancy", "Deleting data", "Copying data"],
+                "correctOptionIndex": 1,
+                "explanation": "Normalization is the process of structuring a database to reduce data duplication and improve integrity."
+              },
+              {
+                "id": "cs-db-q17",
+                "question": "Which SQL command is used to add a new column to a table?",
+                "options": ["UPDATE", "INSERT", "ALTER TABLE", "CREATE"],
+                "correctOptionIndex": 2,
+                "explanation": "ALTER TABLE is used to modify the structure of an existing table, such as adding a column."
+              },
+              {
+                "id": "cs-db-q18",
+                "question": "What is a 'Candidate Key'?",
+                "options": ["A secondary key", "A set of keys that can uniquely identify a row", "A key that links tables", "None"],
+                "correctOptionIndex": 1,
+                "explanation": "A Candidate Key is a column or set of columns that can potentially serve as the primary key."
+              },
+              {
+                "id": "cs-db-q19",
+                "question": "What is the result of a 'Cross Join'?",
+                "options": ["Filtered data", "Cartesian product of both tables", "Matching records only", "No data"],
+                "correctOptionIndex": 1,
+                "explanation": "A CROSS JOIN produces a result set where every row from the first table is joined with every row from the second table."
+              },
+              {
+                "id": "cs-db-q20",
+                "question": "In SQL, 'GRANT' is a ______ command.",
+                "options": ["DDL", "DML", "DCL", "TCL"],
+                "correctOptionIndex": 2,
+                "explanation": "DCL (Data Control Language) includes commands like GRANT and REVOKE to manage permissions."
+              }
+            
           ]
         },
         {
