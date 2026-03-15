@@ -1,215 +1,423 @@
 require('dotenv').config();
-const { Telegraf, Markup } = require('telegraf');
+const path = require('path');
+const fs = require('fs');
 const express = require('express');
-const rawQuestionsData = require('./questions.json');
-const { InMemorySessionStore } = require('./sessionStore');
+const { Telegraf, Markup } = require('telegraf');
 
-// Data normalization (run once at startup)
-function flattenQuestionsArray(arr) {
-    if (!Array.isArray(arr)) return [];
-    const flat = [];
-    for (const item of arr) {
-        if (!item) continue;
-        if (Array.isArray(item)) {
-            for (const q of item) {
-                if (q && q.question && Array.isArray(q.options)) {
-                    flat.push(q);
-                }
-            }
-        } else if (item.question && Array.isArray(item.options)) {
-            flat.push(item);
-        }
-    }
-    return flat;
-}
-
-function normalizeQuestionsData(data) {
-    if (!data || !Array.isArray(data.departments)) {
-        return { departments: [] };
-    }
-
-    return {
-        ...data,
-        departments: data.departments.map((dept) => {
-            if (!dept) return dept;
-            const normalized = { ...dept };
-            if (Array.isArray(dept.chapters)) {
-                normalized.chapters = dept.chapters.map((chapter) =>
-                    chapter && Array.isArray(chapter.questions)
-                        ? { ...chapter, questions: flattenQuestionsArray(chapter.questions) }
-                        : chapter
-                );
-            }
-            return normalized;
-        }),
-    };
-}
-
-const questionsData = normalizeQuestionsData(rawQuestionsData);
-
+// ─────────────────────────────────────────────────────────────
+// Config
+// ─────────────────────────────────────────────────────────────
 const BOT_TOKEN = process.env.BOT_TOKEN;
-const URL = process.env.EXTERNAL_URL; 
 const PORT = process.env.PORT || 3000;
 
-const bot = new Telegraf(BOT_TOKEN);
-const sessionStore = new InMemorySessionStore();
-const app = express();
+if (!BOT_TOKEN) {
+  console.error('❌ BOT_TOKEN is missing in environment variables');
+  process.exit(1);
+}
 
-// Helper functions
-function getDepartments() { return questionsData.departments || []; }
-function getDepartmentById(deptId) { return getDepartments().find((d) => d.id === deptId); }
+// ─────────────────────────────────────────────────────────────
+// Data loading (questions.json)
+// ─────────────────────────────────────────────────────────────
+function loadQuestionsData() {
+  try {
+    const filePath = path.join(__dirname, 'questions.json');
+    const raw = fs.readFileSync(filePath, 'utf8');
+    const data = JSON.parse(raw);
+
+    if (!data || !Array.isArray(data.departments)) {
+      console.warn('⚠️ questions.json has no "departments" array, defaulting to empty.');
+      return { departments: [] };
+    }
+    return data;
+  } catch (err) {
+    console.error('❌ Failed to load questions.json:', err);
+    return { departments: [] };
+  }
+}
+
+// Loaded once at startup (performance)
+const questionsData = loadQuestionsData();
+
+// ─────────────────────────────────────────────────────────────
+// Simple in-memory session store
+// ─────────────────────────────────────────────────────────────
+class SessionStore {
+  constructor() {
+    this.sessions = new Map(); // key: userId, value: session object
+  }
+
+  getSession(userId) {
+    if (!this.sessions.has(userId)) {
+      this.sessions.set(userId, {
+        departmentId: null,
+        chapterId: null,
+        currentQuestionIndex: 0,
+        score: 0,
+        totalQuestions: 0,
+      });
+    }
+    return this.sessions.get(userId);
+  }
+
+  saveSession(userId, session) {
+    this.sessions.set(userId, session);
+  }
+
+  resetSession(userId) {
+    this.sessions.set(userId, {
+      departmentId: null,
+      chapterId: null,
+      currentQuestionIndex: 0,
+      score: 0,
+      totalQuestions: 0,
+    });
+  }
+}
+
+const sessionStore = new SessionStore();
+
+// ─────────────────────────────────────────────────────────────
+// Data helpers
+// ─────────────────────────────────────────────────────────────
+function getDepartments() {
+  return questionsData.departments || [];
+}
+
+function getDepartmentById(deptId) {
+  return getDepartments().find((d) => d.id === deptId);
+}
 
 function getChapterById(deptId, chapterId) {
-    const dept = getDepartmentById(deptId);
-    if (!dept || !dept.chapters) return null;
-    return dept.chapters.find((c) => c.id === chapterId);
+  const dept = getDepartmentById(deptId);
+  if (!dept || !Array.isArray(dept.chapters)) return null;
+  return dept.chapters.find((ch) => ch.id === chapterId) || null;
+}
+
+function getQuestionsForChapter(deptId, chapterId) {
+  const chapter = getChapterById(deptId, chapterId);
+  if (!chapter || !Array.isArray(chapter.questions)) return [];
+  return chapter.questions;
 }
 
 function getQuestion(deptId, chapterId, index) {
-    const chapter = getChapterById(deptId, chapterId);
-    if (!chapter || !Array.isArray(chapter.questions)) return null;
-    return chapter.questions[index] || null;
+  const questions = getQuestionsForChapter(deptId, chapterId);
+  if (index < 0 || index >= questions.length) return null;
+  return questions[index];
 }
 
-function getTotalQuestions(deptId, chapterId) {
-    const chapter = getChapterById(deptId, chapterId);
-    if (!chapter || !Array.isArray(chapter.questions)) return 0;
-    return chapter.questions.length;
-}
-
-// Keyboard Builders
+// ─────────────────────────────────────────────────────────────
+// Keyboard builders (all use Markup.inlineKeyboard)
+// ─────────────────────────────────────────────────────────────
 function buildDepartmentsKeyboard() {
-    const departments = getDepartments();
-    const buttons = departments.map((dept) => Markup.button.callback(dept.name, `dept:${dept.id}`)).reply_markup;
-    return Markup.inlineKeyboard(buttons.map((b) => [b])).reply_markup;
-    
+  const departments = getDepartments();
+
+  if (!departments.length) {
+    return Markup.inlineKeyboard([
+      [Markup.button.callback('No departments configured', 'noop')],
+    ]).reply_markup;
+  }
+
+  const rows = departments.map((dept) => {
+    const text = dept.name || dept.id || 'Department';
+    const callbackData = `dept:${dept.id}`;
+    return [Markup.button.callback(text, callbackData)];
+  });
+
+  return Markup.inlineKeyboard(rows).reply_markup;
 }
 
 function buildChaptersKeyboard(deptId) {
-    const department = getDepartmentById(deptId);
-    if (!department || !department.chapters) return Markup.inlineKeyboard([]);
-    const buttons = department.chapters.map((chap) => Markup.button.callback(chap.name, `chap:${deptId}:${chap.id}`));
-    return Markup.inlineKeyboard(buttons.map((b) => [b]));
+  const department = getDepartmentById(deptId);
+  if (!department || !Array.isArray(department.chapters) || !department.chapters.length) {
+    return Markup.inlineKeyboard([
+      [Markup.button.callback('No chapters available', 'noop')],
+    ]).reply_markup;
+  }
+
+  const rows = department.chapters.map((chapter) => {
+    const text = chapter.name || chapter.id || 'Chapter';
+    const callbackData = `chap:${deptId}:${chapter.id}`;
+    return [Markup.button.callback(text, callbackData)];
+  });
+
+  return Markup.inlineKeyboard(rows).reply_markup;
 }
 
-function buildOptionsKeyboard(question) {
-    const buttons = question.options.map((opt, idx) => Markup.button.callback(opt, `ans:${idx}`));
-    return Markup.inlineKeyboard(buttons.map((b) => [b]));
+function buildOptionsKeyboard(deptId, chapterId, questionIndex) {
+  const question = getQuestion(deptId, chapterId, questionIndex);
+  if (!question || !Array.isArray(question.options)) {
+    return Markup.inlineKeyboard([
+      [Markup.button.callback('No options available', 'noop')],
+    ]).reply_markup;
+  }
+
+  const rows = question.options.map((opt, idx) => {
+    const text = opt || `Option ${idx + 1}`;
+    const callbackData = `ans:${idx}`;
+    return [Markup.button.callback(text, callbackData)];
+  });
+
+  return Markup.inlineKeyboard(rows).reply_markup;
 }
 
+// ─────────────────────────────────────────────────────────────
+// Quiz / flow helpers
+// ─────────────────────────────────────────────────────────────
 async function sendQuestion(ctx, session) {
-    const question = getQuestion(session.departmentId, session.chapterId, session.currentQuestionIndex);
-    if (!question) return;
-    const text = `Question ${session.currentQuestionIndex + 1}/${session.totalQuestions}\n\n${question.question}`;
-    await ctx.reply(text, buildOptionsKeyboard(question));
+  try {
+    const question = getQuestion(
+      session.departmentId,
+      session.chapterId,
+      session.currentQuestionIndex
+    );
+
+    if (!question) {
+      if (session.currentQuestionIndex === 0) {
+        await ctx.reply('⚠️ No questions found in this chapter yet. Please choose another chapter.');
+      } else {
+        await sendScoreSummary(ctx, session);
+      }
+      return;
+    }
+
+    const questionNumber = session.currentQuestionIndex + 1;
+    const questionText = `Question ${questionNumber}/${session.totalQuestions}\n\n${question.question}`;
+
+    await ctx.reply(questionText, {
+      reply_markup: buildOptionsKeyboard(
+        session.departmentId,
+        session.chapterId,
+        session.currentQuestionIndex
+      ),
+    });
+  } catch (err) {
+    console.error('Error in sendQuestion:', err);
+    await ctx.reply('😕 Something went wrong while sending the question. Please try /start.');
+  }
 }
 
 async function sendScoreSummary(ctx, session) {
-    const scoreText = `🏆 Quiz Finished!\n\nYour Score: ${session.score}/${session.totalQuestions}`;
-    await ctx.reply(scoreText, Markup.inlineKeyboard([Markup.button.callback('Restart', 'restart')]));
+  try {
+    const msg = `✅ Quiz finished!\n\nYour score: ${session.score}/${session.totalQuestions}`;
+    await ctx.reply(msg);
+    await ctx.reply(
+      'Would you like to start again?',
+      {
+        reply_markup: Markup.inlineKeyboard([
+          [Markup.button.callback('🔄 Restart', 'restart')],
+        ]).reply_markup,
+      }
+    );
+  } catch (err) {
+    console.error('Error in sendScoreSummary:', err);
+  }
 }
 
-// Handlers
+// ─────────────────────────────────────────────────────────────
+// Bot setup
+// ─────────────────────────────────────────────────────────────
+const bot = new Telegraf(BOT_TOKEN);
+
+// /start
 bot.start(async (ctx) => {
-    try {
-        if (!ctx.from) return;
-        sessionStore.resetSession(ctx.from.id);
-        await ctx.reply(
-            '👋 Welcome to the University Exit Exam Prep Bot!\n\nSelect your department:',
-            buildDepartmentsKeyboard()
-        );
-    } catch (err) {
-        console.error(err);
-        await ctx.reply('😕 Something went wrong starting the bot. Please try /start again.');
-    }
+  try {
+    if (!ctx.from) return;
+
+    sessionStore.resetSession(ctx.from.id);
+
+    await ctx.reply(
+      '👋 Welcome to the Exit Exam Prep Bot!\n\nSelect your department:',
+      { reply_markup: buildDepartmentsKeyboard() }
+    );
+  } catch (err) {
+    console.error('Error in /start handler:', err);
+    await ctx.reply('😕 Something went wrong. Please try /start again in a moment.');
+  }
 });
 
+// Select department
 bot.action(/^dept:/, async (ctx) => {
+  try {
+    if (!ctx.callbackQuery || !ctx.callbackQuery.data || !ctx.from) return;
+
+    const [, deptId] = ctx.callbackQuery.data.split(':');
+    const department = getDepartmentById(deptId);
+
+    if (!department) {
+      await ctx.answerCbQuery('Department not found');
+      return;
+    }
+
+    const session = sessionStore.getSession(ctx.from.id);
+    session.departmentId = deptId;
+    session.chapterId = null;
+    session.currentQuestionIndex = 0;
+    session.score = 0;
+    session.totalQuestions = 0;
+    sessionStore.saveSession(ctx.from.id, session);
+
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(
+      `Selected: *${department.name}*\n\nNow choose a chapter:`,
+      {
+        parse_mode: 'Markdown',
+        reply_markup: buildChaptersKeyboard(deptId),
+      }
+    );
+  } catch (err) {
+    console.error('Error in dept action:', err);
     try {
-        if (!ctx.callbackQuery || !ctx.callbackQuery.data || !ctx.from) return;
-        const [, deptId] = ctx.callbackQuery.data.split(':');
-        const department = getDepartmentById(deptId);
-        if (!department) return ctx.answerCbQuery('Department not found');
-        await ctx.answerCbQuery();
-        await ctx.editMessageText(`Selected: *${department.name}*\nChoose a chapter:`, { parse_mode: 'Markdown', ...buildChaptersKeyboard(deptId) });
-    } catch (err) { console.error(err); }
+      await ctx.answerCbQuery('Something went wrong.');
+    } catch (_) {}
+    await ctx.reply('😕 Something went wrong while selecting the department. Please use /start and try again.');
+  }
 });
 
+// Select chapter
 bot.action(/^chap:/, async (ctx) => {
+  try {
+    if (!ctx.callbackQuery || !ctx.callbackQuery.data || !ctx.from) return;
+
+    const [, deptId, chapterId] = ctx.callbackQuery.data.split(':');
+    const chapter = getChapterById(deptId, chapterId);
+
+    if (!chapter) {
+      await ctx.answerCbQuery('Chapter not found');
+      return;
+    }
+
+    const questions = getQuestionsForChapter(deptId, chapterId);
+    if (!questions.length) {
+      await ctx.answerCbQuery('No questions in this chapter');
+      await ctx.reply('⚠️ No questions found in this chapter yet. Please choose another chapter.');
+      return;
+    }
+
+    const session = sessionStore.getSession(ctx.from.id);
+    session.departmentId = deptId;
+    session.chapterId = chapterId;
+    session.currentQuestionIndex = 0;
+    session.score = 0;
+    session.totalQuestions = questions.length;
+    sessionStore.saveSession(ctx.from.id, session);
+
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(
+      `Starting quiz: *${chapter.name}*`,
+      { parse_mode: 'Markdown' }
+    );
+
+    await sendQuestion(ctx, session);
+  } catch (err) {
+    console.error('Error in chap action:', err);
     try {
-        if (!ctx.callbackQuery || !ctx.callbackQuery.data || !ctx.from) return;
-        const [, deptId, chapterId] = ctx.callbackQuery.data.split(':');
-        const chapter = getChapterById(deptId, chapterId);
-        if (!chapter) return ctx.answerCbQuery('Chapter not found');
-        const session = sessionStore.getSession(ctx.from.id);
-        session.departmentId = deptId;
-        session.chapterId = chapterId;
-        session.currentQuestionIndex = 0;
-        session.score = 0;
-        session.totalQuestions = getTotalQuestions(deptId, chapterId);
-
-        if (!session.totalQuestions) {
-            await ctx.answerCbQuery('No questions in this chapter yet.');
-            await ctx.reply('⚠️ No questions found in this chapter yet. Please choose another chapter.');
-            return;
-        }
-
-        sessionStore.saveSession(ctx.from.id, session);
-        await ctx.answerCbQuery();
-        await ctx.editMessageText(`Starting Quiz: *${chapter.name}*`, { parse_mode: 'Markdown' });
-        await sendQuestion(ctx, session);
-    } catch (err) { console.error(err); }
+      await ctx.answerCbQuery('Something went wrong.');
+    } catch (_) {}
+    await ctx.reply('😕 Something went wrong while starting the quiz. Please use /start and try again.');
+  }
 });
 
+// Answer question
 bot.action(/^ans:/, async (ctx) => {
+  try {
+    if (!ctx.callbackQuery || !ctx.callbackQuery.data || !ctx.from) return;
+
+    const session = sessionStore.getSession(ctx.from.id);
+    if (!session || !session.departmentId || !session.chapterId) {
+      await ctx.answerCbQuery('Session expired. Use /start');
+      return;
+    }
+
+    const [, optIdxStr] = ctx.callbackQuery.data.split(':');
+    const selectedIndex = parseInt(optIdxStr, 10);
+
+    if (Number.isNaN(selectedIndex)) {
+      await ctx.answerCbQuery('Invalid option');
+      return;
+    }
+
+    const question = getQuestion(
+      session.departmentId,
+      session.chapterId,
+      session.currentQuestionIndex
+    );
+
+    if (!question) {
+      await ctx.answerCbQuery('No more questions.');
+      await sendScoreSummary(ctx, session);
+      return;
+    }
+
+    const isCorrect = selectedIndex === question.correctOptionIndex;
+    if (isCorrect) session.score += 1;
+
+    await ctx.answerCbQuery(isCorrect ? '✅ Correct!' : '❌ Wrong');
+
+    const explanation = question.explanation || 'No explanation provided for this question.';
+    const feedback = `${isCorrect ? '✅ *Correct!*' : '❌ *Wrong.*'}\n\n*Explanation:*\n${explanation}`;
+    await ctx.reply(feedback, { parse_mode: 'Markdown' });
+
+    session.currentQuestionIndex += 1;
+    sessionStore.saveSession(ctx.from.id, session);
+
+    if (session.currentQuestionIndex < session.totalQuestions) {
+      await sendQuestion(ctx, session);
+    } else {
+      await sendScoreSummary(ctx, session);
+    }
+  } catch (err) {
+    console.error('Error in ans action:', err);
     try {
-        if (!ctx.callbackQuery || !ctx.callbackQuery.data || !ctx.from) return;
-        const session = sessionStore.getSession(ctx.from.id);
-        if (!session || !session.chapterId) return ctx.answerCbQuery('Session expired. Use /start');
-
-        const [, optIdx] = ctx.callbackQuery.data.split(':');
-        const selected = parseInt(optIdx, 10);
-        const question = getQuestion(session.departmentId, session.chapterId, session.currentQuestionIndex);
-
-        if (!question) {
-            await sendScoreSummary(ctx, session);
-            return;
-        }
-
-        const isCorrect = selected === question.correctOptionIndex;
-        if (isCorrect) session.score++;
-        await ctx.answerCbQuery(isCorrect ? '✅ Correct!' : '❌ Wrong');
-        const explanation = question.explanation || 'No explanation provided.';
-        await ctx.reply(`${isCorrect ? '✅ *Correct!*' : '❌ *Wrong.*'}\n\n*Explanation:*\n${explanation}`, { parse_mode: 'Markdown' });
-
-        session.currentQuestionIndex++;
-        sessionStore.saveSession(ctx.from.id, session);
-        if (session.currentQuestionIndex < session.totalQuestions) {
-            await sendQuestion(ctx, session);
-        } else {
-            await sendScoreSummary(ctx, session);
-        }
-    } catch (err) { console.error(err); }
+      await ctx.answerCbQuery('Something went wrong.');
+    } catch (_) {}
+    await ctx.reply('😕 Something went wrong while processing your answer. Please use /start to try again.');
+  }
 });
 
+// Restart
 bot.action('restart', async (ctx) => {
-    try {
-        if (!ctx.from) return;
-        sessionStore.resetSession(ctx.from.id);
-        await ctx.reply('Select your department:', buildDepartmentsKeyboard());
-    } catch (err) { console.error(err); }
+  try {
+    if (!ctx.from) return;
+    sessionStore.resetSession(ctx.from.id);
+    await ctx.answerCbQuery();
+    await ctx.reply(
+      '🔄 Quiz restarted. Select your department:',
+      { reply_markup: buildDepartmentsKeyboard() }
+    );
+  } catch (err) {
+    console.error('Error in restart action:', err);
+    await ctx.reply('😕 Could not restart the quiz. Please try /start.');
+  }
 });
 
-// Webhook and Express Setup
-app.use(express.json());
-app.get('/', (req, res) => res.send('OK'));
+// Fallback for unused callbacks
+bot.action('noop', async (ctx) => {
+  try {
+    await ctx.answerCbQuery();
+  } catch (err) {
+    console.error('Error in noop action:', err);
+  }
+});
 
-if (URL) {
-    const secretPath = `/telegraf/${bot.secretPathComponent()}`;
-    bot.telegram.setWebhook(`${URL}${secretPath}`);
-    app.use(bot.webhookCallback(secretPath));
-} else {
-    bot.launch();
-}
+// ─────────────────────────────────────────────────────────────
+// Express server (optional, but good for Render/health checks)
+// ─────────────────────────────────────────────────────────────
+const app = express();
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// Health-check route (for uptime monitors / Render)
+app.get('/', (req, res) => {
+  res.send('OK');
+});
+
+// Long polling (simple & reliable; you can swap to webhooks later if you want)
+bot.launch()
+  .then(() => console.log('🤖 Bot started with long polling'))
+  .catch((err) => console.error('❌ Failed to launch bot:', err));
+
+app.listen(PORT, () => {
+  console.log(`🌐 Express server listening on port ${PORT}`);
+});
+
+// Graceful shutdown
+process.once('SIGINT', () => bot.stop('SIGINT'));
+process.once('SIGTERM', () => bot.stop('SIGTERM'));
