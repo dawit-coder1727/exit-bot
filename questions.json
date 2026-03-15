@@ -1,938 +1,89 @@
 {
   "departments": [
     {
-      "id": "cs",
-      "name": "Computer Science",
+      "id": "acc-fin",
+      "name": "Accounting & Finance",
       "chapters": [
         {
-          "id": "algorithms",
-          "name": "Algorithms & Data Structures",
-          "questions": [
-            [
-              {
-                "id": "algo-q1",
-                "question": "What is the primary characteristic of a 'Queue' data structure?",
-                "options": ["Last-In-First-Out (LIFO)", "First-In-First-Out (FIFO)", "Random Access", "Priority Based"],
-                "correctOptionIndex": 1,
-                "explanation": "A Queue works like a real-life line; the first person to enter is the first one to leave (FIFO)."
-              },
-              {
-                "id": "algo-q2",
-                "question": "In a Binary Search Tree (BST), what is the relationship between a parent and its right child?",
-                "options": ["Right child is smaller", "Right child is equal", "Right child is greater", "No relationship"],
-                "correctOptionIndex": 2,
-                "explanation": "In a BST, the right subtree always contains values greater than the parent node's value."
-              },
-              {
-                "id": "algo-q3",
-                "question": "Which sorting algorithm is often considered the most efficient for very large datasets?",
-                "options": ["Bubble Sort", "Selection Sort", "Merge Sort", "Insertion Sort"],
-                "correctOptionIndex": 2,
-                "explanation": "Merge Sort has a consistent time complexity of O(n log n), making it very efficient for large data."
-              },
-              {
-                "id": "algo-q4",
-                "question": "What is the purpose of a 'Hash Function' in a Hash Table?",
-                "options": ["To sort data", "To map a key to a specific index", "To delete data", "To encrypt data"],
-                "correctOptionIndex": 1,
-                "explanation": "A hash function takes an input (key) and turns it into a fixed-size numerical index within an array."
-              },
-              {
-                "id": "algo-q5",
-                "question": "Which of these is a non-linear data structure?",
-                "options": ["Array", "Linked List", "Stack", "Graph"],
-                "correctOptionIndex": 3,
-                "explanation": "Graphs and Trees are non-linear because their elements are not connected in a sequential sequence."
-              }
-            ],
-            [
-              {
-                "id": "algo-q6",
-                "question": "Which data structure is most efficient for implementing a LIFO (Last-In-First-Out) system?",
-                "options": ["Queue", "Stack", "Linked List", "Array"],
-                "correctOptionIndex": 1,
-                "explanation": "A Stack follows the LIFO principle, where the last element added is the first one to be removed."
-              },
-              {
-                "id": "algo-q7",
-                "question": "What is the time complexity of a Binary Search algorithm?",
-                "options": ["O(n)", "O(n^2)", "O(log n)", "O(1)"],
-                "correctOptionIndex": 2,
-                "explanation": "Binary Search divides the search interval in half each time, resulting in a logarithmic time complexity."
-              },
-              {
-                "id": "algo-q8",
-                "question": "Which sorting algorithm works by repeatedly selecting the smallest element from the unsorted part?",
-                "options": ["Bubble Sort", "Insertion Sort", "Selection Sort", "Merge Sort"],
-                "correctOptionIndex": 2,
-                "explanation": "Selection Sort finds the minimum element and places it at the beginning in each iteration."
-              },
-              {
-                "id": "algo-q9",
-                "question": "A Linear Search has a worst-case time complexity of:",
-                "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
-                "correctOptionIndex": 2,
-                "explanation": "In the worst case, Linear Search must check every single element in the list."
-              },
-              {
-                "id": "algo-q10",
-                "question": "Which data structure is used to represent a hierarchical relationship between elements?",
-                "options": ["Queue", "Stack", "Tree", "Hash Table"],
-                "correctOptionIndex": 2,
-                "explanation": "Trees are non-linear data structures used to represent hierarchies, like a file system."
-              },
-              {
-                "id": "algo-q11",
-                "question": "What is the primary advantage of a Doubly Linked List over a Singly Linked List?",
-                "options": ["Uses less memory", "Faster access to elements", "Can be traversed in both directions", "Easier to implement"],
-                "correctOptionIndex": 2,
-                "explanation": "A Doubly Linked List has pointers to both the next and the previous nodes."
-              },
-              {
-                "id": "algo-q12",
-                "question": "In a Hash Table, what occurs when two different keys map to the same index?",
-                "options": ["Overflow", "Collision", "Deletion", "Hashing"],
-                "correctOptionIndex": 1,
-                "explanation": "A collision happens when the hash function produces the same index for different inputs."
-              },
-              {
-                "id": "algo-q13",
-                "question": "Which algorithm is commonly used to find the shortest path in a weighted graph?",
-                "options": ["Prim's Algorithm", "Dijkstra's Algorithm", "Kruskal's Algorithm", "Binary Search"],
-                "correctOptionIndex": 1,
-                "explanation": "Dijkstra's Algorithm is the standard choice for finding the shortest path from a source to all other nodes."
-              },
-              {
-                "id": "algo-q14",
-                "question": "What is the best-case time complexity of Bubble Sort (on a sorted array)?",
-                "options": ["O(1)", "O(n)", "O(n log n)", "O(n^2)"],
-                "correctOptionIndex": 1,
-                "explanation": "With an optimized version that checks for swaps, Bubble Sort can finish in O(n) for a sorted list."
-              },
-              {
-                "id": "algo-q15",
-                "question": "Which data structure is typically used to implement Breadth-First Search (BFS)?",
-                "options": ["Stack", "Queue", "Priority Queue", "Linked List"],
-                "correctOptionIndex": 1,
-                "explanation": "BFS uses a Queue to keep track of nodes to visit in a level-by-level order."
-              },
-              {
-                "id": "algo-q16",
-                "question": "What is the space complexity of an iterative Linear Search?",
-                "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
-                "correctOptionIndex": 0,
-                "explanation": "Linear search only uses a constant amount of extra space regardless of the input size."
-              },
-              {
-                "id": "algo-q17",
-                "question": "Which sorting algorithm uses the 'Divide and Conquer' strategy?",
-                "options": ["Selection Sort", "Bubble Sort", "Merge Sort", "Insertion Sort"],
-                "correctOptionIndex": 2,
-                "explanation": "Merge Sort divides the array into halves, sorts them recursively, and then merges them."
-              },
-              {
-                "id": "algo-q18",
-                "question": "In a Binary Search Tree (BST), the left child of a node is always:",
-                "options": ["Equal to the parent", "Greater than the parent", "Smaller than the parent", "Random"],
-                "correctOptionIndex": 2,
-                "explanation": "By definition, the left subtree of a node in a BST contains only nodes with keys less than the node's key."
-              },
-              {
-                "id": "algo-q19",
-                "question": "What is 'Recursion'?",
-                "options": ["A loop that never ends", "A function that calls itself", "A way to delete data", "A type of sorting"],
-                "correctOptionIndex": 1,
-                "explanation": "Recursion occurs when a function calls itself as a subroutine to solve smaller instances of the same problem."
-              },
-              {
-                "id": "algo-q20",
-                "question": "Which data structure is used to implement Depth-First Search (DFS)?",
-                "options": ["Queue", "Stack", "Array", "Linked List"],
-                "correctOptionIndex": 1,
-                "explanation": "DFS uses a Stack (either explicitly or via the call stack in recursion) to go as deep as possible."
-              }
-            ]
-          ]
-        },
-        {
-          "id": "networking",
-          "name": "Computer Networking",
+          "id": "acc-ch1",
+          "name": "Financial Accounting Basics",
           "questions": [
             {
-              "id": "cs-net-q1",
-              "question": "Which OSI layer is responsible for end-to-end communication and error recovery?",
-              "options": ["Network Layer", "Physical Layer", "Transport Layer", "Data Link Layer"],
-              "correctOptionIndex": 2,
-              "explanation": "The Transport layer (Layer 4) ensures reliable data transfer through flow control and error checking."
-            },
-            {
-              "id": "cs-net-q2",
-              "question": "What is the default port number for HTTP?",
-              "options": ["21", "25", "80", "443"],
-              "correctOptionIndex": 2,
-              "explanation": "HTTP uses port 80 by default, while HTTPS uses port 443."
-            },
-            {
-              "id": "cs-net-q3",
-              "question": "Which protocol is used to map an IP address to a MAC address?",
-              "options": ["DHCP", "ARP", "DNS", "ICMP"],
+              "id": "acc-q1",
+              "question": "According to the accounting equation, Assets are equal to:",
+              "options": [
+                "Liabilities - Equity",
+                "Liabilities + Equity",
+                "Equity - Liabilities",
+                "Revenue + Expenses"
+              ],
               "correctOptionIndex": 1,
-              "explanation": "Address Resolution Protocol (ARP) is used to find the physical (MAC) address from a known IP address."
+              "explanation": "The basic accounting equation is Assets = Liabilities + Equity."
+            },
+            {
+              "id": "acc-q2",
+              "question": "Which financial statement reports a company's financial position at a specific point in time?",
+              "options": [
+                "Income Statement",
+                "Statement of Cash Flows",
+                "Balance Sheet",
+                "Statement of Retained Earnings"
+              ],
+              "correctOptionIndex": 2,
+              "explanation": "The Balance Sheet shows assets, liabilities and equity on a specific date."
             }
           ]
         },
         {
-          "id": "os",
-          "name": "Operating Systems",
-          "chapters": [
-            {
-              "id": "os-ch1",
-              "title": "Process Management & Memory",
-              "questions": [
-                {
-                  "id": "cs-os-q1",
-                  "question": "What is the main purpose of 'Virtual Memory' in an Operating System?",
-                  "options": [
-                    "To increase CPU speed",
-                    "To allow programs larger than physical RAM to run",
-                    "To back up data to the cloud",
-                    "To manage external hard drives"
-                  ],
-                  "correctOptionIndex": 1,
-                  "explanation": "Virtual memory allows the execution of processes that are not completely in main memory (RAM) by using disk space."
-                },
-                {
-                  "id": "cs-os-q2",
-                  "question": "Which of the following conditions is NOT required for a Deadlock to occur?",
-                  "options": [
-                    "Mutual Exclusion",
-                    "Hold and Wait",
-                    "Preemption",
-                    "Circular Wait"
-                  ],
-                  "correctOptionIndex": 2,
-                  "explanation": "For a deadlock to occur, 'No Preemption' is required. If preemption is allowed, deadlock can be broken."
-                },
-                {
-                  "id": "cs-os-q3",
-                  "question": "Which CPU scheduling algorithm is designed specifically for time-sharing systems?",
-                  "options": [
-                    "First-Come, First-Served (FCFS)",
-                    "Shortest Job First (SJF)",
-                    "Round Robin (RR)",
-                    "Priority Scheduling"
-                  ],
-                  "correctOptionIndex": 2,
-                  "explanation": "Round Robin is ideal for time-sharing because it gives each process a small unit of CPU time (time quantum)."
-                },
-                {
-                  "id": "cs-os-q4",
-                  "question": "What is a 'Kernel' in an Operating System?",
-                  "options": [
-                    "The user interface of the OS",
-                    "The core part of the OS that manages system resources",
-                    "An application software like Word",
-                    "A hardware component in the CPU"
-                  ],
-                  "correctOptionIndex": 1,
-                  "explanation": "The Kernel is the central component of an OS that manages tasks like memory management and process scheduling."
-                },
-                [
-                  { "id": "os-q5", "question": "What is the primary role of the BIOS?", "options": ["Manage files", "Boot the system", "Run applications", "Control internet"], "correctOptionIndex": 1, "explanation": "BIOS (Basic Input/Output System) initializes hardware and starts the operating system during the boot process." },
-                  { "id": "os-q6", "question": "Which of the following is a multi-user, multi-tasking OS?", "options": ["MS-DOS", "Windows 95", "UNIX", "Windows 3.1"], "correctOptionIndex": 2, "explanation": "UNIX was designed from the ground up to support multiple users and multiple tasks simultaneously." },
-                  { "id": "os-q7", "question": "What is 'Thrashing' in OS?", "options": ["High CPU usage", "Excessive paging activity", "Hard drive failure", "Process termination"], "correctOptionIndex": 1, "explanation": "Thrashing occurs when the system spends more time swapping pages in and out of memory than executing instructions." },
-                  { "id": "os-q8", "question": "Which scheduling algorithm is non-preemptive?", "options": ["Round Robin", "SRTF", "FCFS", "Priority Scheduling"], "correctOptionIndex": 2, "explanation": "First-Come, First-Served (FCFS) is non-preemptive; once a process starts, it runs until it finishes or blocks." },
-                  { "id": "os-q9", "question": "What is a 'Daemon' in Linux?", "options": ["A virus", "A background process", "A hardware driver", "A user account"], "correctOptionIndex": 1, "explanation": "A daemon is a background process that handles system services like printing or networking." },
-                  { "id": "os-q10", "question": "What is the size of a typical memory page?", "options": ["1 KB", "4 KB", "1 MB", "512 bytes"], "correctOptionIndex": 1, "explanation": "4 KB is the most common page size used in modern virtual memory systems." },
-                  { "id": "os-q11", "question": "What is 'SPOOLing' mainly used for?", "options": ["CPU scheduling", "Memory management", "I/O job queuing (e.g. Printing)", "File compression"], "correctOptionIndex": 2, "explanation": "SPOOLing (Simultaneous Peripheral Operations On-Line) stores data for slow devices like printers in a buffer." },
-                  { "id": "os-q12", "question": "Which part of the OS remains in RAM at all times?", "options": ["Shell", "Kernel", "Compiler", "Text Editor"], "correctOptionIndex": 1, "explanation": "The Kernel is the heart of the OS and stays in memory to manage all system operations." },
-                  { "id": "os-q13", "question": "A critical section is a program segment where:", "options": ["Errors occur", "Shared resources are accessed", "Infinite loops run", "The OS crashes"], "correctOptionIndex": 1, "explanation": "The Critical Section is code where a process accesses shared variables or files that others might also use." },
-                  { "id": "os-q14", "question": "What is 'Context Switching'?", "options": ["Changing hardware", "Switching between CPU tasks", "Reinstalling OS", "Moving files"], "correctOptionIndex": 1, "explanation": "Context switching is the process of storing the state of a process so it can be resumed later while another runs." },
-                  { "id": "os-q15", "question": "Which file system is native to Windows?", "options": ["EXT4", "FAT32", "NTFS", "HFS+"], "correctOptionIndex": 2, "explanation": "NTFS (New Technology File System) is the primary file system used by modern Windows versions." },
-                  { "id": "os-q16", "question": "What does 'GUI' stand for?", "options": ["General User Interface", "Graphical User Interface", "Global User Interaction", "None"], "correctOptionIndex": 1, "explanation": "GUI allows users to interact with the OS using visual icons and indicators instead of text commands." },
-                  { "id": "os-q17", "question": "A system call is used to:", "options": ["Install apps", "Request services from the Kernel", "Shutdown the PC", "Browse the web"], "correctOptionIndex": 1, "explanation": "System calls provide an interface between a running program and the operating system." },
-                  { "id": "os-q18", "question": "What is 'Fragmentation'?", "options": ["Disk cleaning", "Scattered free space in memory", "System update", "Process death"], "correctOptionIndex": 1, "explanation": "Fragmentation happens when memory is broken into small, non-contiguous blocks that cannot be used effectively." },
-                  { "id": "os-q19", "question": "Which command is used to see running processes in Linux?", "options": ["ls", "cd", "top", "mkdir"], "correctOptionIndex": 2, "explanation": "The 'top' or 'ps' command displays real-time information about active system processes." },
-                  { "id": "os-q20", "question": "What is the 'Root' user in Linux?", "options": ["A guest user", "A restricted user", "The superuser with full access", "A deleted user"], "correctOptionIndex": 2, "explanation": "Root is the administrative account in Linux that has total control over the entire system." }
-                ]
-              ]
-            }
-          ]
+          "id": "acc-ch2",
+          "name": "Managerial Accounting",
+          "questions": []
         },
         {
-          "id": "dbms",
-          "name": "Database Management Systems",
-          "questions": [
-            {
-              "id": "cs-db-q1",
-              "question": "Which of the following is a property of a transaction that ensures all operations are completed or none are?",
-              "options": ["Atomicity", "Consistency", "Isolation", "Durability"],
-              "correctOptionIndex": 0,
-              "explanation": "Atomicity ensures that a transaction is treated as a single 'unit', which either completely happens, or doesn't happen at all."
-            },
-            {
-              "id": "cs-db-q2",
-              "question": "In SQL, which command is used to change the structure of an existing table?",
-              "options": ["UPDATE", "MODIFY", "ALTER", "CHANGE"],
-              "correctOptionIndex": 2,
-              "explanation": "The ALTER command is used to add, delete, or modify columns in an existing table."
-            },
-            {
-              "id": "cs-db-q3",
-              "question": "What is a 'Foreign Key' used for in a database?",
-              "options": [
-                "To uniquely identify a row",
-                "To link two tables together",
-                "To encrypt sensitive data",
-                "To speed up search queries"
-              ],
-              "correctOptionIndex": 1,
-              "explanation": "A Foreign Key is a field in one table that refers to the Primary Key in another table, creating a relationship between them."
-            },
-            {
-              "id": "cs-db-q4",
-              "question": "Which level of normalization handles the removal of multi-valued attributes?",
-              "options": ["1NF", "2NF", "3NF", "BCNF"],
-              "correctOptionIndex": 0,
-              "explanation": "First Normal Form (1NF) requires that all attributes are atomic and there are no repeating groups or multi-valued attributes."
-            },
-            {
-              "id": "cs-db-q5",
-              "question": "What is a 'Primary Key'?",
-              "options": ["A key that allows null values", "A unique identifier for each record in a table", "A key used to link two tables", "A temporary key"],
-              "correctOptionIndex": 1,
-              "explanation": "A Primary Key uniquely identifies each record in a database table and cannot contain NULL values."
-            },
-              {
-                "id": "cs-db-q6",
-                "question": "Which SQL clause is used to filter records?",
-                "options": ["GROUP BY", "ORDER BY", "WHERE", "SELECT"],
-                "correctOptionIndex": 2,
-                "explanation": "The WHERE clause is used to extract only those records that fulfill a specified condition."
-              },
-              {
-                "id": "cs-db-q7",
-                "question": "What is 'Data Redundancy'?",
-                "options": ["Data security", "Duplication of data", "Data loss", "Data backup"],
-                "correctOptionIndex": 1,
-                "explanation": "Data redundancy occurs when the same piece of data is stored in two or more separate places."
-              },
-              {
-                "id": "cs-db-q8",
-                "question": "Which join returns all records from the left table even if there are no matches?",
-                "options": ["INNER JOIN", "RIGHT JOIN", "LEFT JOIN", "FULL JOIN"],
-                "correctOptionIndex": 2,
-                "explanation": "A LEFT JOIN returns all rows from the left table and the matched rows from the right table."
-              },
-              {
-                "id": "cs-db-q9",
-                "question": "What is a 'Unique Key'?",
-                "options": ["Allows duplicates", "Does not allow nulls", "Identifies records uniquely (allows one null)", "Same as Foreign Key"],
-                "correctOptionIndex": 2,
-                "explanation": "A Unique Key ensures all values in a column are different, but unlike a Primary Key, it can accept one NULL value."
-              },
-              {
-                "id": "cs-db-q10",
-                "question": "Which SQL command is used to delete a database table?",
-                "options": ["DELETE", "REMOVE", "DROP", "TRUNCATE"],
-                "correctOptionIndex": 2,
-                "explanation": "DROP TABLE removes the entire table structure and data from the database permanently."
-              },
-              {
-                "id": "cs-db-q11",
-                "question": "What is 'Metadata'?",
-                "options": ["Large data", "Data about data", "Hidden data", "Encrypted data"],
-                "correctOptionIndex": 1,
-                "explanation": "Metadata describes the properties of data, such as its type, size, and creation date."
-              },
-              {
-                "id": "cs-db-q12",
-                "question": "What does ACID stand for?",
-                "options": ["Atomicity, Consistency, Isolation, Durability", "Access, Control, Integrity, Data", "Auto, Clear, Index, Delete", "None"],
-                "correctOptionIndex": 0,
-                "explanation": "ACID properties ensure that database transactions are processed reliably."
-              },
-              {
-                "id": "cs-db-q13",
-                "question": "Which command is used to save changes in a database permanently?",
-                "options": ["SAVE", "COMMIT", "ROLLBACK", "GRANT"],
-                "correctOptionIndex": 1,
-                "explanation": "COMMIT is used to save all changes made during the current transaction."
-              },
-              {
-                "id": "cs-db-q14",
-                "question": "A 'View' in SQL is:",
-                "options": ["A physical table", "A virtual table", "A database backup", "A report"],
-                "correctOptionIndex": 1,
-                "explanation": "A View is a virtual table based on the result-set of an SQL statement."
-              },
-              {
-                "id": "cs-db-q15",
-                "question": "Which aggregate function is used to find the number of rows?",
-                "options": ["SUM()", "AVG()", "COUNT()", "MAX()"],
-                "correctOptionIndex": 2,
-                "explanation": "COUNT() returns the number of records that match a specific criterion."
-              },
-              {
-                "id": "cs-db-q16",
-                "question": "What is 'Normalization'?",
-                "options": ["Increasing data", "Organizing data to reduce redundancy", "Deleting data", "Copying data"],
-                "correctOptionIndex": 1,
-                "explanation": "Normalization is the process of structuring a database to reduce data duplication and improve integrity."
-              },
-              {
-                "id": "cs-db-q17",
-                "question": "Which SQL command is used to add a new column to a table?",
-                "options": ["UPDATE", "INSERT", "ALTER TABLE", "CREATE"],
-                "correctOptionIndex": 2,
-                "explanation": "ALTER TABLE is used to modify the structure of an existing table, such as adding a column."
-              },
-              {
-                "id": "cs-db-q18",
-                "question": "What is a 'Candidate Key'?",
-                "options": ["A secondary key", "A set of keys that can uniquely identify a row", "A key that links tables", "None"],
-                "correctOptionIndex": 1,
-                "explanation": "A Candidate Key is a column or set of columns that can potentially serve as the primary key."
-              },
-              {
-                "id": "cs-db-q19",
-                "question": "What is the result of a 'Cross Join'?",
-                "options": ["Filtered data", "Cartesian product of both tables", "Matching records only", "No data"],
-                "correctOptionIndex": 1,
-                "explanation": "A CROSS JOIN produces a result set where every row from the first table is joined with every row from the second table."
-              },
-              {
-                "id": "cs-db-q20",
-                "question": "In SQL, 'GRANT' is a ______ command.",
-                "options": ["DDL", "DML", "DCL", "TCL"],
-                "correctOptionIndex": 2,
-                "explanation": "DCL (Data Control Language) includes commands like GRANT and REVOKE to manage permissions."
-              }
-            
-          ]
+          "id": "acc-ch3",
+          "name": "Financial Reporting",
+          "questions": []
         },
         {
-          "id": "software-eng",
-          "name": "Software Engineering",
-          "questions": [
-            {
-              "id": "cs-se-q1",
-              "question": "Which software development life cycle (SDLC) model is known for its iterative and incremental approach?",
-              "options": ["Waterfall Model", "V-Model", "Agile Model", "Big Bang Model"],
-              "correctOptionIndex": 2,
-              "explanation": "Agile model focuses on continuous iteration and incremental delivery, allowing for flexibility and customer feedback."
-            },
-            {
-              "id": "cs-se-q2",
-              "question": "In the context of software testing, what is 'White-Box Testing'?",
-              "options": [
-                "Testing the user interface only",
-                "Testing the internal logic and code structure",
-                "Testing without knowing the internal code",
-                "Testing performed by the end-users"
-              ],
-              "correctOptionIndex": 1,
-              "explanation": "White-box testing (also known as structural testing) examines the internal workings of an application's code."
-            },
-            {
-              "id": "cs-se-q3",
-              "question": "What does the 'S' in SOLID principles of object-oriented design stand for?",
-              "options": [
-                "Systematic Design",
-                "Single Responsibility Principle",
-                "Structural Integrity",
-                "Software Stability"
-              ],
-              "correctOptionIndex": 1,
-              "explanation": "The Single Responsibility Principle states that a class should have only one reason to change, meaning it should perform only one job."
-            },
-            {
-              "id": "cs-se-q4",
-              "question": "Which document is created first during the software development process to define user requirements?",
-              "options": ["Design Document", "User Manual", "SRS (Software Requirements Specification)", "Source Code"],
-              "correctOptionIndex": 2,
-              "explanation": "The SRS document describes what the software is expected to do and its operational constraints."
-            },
-              {
-                "id": "se-q5",
-                "question": "What is 'Coupling' in software design?",
-                "options": ["The focus of a single module", "The degree of interdependence between modules", "The speed of the code", "The number of users"],
-                "correctOptionIndex": 1,
-                "explanation": "Coupling measures how much one module relies on another. Low coupling is generally preferred for better maintenance."
-              },
-              {
-                "id": "se-q6",
-                "question": "What is 'Cohesion' in software design?",
-                "options": ["Interdependence between modules", "The degree to which tasks within a module are related", "Database connection", "User interface design"],
-                "correctOptionIndex": 1,
-                "explanation": "Cohesion refers to how focused a single module is. High cohesion is preferred."
-              },
-              {
-                "id": "se-q7",
-                "question": "Which process involves converting user requirements into a logical model?",
-                "options": ["Coding", "Testing", "Analysis", "Deployment"],
-                "correctOptionIndex": 2,
-                "explanation": "Software Analysis is the stage where requirements are gathered and modeled to understand what needs to be built."
-              },
-              {
-                "id": "se-q8",
-                "question": "What is the primary goal of the 'Agile' methodology?",
-                "options": ["Detailed documentation", "Fixed requirements", "Customer satisfaction through early delivery", "Low cost"],
-                "correctOptionIndex": 2,
-                "explanation": "Agile prioritizes individuals and interactions, working software, and customer collaboration over processes and tools."
-              },
-              {
-                "id": "se-q9",
-                "question": "In Git, which command is used to save changes to the local repository?",
-                "options": ["git push", "git pull", "git commit", "git add"],
-                "correctOptionIndex": 2,
-                "explanation": "Commit records changes to the repository with a descriptive message."
-              },
-              {
-                "id": "se-q10",
-                "question": "What is 'Regression Testing'?",
-                "options": ["Testing new features", "Re-testing to ensure changes didn't break existing features", "Testing speed", "Testing security"],
-                "correctOptionIndex": 1,
-                "explanation": "Regression testing ensures that recent code changes haven't adversely affected existing functionality."
-              },
-              {
-                "id": "se-q11",
-                "question": "Which diagram is used to show the interaction between users and the system?",
-                "options": ["Class Diagram", "Use Case Diagram", "State Diagram", "ER Diagram"],
-                "correctOptionIndex": 1,
-                "explanation": "Use Case diagrams represent the functions of a system and the actors who interact with it."
-              },
-              {
-                "id": "se-q12",
-                "question": "What is 'Refactoring'?",
-                "options": ["Adding new features", "Improving code structure without changing behavior", "Fixing bugs", "Deleting code"],
-                "correctOptionIndex": 1,
-                "explanation": "Refactoring makes code cleaner and more efficient while keeping its external functionality the same."
-              },
-              {
-                "id": "se-q13",
-                "question": "What is the 'Beta' version of software?",
-                "options": ["The final product", "A version for internal testing", "A version released for external user testing", "The first draft"],
-                "correctOptionIndex": 2,
-                "explanation": "Beta testing is performed by real users in a real environment before the final release."
-              },
-              {
-                "id": "se-q14",
-                "question": "What is 'Validation' in software engineering?",
-                "options": ["Are we building the product right?", "Are we building the right product?", "Is the code fast?", "Does it have bugs?"],
-                "correctOptionIndex": 1,
-                "explanation": "Validation checks if the software meets the actual needs and requirements of the user."
-              },
-              {
-                "id": "se-q15",
-                "question": "What is 'Verification' in software engineering?",
-                "options": ["Are we building the product right?", "Are we building the right product?", "Is the user happy?", "Is it deployed?"],
-                "correctOptionIndex": 0,
-                "explanation": "Verification checks if the software conforms to its technical specifications during development."
-              },
-              {
-                "id": "se-q16",
-                "question": "Which maintenance type involves fixing bugs after release?",
-                "options": ["Corrective Maintenance", "Adaptive Maintenance", "Perfective Maintenance", "Preventive Maintenance"],
-                "correctOptionIndex": 0,
-                "explanation": "Corrective maintenance is the process of fixing errors discovered while the software is in use."
-              },
-              {
-                "id": "se-q17",
-                "question": "What does 'UI' stand for?",
-                "options": ["User Interaction", "User Interface", "Unit Integration", "Universal Interface"],
-                "correctOptionIndex": 1,
-                "explanation": "User Interface refers to the visual parts of the software that a user interacts with."
-              },
-              {
-                "id": "se-q18",
-                "question": "What is the 'Scrum' framework used for?",
-                "options": ["Managing hardware", "Database design", "Agile project management", "Network security"],
-                "correctOptionIndex": 2,
-                "explanation": "Scrum is a popular Agile framework for managing complex software development projects."
-              },
-              {
-                "id": "se-q19",
-                "question": "What is a 'Prototype'?",
-                "options": ["The final release", "An early sample or model of a product", "A bug report", "A technical manual"],
-                "correctOptionIndex": 1,
-                "explanation": "Prototypes are built to test concepts and get feedback early in the design process."
-              },
-              {
-                "id": "se-q20",
-                "question": "Which tool is commonly used for version control?",
-                "options": ["Photoshop", "Git", "Excel", "Notepad"],
-                "correctOptionIndex": 1,
-                "explanation": "Git is the industry standard for tracking changes in source code during software development."
-              }
-          ]
+          "id": "acc-ch4",
+          "name": "Corporate Finance",
+          "questions": []
         },
         {
-          "id": "coa",
-          "name": "Computer Organization & Architecture",
-          "questions": [
-            {
-              "id": "cs-coa-q1",
-              "question": "Which component of the CPU is responsible for performing arithmetic and logical operations?",
-              "options": ["Control Unit", "ALU (Arithmetic Logic Unit)", "Registers", "Cache"],
-              "correctOptionIndex": 1,
-              "explanation": "The ALU is the digital circuit that performs integer arithmetic and bitwise logical operations."
-            },
-            {
-              "id": "cs-coa-q2",
-              "question": "What is 'Pipelining' in computer architecture?",
-              "options": [
-                "A way to cool down the CPU",
-                "Executing multiple instructions simultaneously in different stages",
-                "Connecting multiple computers together",
-                "Increasing the size of the RAM"
-              ],
-              "correctOptionIndex": 1,
-              "explanation": "Pipelining is a technique where multiple instructions are overlapped in execution, improving throughput."
-            },
-            [
-  {
-    "id": "coa-q3",
-    "question": "What is the function of the 'Control Unit' in the CPU?",
-    "options": ["To perform calculations", "To store data permanently", "To direct the operation of the processor", "To provide power"],
-    "correctOptionIndex": 2,
-    "explanation": "The Control Unit (CU) extracts instructions from memory, decodes them, and executes them by signaling other components."
-  },
-  {
-    "id": "coa-q4",
-    "question": "Which memory type is the fastest for the CPU to access?",
-    "options": ["RAM", "Hard Disk", "Cache Memory", "Optical Disk"],
-    "correctOptionIndex": 2,
-    "explanation": "Cache memory is located very close to the CPU and stores frequently used data for high-speed access."
-  },
-  {
-    "id": "coa-q5",
-    "question": "What does 'RAM' stand for?",
-    "options": ["Read Access Memory", "Random Access Memory", "Run Allied Memory", "Reset Access Memory"],
-    "correctOptionIndex": 1,
-    "explanation": "Random Access Memory (RAM) allows data items to be read or written in almost the same amount of time irrespective of the physical location."
-  },
-  {
-    "id": "coa-q6",
-    "question": "What is a 'Register' in computer architecture?",
-    "options": ["A large storage drive", "A small, high-speed storage location within the CPU", "A type of software", "An input device"],
-    "correctOptionIndex": 1,
-    "explanation": "Registers are the smallest and fastest data storage units used by the CPU to process instructions immediately."
-  },
-  {
-    "id": "coa-q7",
-    "question": "Which bus is used to specify the physical address of a memory location?",
-    "options": ["Data Bus", "Control Bus", "Address Bus", "System Bus"],
-    "correctOptionIndex": 2,
-    "explanation": "The Address Bus carries the address of the data (but not the data itself) between the processor and memory."
-  },
-  {
-    "id": "coa-q8",
-    "question": "What is 'Von Neumann Architecture' based on?",
-    "options": ["Stored-program concept", "Separate memory for data and code", "Parallel processing", "Quantum computing"],
-    "correctOptionIndex": 0,
-    "explanation": "Von Neumann architecture uses a single storage system for both instructions (programs) and data."
-  },
-  {
-    "id": "coa-q9",
-    "question": "What is the purpose of 'Instruction Cycle'?",
-    "options": ["To cool the CPU", "To fetch, decode, and execute an instruction", "To install software", "To restart the computer"],
-    "correctOptionIndex": 1,
-    "explanation": "The instruction cycle (fetch-decode-execute) is the process by which a computer retrieves and acts upon a program instruction."
-  },
-  {
-    "id": "coa-q10",
-    "question": "What is the main difference between RISC and CISC?",
-    "options": ["Color of the chip", "The complexity and number of instructions", "The size of the motherboard", "The type of RAM used"],
-    "correctOptionIndex": 1,
-    "explanation": "RISC (Reduced Instruction Set Computer) uses simple instructions, while CISC (Complex Instruction Set Computer) uses complex, multi-step instructions."
-  },
-  {
-    "id": "coa-q11",
-    "question": "What is 'Program Counter (PC)'?",
-    "options": ["A register that holds the address of the next instruction", "A software that counts programs", "A tool for debugging", "The main power switch"],
-    "correctOptionIndex": 0,
-    "explanation": "The PC automatically increments to point to the address of the next instruction to be executed."
-  },
-  {
-    "id": "coa-q12",
-    "question": "What is 'Interrupt' in computer systems?",
-    "options": ["A system crash", "A signal from hardware or software for immediate attention", "A power outage", "A type of virus"],
-    "correctOptionIndex": 1,
-    "explanation": "An interrupt alerts the processor to a high-priority condition requiring the interruption of the current code the processor is executing."
-  },
-  {
-    "id": "coa-q13",
-    "question": "What is 'Secondary Storage'?",
-    "options": ["RAM", "Non-volatile storage like Hard Drives", "CPU Registers", "Cache"],
-    "correctOptionIndex": 1,
-    "explanation": "Secondary storage (like HDD or SSD) retains data even when the power is turned off, unlike primary memory."
-  },
-  {
-    "id": "coa-q14",
-    "question": "What is the 'Instruction Register (IR)'?",
-    "options": ["Stores the current instruction being executed", "Counts the number of instructions", "Deletes instructions", "Stores user data"],
-    "correctOptionIndex": 0,
-    "explanation": "The IR holds the instruction currently being decoded or executed by the CPU."
-  },
-  {
-    "id": "coa-q15",
-    "question": "In memory hierarchy, as we go down (from registers to disk):",
-    "options": ["Speed increases", "Cost increases", "Capacity increases", "Size decreases"],
-    "correctOptionIndex": 2,
-    "explanation": "As you move down the hierarchy, storage becomes slower and cheaper, but the capacity (size) increases significantly."
-  },
-  {
-    "id": "coa-q16",
-    "question": "What is 'DMA' in computer architecture?",
-    "options": ["Data Memory Access", "Direct Memory Access", "Digital Multi Access", "Dynamic Media Access"],
-    "correctOptionIndex": 1,
-    "explanation": "DMA allows hardware subsystems to access main system memory independently of the central processing unit (CPU)."
-  },
-  {
-    "id": "coa-q17",
-    "question": "What is the 'Word Size' of a computer?",
-    "options": ["The number of words in a document", "The number of bits the CPU can process at once", "The size of the screen", "The speed of the internet"],
-    "correctOptionIndex": 1,
-    "explanation": "Word size (e.g., 32-bit or 64-bit) refers to the fixed-sized datum handled as a unit by the instruction set or hardware of the processor."
-  },
-  {
-    "id": "coa-q18",
-    "question": "What is 'Parallel Processing'?",
-    "options": ["Running one task slowly", "Executing multiple tasks simultaneously", "Using only one core", "None"],
-    "correctOptionIndex": 1,
-    "explanation": "Parallel processing is the simultaneous execution of multiple instructions or tasks to speed up computation."
-  },
-  {
-    "id": "coa-q19",
-    "question": "Which unit is used to measure CPU clock speed?",
-    "options": ["Bits", "Bytes", "Hertz (GHz)", "Pixels"],
-    "correctOptionIndex": 2,
-    "explanation": "Clock speed is measured in Hertz (usually Gigahertz today), representing the number of cycles the CPU performs per second."
-  },
-  {
-    "id": "coa-q20",
-    "question": "What is 'Firmware'?",
-    "options": ["Soft clothes", "Permanent software programmed into a hardware device", "A type of database", "A browser extension"],
-    "correctOptionIndex": 1,
-    "explanation": "Firmware is low-level software that provides control for a device's specific hardware, such as the BIOS in a PC."
-  }
-]
-          ]
-        },
-        {
-          "id": "oop",
-          "name": "Object-Oriented Programming",
-          "questions": [
-            {
-              "id": "cs-oop-q1",
-              "question": "Which OOP concept allows a class to acquire the properties and methods of another class?",
-              "options": ["Encapsulation", "Abstraction", "Inheritance", "Polymorphism"],
-              "correctOptionIndex": 2,
-              "explanation": "Inheritance is the mechanism by which one class derives features from another class (parent class)."
-            },
-            {
-              "id": "cs-oop-q2",
-              "question": "What is 'Polymorphism'?",
-              "options": [
-                "Hiding data from the user",
-                "Creating many objects of the same class",
-                "The ability of a single interface to take different forms",
-                "The process of cleaning up memory"
-              ],
-              "correctOptionIndex": 2,
-              "explanation": "Polymorphism allows methods to do different things based on the object it is acting upon."
-            },
-            [
-  {
-    "id": "oop-q3",
-    "question": "What is 'Abstraction' in OOP?",
-    "options": ["Hiding internal details and showing only functionality", "Inheriting properties from a parent class", "Creating multiple objects", "Writing code in a single file"],
-    "correctOptionIndex": 0,
-    "explanation": "Abstraction simplifies complex reality by modeling classes appropriate to the problem and hiding unnecessary implementation details."
-  },
-  {
-    "id": "oop-q4",
-    "question": "What is 'Encapsulation'?",
-    "options": ["Breaking code into small pieces", "Wrapping data and methods into a single unit (class)", "Linking two different databases", "Running code on multiple servers"],
-    "correctOptionIndex": 1,
-    "explanation": "Encapsulation restricts direct access to some of an object's components, which is a means of preventing accidental modification of data."
-  },
-  {
-    "id": "oop-q5",
-    "question": "Which keyword is commonly used to create an instance of a class?",
-    "options": ["class", "init", "new", "object"],
-    "correctOptionIndex": 2,
-    "explanation": "In most OOP languages like Java, C++, and JavaScript, the 'new' keyword is used to allocate memory for a new object."
-  },
-  {
-    "id": "oop-q6",
-    "question": "What is a 'Constructor'?",
-    "options": ["A tool to build hardware", "A special method used to initialize objects", "A way to delete an object", "The main function of a program"],
-    "correctOptionIndex": 1,
-    "explanation": "A constructor is automatically called when an object of a class is created, often used to set initial values for attributes."
-  },
-  {
-    "id": "oop-q7",
-    "question": "What is 'Method Overloading'?",
-    "options": ["Giving a method too much data", "Having multiple methods with the same name but different parameters", "Deleting a method", "Changing a method's name"],
-    "correctOptionIndex": 1,
-    "explanation": "Overloading allows a class to have more than one method with the same name, as long as their argument lists are different (Compile-time polymorphism)."
-  },
-  {
-    "id": "oop-q8",
-    "question": "What is 'Method Overriding'?",
-    "options": ["Creating a new method", "A subclass providing a specific implementation of a method already defined in its superclass", "Calling a method multiple times", "Hidden methods"],
-    "correctOptionIndex": 1,
-    "explanation": "Overriding allows a child class to provide a specific version of a method that is already provided by its parent class (Runtime polymorphism)."
-  },
-  {
-    "id": "oop-q9",
-    "question": "Which of the following is NOT one of the four main pillars of OOP?",
-    "options": ["Inheritance", "Compilation", "Polymorphism", "Encapsulation"],
-    "correctOptionIndex": 1,
-    "explanation": "The four pillars are Abstraction, Encapsulation, Inheritance, and Polymorphism. Compilation is a general programming process."
-  },
-  {
-    "id": "oop-q10",
-    "question": "What is an 'Interface' in OOP?",
-    "options": ["A physical screen", "A blueprint that defines a set of methods but not their implementation", "A type of variable", "The user dashboard"],
-    "correctOptionIndex": 1,
-    "explanation": "An interface defines what a class must do, but not how it does it. Classes 'implement' interfaces."
-  },
-  {
-    "id": "oop-q11",
-    "question": "What is a 'Destructor' used for?",
-    "options": ["To build objects", "To clean up memory and destroy objects", "To copy objects", "To pause the program"],
-    "correctOptionIndex": 1,
-    "explanation": "Destructors are special methods called when an object is about to be deleted to release resources like memory or file handles."
-  },
-  {
-    "id": "oop-q12",
-    "question": "Which access modifier makes a member accessible only within the same class?",
-    "options": ["public", "protected", "private", "internal"],
-    "correctOptionIndex": 2,
-    "explanation": "The 'private' modifier ensures that the data is hidden from any code outside the specific class."
-  },
-  {
-    "id": "oop-q13",
-    "question": "What is a 'Static' member in a class?",
-    "options": ["A member that changes often", "A member that belongs to the class itself rather than any specific object", "A deleted member", "A hidden member"],
-    "correctOptionIndex": 1,
-    "explanation": "Static variables or methods are shared by all instances of a class; you don't need to create an object to use them."
-  },
-  {
-    "id": "oop-q14",
-    "question": "What is 'Multiple Inheritance'?",
-    "options": ["One class inheriting from many parents", "Many classes inheriting from one parent", "A class with many methods", "No inheritance"],
-    "correctOptionIndex": 0,
-    "explanation": "Multiple inheritance is when a class can inherit features from more than one parent class (Supported in C++ but not directly in Java)."
-  },
-  {
-    "id": "oop-q15",
-    "question": "What is an 'Abstract Class'?",
-    "options": ["A class that cannot be instantiated", "A class with no methods", "A class with only one object", "A class that is empty"],
-    "correctOptionIndex": 0,
-    "explanation": "An abstract class serves as a base for other classes and cannot be used to create objects directly."
-  },
-  {
-    "id": "oop-q16",
-    "question": "What is 'Composition' in OOP?",
-    "options": ["Writing music with code", "A 'has-a' relationship where one class contains an object of another class", "Inheriting from a class", "Deleting a class"],
-    "correctOptionIndex": 1,
-    "explanation": "Composition is a design principle where complex objects are built by combining simpler ones (e.g., A Car 'has-a' Engine)."
-  },
-  {
-    "id": "oop-q17",
-    "question": "What does 'this' (or 'self') keyword refer to?",
-    "options": ["The parent class", "The current instance of the class", "The main function", "A global variable"],
-    "correctOptionIndex": 1,
-    "explanation": "The 'this' keyword refers to the specific object that is currently executing the code."
-  },
-  {
-    "id": "oop-q18",
-    "question": "What is a 'Super' (or 'base') keyword used for?",
-    "options": ["To make the code faster", "To call members of the parent class", "To stop the program", "To create a new class"],
-    "correctOptionIndex": 1,
-    "explanation": "The 'super' keyword is used in a subclass to access methods or constructors from its parent class."
-  },
-  {
-    "id": "oop-q19",
-    "question": "What is the main goal of 'Inheritance'?",
-    "options": ["Code Reusability", "Data Hiding", "Slower execution", "To make code complex"],
-    "correctOptionIndex": 0,
-    "explanation": "Inheritance allows new classes to reuse, extend, and modify the behavior defined in existing classes."
-  },
-  {
-    "id": "oop-q20",
-    "question": "Which OOP pillar is closely related to 'Data Hiding'?",
-    "options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"],
-    "correctOptionIndex": 2,
-    "explanation": "Encapsulation hides the internal state of an object and only allows access through public methods."
-  }
-]
-          ]
+          "id": "acc-ch5",
+          "name": "Auditing & Assurance",
+          "questions": []
         }
       ]
     },
     {
-        "department": "Accounting & Finance",
-        "chapters": [
-          {
-            "id": "fin-acc",
-            "name": "Financial Accounting",
-            "questions": [
-              {
-                "id": "acc-q1",
-                "question": "According to the accounting equation, Assets are equal to:",
-                "options": ["Liabilities - Equity", "Liabilities + Equity", "Equity - Liabilities", "Revenue + Expenses"],
-                "correctOptionIndex": 1,
-                "explanation": "The basic accounting equation is Assets = Liabilities + Owners' Equity."
-              },
-              {
-                "id": "acc-q2",
-                "question": "Which financial statement reports a company's financial position at a specific point in time?",
-                "options": ["Income Statement", "Statement of Cash Flows", "Balance Sheet", "Retained Earnings Statement"],
-                "correctOptionIndex": 2,
-                "explanation": "The Balance Sheet provides a snapshot of assets, liabilities, and equity at a specific date."
-              },
-              {
-                "id": "acc-q3",
-                "question": "The process of transferring journal entry information to the ledger is called:",
-                "options": ["Journalizing", "Posting", "Analyzing", "Summarizing"],
-                "correctOptionIndex": 1,
-                "explanation": "Posting is the stage where entries from the book of original entry (journal) are moved to the individual accounts (ledger)."
-              },
-              {
-                "id": "acc-q4",
-                "question": "Which accounting principle states that expenses should be recognized in the same period as the revenues they helped generate?",
-                "options": ["Cost Principle", "Matching Principle", "Going Concern Principle", "Full Disclosure"],
-                "correctOptionIndex": 1,
-                "explanation": "The Matching Principle ensures that efforts (expenses) are matched with accomplishments (revenues)."
-              },
-              {
-                "id": "acc-q5",
-                "question": "What is 'Depreciation'?",
-                "options": ["Increase in asset value", "The allocation of the cost of a tangible asset over its useful life", "Cash paid for a new building", "None"],
-                "correctOptionIndex": 1,
-                "explanation": "Depreciation is the systematic allocation of an asset's cost as an expense over the years it is used."
-              },
-              { "id": "acc-q6", "question": "Which account is increased by a Debit?", "options": ["Accounts Payable", "Service Revenue", "Cash", "Common Stock"], "correctOptionIndex": 2, "explanation": "Assets (like Cash) and Expenses are increased by debits." },
-              { "id": "acc-q7", "question": "What is the normal balance of an 'Expense' account?", "options": ["Credit", "Debit", "Zero", "Negative"], "correctOptionIndex": 1, "explanation": "Expenses increase with debits, so they have a normal debit balance." },
-              { "id": "acc-q8", "question": "Unearned Revenue is classified as a:", "options": ["Asset", "Liability", "Equity", "Revenue"], "correctOptionIndex": 1, "explanation": "Unearned revenue is a liability because the company owes a service or product to the customer." },
-              { "id": "acc-q9", "question": "Which of the following is an intangible asset?", "options": ["Inventory", "Equipment", "Copyright", "Land"], "correctOptionIndex": 2, "explanation": "Copyrights, patents, and trademarks are assets that lack physical substance." },
-              { "id": "acc-q10", "question": "The 'Double-Entry' system means:", "options": ["Recording a transaction twice", "Each transaction affects at least two accounts", "Having two sets of books", "None"], "correctOptionIndex": 1, "explanation": "Every transaction must have at least one debit and one credit that equal each other." },
-              { "id": "acc-q11", "question": "What is the purpose of a Trial Balance?", "options": ["To calculate profit", "To prove debits equal credits", "To pay taxes", "To show cash flow"], "correctOptionIndex": 1, "explanation": "A trial balance checks the mathematical accuracy of the ledger." },
-              { "id": "acc-q12", "question": "Net Income is calculated as:", "options": ["Assets - Liabilities", "Revenue + Expenses", "Revenue - Expenses", "Equity + Revenue"], "correctOptionIndex": 2, "explanation": "Net income is the excess of total revenues over total expenses." },
-              { "id": "acc-q13", "question": "Which of these is a 'Current Asset'?", "options": ["Land", "Machinery", "Accounts Receivable", "Long-term Investment"], "correctOptionIndex": 2, "explanation": "Current assets are expected to be converted to cash within one year." },
-              { "id": "acc-q14", "question": "LIFO stands for:", "options": ["Long-In First-Out", "Last-In First-Out", "Left-In First-Out", "None"], "correctOptionIndex": 1, "explanation": "LIFO assumes the last items placed in inventory are the first ones sold." },
-              { "id": "acc-q15", "question": "A Credit to an Asset account means:", "options": ["Increase", "Decrease", "No change", "Error"], "correctOptionIndex": 1, "explanation": "Asset accounts are decreased by credit entries." },
-              { "id": "acc-q16", "question": "The 'Going Concern' assumption means:", "options": ["The business will close soon", "The business will continue to operate indefinitely", "The business has many debts", "The business is a sole proprietorship"], "correctOptionIndex": 1, "explanation": "It assumes the entity will remain in operation for the foreseeable future." },
-              { "id": "acc-q17", "question": "Which report shows changes in owners' capital?", "options": ["Income Statement", "Balance Sheet", "Statement of Retained Earnings", "Audit Report"], "correctOptionIndex": 2, "explanation": "This statement summarizes the changes in retained earnings for a specific period." },
-              { "id": "acc-q18", "question": "What is 'Inventory'?", "options": ["Cash in bank", "Goods held for sale", "Office furniture", "Money owed to suppliers"], "correctOptionIndex": 1, "explanation": "Inventory represents the raw materials or finished goods a business intends to sell." },
-              { "id": "acc-q19", "question": "An Audit is:", "options": ["Recording daily sales", "An independent examination of financial statements", "Paying employees", "Buying equipment"], "correctOptionIndex": 1, "explanation": "An audit verifies that financial records are accurate and follow accounting standards." },
-              { "id": "acc-q20", "question": "Dividends decrease which account?", "options": ["Assets", "Retained Earnings", "Liabilities", "Revenue"], "correctOptionIndex": 1, "explanation": "Dividends are a distribution of profits, which reduces the retained earnings of the company." }
-            ]
+      "id": "bus-mgt",
+      "name": "Business Management",
+      "chapters": [
+        {
+          "id": "bm-ch1",
+          "name": "Principles of Management",
+          "questions": []
+        },
+        {
+          "id": "bm-ch2",
+          "name": "Organizational Behavior",
+          "questions": []
+        },
+        {
+          "id": "bm-ch3",
+          "name": "Strategic Management",
+          "questions": []
+        },
+        {
+          "id": "bm-ch4",
+          "name": "Operations Management",
+          "questions": []
+        },
+        {
+          "id": "bm-ch5",
+          "name": "Human Resource Management",
+          "questions": []
         }
       ]
     },
@@ -941,116 +92,73 @@
       "name": "Marketing Management",
       "chapters": [
         {
-          "id": "mkt-strat",
+          "id": "mkt-ch1",
+          "name": "Marketing Fundamentals",
+          "questions": []
+        },
+        {
+          "id": "mkt-ch2",
+          "name": "Consumer Behavior",
+          "questions": []
+        },
+        {
+          "id": "mkt-ch3",
           "name": "Marketing Strategy",
-          "questions": [
-            {
-              "id": "mkt-q1",
-              "question": "Which of the 4Ps is responsible for communication with the target market?",
-              "options": ["Product", "Price", "Place", "Promotion"],
-              "correctOptionIndex": 3,
-              "explanation": "Promotion covers advertising, public relations, and sales to communicate with customers."
-            },
-              { "id": "mkt-q2", "question": "What does 'SWOT' stand for?", "options": ["Sales, Waste, Order, Time", "Strengths, Weaknesses, Opportunities, Threats", "Strategy, Work, Operations, Technology", "None"], "correctOptionIndex": 1, "explanation": "SWOT analysis is a tool used to identify internal (S,W) and external (O,T) factors." },
-              { "id": "mkt-q3", "question": "Which concept focuses on mass distribution and low cost?", "options": ["Product Concept", "Production Concept", "Selling Concept", "Marketing Concept"], "correctOptionIndex": 1, "explanation": "The production concept assumes consumers prefer widely available and inexpensive products." },
-              { "id": "mkt-q4", "question": "The process of dividing a market into groups is:", "options": ["Targeting", "Positioning", "Segmentation", "Branding"], "correctOptionIndex": 2, "explanation": "Market segmentation divides a diverse market into smaller, similar groups." },
-              { "id": "mkt-q5", "question": "Which of the 4Ps is related to distribution channels?", "options": ["Product", "Price", "Place", "Promotion"], "correctOptionIndex": 2, "explanation": "'Place' involves making the product available to the consumer at the right location." },
-              { "id": "mkt-q6", "question": "What is 'Brand Equity'?", "options": ["The price of a brand", "The value premium a name adds to a product", "Number of stores", "Ad cost"], "correctOptionIndex": 1, "explanation": "Brand equity is the commercial value derived from consumer perception of the brand name." },
-              { "id": "mkt-q7", "question": "Rapid market acceptance and increasing profits happen in which PLC stage?", "options": ["Introduction", "Growth", "Maturity", "Decline"], "correctOptionIndex": 1, "explanation": "The Growth stage is characterized by a sharp climb in sales and profits." },
-              { "id": "mkt-q8", "question": "What is 'Market Skimming'?", "options": ["Setting a very low price", "Setting a high initial price", "Copying competitors", "None"], "correctOptionIndex": 1, "explanation": "Skimming involves setting a high price to 'skim' revenues from layers of the market." },
-              { "id": "mkt-q9", "question": "Which of these is a digital marketing tool?", "options": ["SEO", "Billboards", "Newspapers", "Direct Mail"], "correctOptionIndex": 0, "explanation": "Search Engine Optimization (SEO) is a core digital marketing strategy." },
-              { "id": "mkt-q10", "question": "Relationship marketing focuses on:", "options": ["One-time sales", "Building long-term customer bonds", "Lowering prices", "Hiring more staff"], "correctOptionIndex": 1, "explanation": "It aims at long-term engagement rather than short-term transactions." },
-              { "id": "mkt-q11", "question": "The 'Marketing Mix' is also known as:", "options": ["The 4Ps", "The 4Cs", "SWOT", "PESTEL"], "correctOptionIndex": 0, "explanation": "Product, Price, Place, and Promotion form the traditional Marketing Mix." },
-              { "id": "mkt-q12", "question": "What is 'Niche Marketing'?", "options": ["Mass marketing", "Targeting a specific small segment", "Global marketing", "Selling only in summer"], "correctOptionIndex": 1, "explanation": "Niche marketing focuses on a well-defined, narrow audience." },
-              { "id": "mkt-q13", "question": "A 'Loss Leader' is a product sold at:", "options": ["High profit", "Cost or below cost to attract customers", "Fixed price", "None"], "correctOptionIndex": 1, "explanation": "Loss leaders are used to draw customers into a store, hoping they buy other items." },
-              { "id": "mkt-q14", "question": "Consumer Behavior studies:", "options": ["Factory work", "How individuals choose and use goods", "Accounting", "Taxes"], "correctOptionIndex": 1, "explanation": "It investigates why and how people make purchasing decisions." },
-              { "id": "mkt-q15", "question": "What is 'Positioning'?", "options": ["Placing items on shelves", "The place a product occupies in consumers' minds", "Moving factories", "Increasing prices"], "correctOptionIndex": 1, "explanation": "Positioning is how a brand is perceived relative to competitors." },
-              { "id": "mkt-q16", "question": "Green marketing involves:", "options": ["Selling green products", "Environmentally safe marketing", "Cheap marketing", "None"], "correctOptionIndex": 1, "explanation": "It focuses on ecological sustainability and environmental protection." },
-              { "id": "mkt-q17", "question": "Which environment includes laws and government agencies?", "options": ["Economic", "Technological", "Political-Legal", "Cultural"], "correctOptionIndex": 2, "explanation": "The political environment consists of laws and regulations that influence business." },
-              { "id": "mkt-q18", "question": "What is 'Direct Marketing'?", "options": ["TV Ads", "Mail or phone contact with specific individuals", "Radio", "Magazines"], "correctOptionIndex": 1, "explanation": "Direct marketing allows targeted communication with specific consumers." },
-              { "id": "mkt-q19", "question": "The 'Product Concept' assumes consumers want:", "options": ["Cheap items", "Items with best quality and performance", "Items they see on TV", "Anything available"], "correctOptionIndex": 1, "explanation": "This concept focuses on continuous product improvement and quality." },
-              { "id": "mkt-q20", "question": "What is the primary goal of Marketing?", "options": ["To confuse customers", "To create value for customers and build relationships", "To pay less tax", "To close the business"], "correctOptionIndex": 1, "explanation": "Modern marketing is about creating value and satisfying customer needs." }
-            ]
+          "questions": []
+        },
+        {
+          "id": "mkt-ch4",
+          "name": "Digital Marketing",
+          "questions": []
+        },
+        {
+          "id": "mkt-ch5",
+          "name": "Services Marketing",
+          "questions": []
         }
       ]
     },
     {
-      "id": "econ",
-      "name": "Economics",
+      "id": "cs",
+      "name": "Computer Science",
       "chapters": [
         {
-          "id": "micro",
-          "name": "Microeconomics",
+          "id": "cs-ch1",
+          "name": "Algorithms & Data Structures",
           "questions": [
             {
-              "id": "econ-q1",
-              "question": "In a perfectly competitive market, firms are:",
-              "options": ["Price Makers", "Price Takers", "Monopolists", "Oligopolists"],
+              "id": "cs-q1",
+              "question": "Which data structure uses LIFO (Last-In-First-Out)?",
+              "options": [
+                "Queue",
+                "Stack",
+                "Array",
+                "Linked List"
+              ],
               "correctOptionIndex": 1,
-              "explanation": "Individual firms have no power to influence market price, so they are 'price takers'."
-            },
-            [
-              { "id": "econ-q2", "question": "The 'Law of Demand' states that as price increases:", "options": ["Demand increases", "Quantity demanded decreases", "Supply decreases", "Quantity demanded increases"], "correctOptionIndex": 1, "explanation": "The law of demand describes an inverse relationship between price and quantity demanded." },
-              { "id": "econ-q3", "question": "What is 'Scarcity' in economics?", "options": ["Having too much money", "Unlimited resources", "Unlimited wants meeting limited resources", "None"], "correctOptionIndex": 2, "explanation": "Scarcity is the fundamental economic problem of having seemingly unlimited human wants in a world of limited resources." },
-              { "id": "econ-q4", "question": "When the price of a substitute good (like Tea) rises, the demand for the main good (like Coffee) will:", "options": ["Decrease", "Stay the same", "Increase", "Become zero"], "correctOptionIndex": 2, "explanation": "Since the goods are substitutes, people will switch to coffee when tea becomes expensive." },
-              { "id": "econ-q5", "question": "Equilibrium price is the price where:", "options": ["Supply is greater than demand", "Demand is greater than supply", "Quantity demanded equals quantity supplied", "The government sets the price"], "correctOptionIndex": 2, "explanation": "At equilibrium, the market is cleared and there is no shortage or surplus." },
-              { "id": "econ-q6", "question": "What is 'Marginal Utility'?", "options": ["Total satisfaction", "The extra satisfaction from consuming one more unit", "The price of a good", "The cost of production"], "correctOptionIndex": 1, "explanation": "Marginal utility measures the benefit gained from an additional unit of consumption." },
-              { "id": "econ-q7", "question": "A 'Monopoly' market is characterized by:", "options": ["Many sellers", "Two sellers", "A single seller", "No sellers"], "correctOptionIndex": 2, "explanation": "In a monopoly, one firm controls the entire market for a product with no close substitutes." },
-              { "id": "econ-q8", "question": "Price Elasticity of Demand measures:", "options": ["How much supply changes", "The responsiveness of quantity demanded to a change in price", "The profit of a firm", "Government tax"], "correctOptionIndex": 1, "explanation": "It shows how sensitive consumers are to price changes." },
-              { "id": "econ-q9", "question": "What are 'Inferior Goods'?", "options": ["High-quality goods", "Goods for which demand decreases as income rises", "Luxury cars", "Free goods"], "correctOptionIndex": 1, "explanation": "As people get richer, they stop buying inferior goods (like public transport) and buy better alternatives." },
-              { "id": "econ-q10", "question": "The 'Factors of Production' are:", "options": ["Gold and Silver", "Land, Labor, Capital, and Entrepreneurship", "Cars and Houses", "Bread and Milk"], "correctOptionIndex": 1, "explanation": "These are the inputs used in the production of goods or services in order to make an economic profit." },
-              { "id": "econ-q11", "question": "What is an 'Oligopoly'?", "options": ["One seller", "Many small sellers", "A few large sellers dominating the market", "A market with no rules"], "correctOptionIndex": 2, "explanation": "Examples include the telecommunications or airline industries." },
-              { "id": "econ-q12", "question": "A price floor is:", "options": ["A maximum legal price", "A minimum legal price set by the government", "The market price", "The cost of materials"], "correctOptionIndex": 1, "explanation": "A price floor (like minimum wage) is the lowest legal price that can be charged." },
-              { "id": "econ-q13", "question": "Which curve shows the various combinations of two goods an economy can produce?", "options": ["Demand Curve", "Supply Curve", "Production Possibilities Frontier (PPF)", "Lorenz Curve"], "correctOptionIndex": 2, "explanation": "The PPF illustrates the concepts of tradeoffs and opportunity cost." },
-              { "id": "econ-q14", "question": "What is 'Normal Profit'?", "options": ["Zero profit", "The minimum profit needed to keep a firm in business", "Illegal profit", "Taxable income"], "correctOptionIndex": 1, "explanation": "Normal profit is considered a cost of production in economics." },
-              { "id": "econ-q15", "question": "What happens to the demand curve when consumer income increases (for normal goods)?", "options": ["Shifts to the left", "Shifts to the right", "Does not move", "Disappears"], "correctOptionIndex": 1, "explanation": "More income leads to higher demand, shifting the curve outward to the right." },
-              { "id": "econ-q16", "question": "The 'Law of Diminishing Marginal Returns' applies to:", "options": ["The long run", "The short run", "Only agriculture", "None"], "correctOptionIndex": 1, "explanation": "It states that adding more of a variable input to a fixed input will eventually decrease productivity." },
-              { "id": "econ-q17", "question": "What is a 'Public Good'?", "options": ["A good sold in stores", "A good that is non-excludable and non-rivalrous", "A good used by the president", "A expensive good"], "correctOptionIndex": 1, "explanation": "Examples include national defense or street lighting." },
-              { "id": "econ-q18", "question": "Consumer Surplus is:", "options": ["The money the government takes", "The difference between what a consumer is willing to pay and what they actually pay", "Excess inventory", "Store profit"], "correctOptionIndex": 1, "explanation": "It represents the benefit consumers receive from buying a good at a market price lower than their maximum willingness to pay." },
-              { "id": "econ-q19", "question": "What is 'Fixed Cost' in the short run?", "options": ["Cost that changes with output", "Cost that remains constant regardless of output", "The price of labor", "Marketing cost"], "correctOptionIndex": 1, "explanation": "Rent and insurance are typical fixed costs." },
-              { "id": "econ-q20", "question": "Microeconomics focuses on:", "options": ["The whole national economy", "Individual households and firms", "Global trade only", "Inflation and Unemployment"], "correctOptionIndex": 1, "explanation": "Unlike Macroeconomics, Micro focuses on small-scale economic units." }
-            ]
+              "explanation": "A stack removes the most recently added element first."
+            }
           ]
-        }
-      ]
-    },
-    {
-      "id": "agri-econ",
-      "name": "Agricultural Economics",
-      "chapters": [
+        },
         {
-          "id": "farm-mgmt",
-          "name": "Farm Management",
-          "questions": [
-            {
-              "id": "agec-q1",
-              "question": "The opportunity cost of using a resource is:",
-              "options": ["Market Price", "Sunk Cost", "Value of the next best alternative", "Total Variable Cost"],
-              "correctOptionIndex": 2,
-              "explanation": "Opportunity cost is the benefit given up by not choosing the next best alternative."
-            },
-            [
-              { "id": "agec-q2", "question": "What is the primary goal of Farm Management?", "options": ["Increasing family size", "Profit maximization and resource optimization", "Buying the most expensive seeds", "Selling land"], "correctOptionIndex": 1, "explanation": "Farm management involves making decisions to organize and operate a farm for maximum continuous profit." },
-              { "id": "agec-q3", "question": "A 'Production Function' in agriculture shows the relationship between:", "options": ["Input and Output", "Buyer and Seller", "Rainfall and Temperature", "Price and Tax"], "correctOptionIndex": 0, "explanation": "It describes the technical relationship between the amounts of inputs used and the amount of output produced." },
-              { "id": "agec-q4", "question": "What are 'Variable Costs' in farming?", "options": ["Land tax", "Seeds, fertilizers, and fuel", "Tractor depreciation", "Farm buildings"], "correctOptionIndex": 1, "explanation": "Variable costs change directly with the level of production (e.g., the more you plant, the more seeds you need)." },
-              { "id": "agec-q5", "question": "The 'Law of Diminishing Returns' suggests that adding more fertilizer will eventually:", "options": ["Keep increasing yield forever", "Decrease the total yield", "Result in smaller and smaller increases in yield", "Make the soil richer"], "correctOptionIndex": 2, "explanation": "After a certain point, each additional unit of input adds less to the total output than the previous unit." },
-              { "id": "agec-q6", "question": "What is 'Diversification' in farming?", "options": ["Planting only one crop", "Engaging in multiple farm enterprises (e.g., crops and livestock)", "Leaving the land empty", "Selling the farm"], "correctOptionIndex": 1, "explanation": "Diversification helps reduce risk; if one crop fails, the farmer has others to rely on." },
-              { "id": "agec-q7", "question": "Which of these is a 'Fixed Cost' for a farmer?", "options": ["Daily wages", "Chemicals", "Interest on long-term loans", "Electricity for irrigation"], "correctOptionIndex": 2, "explanation": "Fixed costs must be paid even if no production takes place." },
-              { "id": "agec-q8", "question": "What is 'Farm Budgeting'?", "options": ["Counting money at harvest", "A plan for future farm operations and estimated income/expenses", "Paying taxes", "Applying for a loan"], "correctOptionIndex": 1, "explanation": "Budgeting is a tool used to test the financial outcome of a farm plan before it is implemented." },
-              { "id": "agec-q9", "question": "Net Farm Income is calculated as:", "options": ["Total Revenue - Total Costs", "Total Revenue + Total Costs", "Total Assets - Liabilities", "Gross Sales only"], "correctOptionIndex": 0, "explanation": "It represents the return to the farmer for their labor, management, and equity." },
-              { "id": "agec-q10", "question": "What is 'Partial Budgeting' used for?", "options": ["The whole farm plan", "Evaluating small changes in the farm business", "Calculating taxes", "Buying a new farm"], "correctOptionIndex": 1, "explanation": "Partial budgeting analyzes the impact of specific changes, like adding a new small enterprise." },
-              { "id": "agec-q11", "question": "Which type of risk is caused by unpredictable weather or pests?", "options": ["Financial Risk", "Price Risk", "Production Risk", "Institutional Risk"], "correctOptionIndex": 2, "explanation": "Production risk involves anything that affects the actual yield or quantity of the product." },
-              { "id": "agec-q12", "question": "A 'Cash Flow Statement' helps a farmer track:", "options": ["Soil fertility", "The timing of money coming in and going out", "The age of the tractor", "The number of workers"], "correctOptionIndex": 1, "explanation": "It ensures the farmer has enough cash to pay bills when they are due." },
-              { "id": "agec-q13", "question": "What is 'Subsistence Farming'?", "options": ["Farming for international export", "Farming mainly for the family's own consumption", "Corporate farming", "Organic farming"], "correctOptionIndex": 1, "explanation": "In subsistence farming, most of the crops or livestock are used to maintain the farmer and their family." },
-              { "id": "agec-q14", "question": "The 'Principle of Substitution' suggests using:", "options": ["The most expensive input", "The input that costs the least to produce a given output", "Any input available", "No inputs"], "correctOptionIndex": 1, "explanation": "Farmers should replace expensive inputs with cheaper ones as long as the output remains the same." },
-              { "id": "agec-q15", "question": "What is 'Elasticity of Supply' for agricultural products usually like in the short run?", "options": ["Highly elastic", "Inelastic", "Perfectly elastic", "Zero"], "correctOptionIndex": 1, "explanation": "Agricultural supply is often inelastic in the short run because crops take time to grow." },
-              { "id": "agec-q16", "question": "Which document shows the financial position of a farm on a specific date?", "options": ["Income Statement", "Balance Sheet", "Production Record", "Labor Diary"], "correctOptionIndex": 1, "explanation": "The Balance Sheet lists assets, liabilities, and net worth." },
-              { "id": "agec-q17", "question": "What is 'Agribusiness'?", "options": ["Only traditional farming", "The entire range of activities from input supply to processing and distribution", "Selling seeds only", "Government policy"], "correctOptionIndex": 1, "explanation": "Agribusiness includes everything from the 'farm to the fork'." },
-              { "id": "agec-q18", "question": "What does 'LDR' (Land-to-Debt Ratio) measure?", "options": ["Soil quality", "Financial leverage and solvency", "Planting density", "Rainfall amount"], "correctOptionIndex": 1, "explanation": "It helps assess how much of the land value is covered by debt." },
-              { "id": "agec-q19", "question": "What is the 'Economic Threshold' in pest management?", "options": ["When the pest is beautiful", "The level of pest damage where the cost of control equals the value of crop saved", "Killing all insects", "Buying the cheapest pesticide"], "correctOptionIndex": 1, "explanation": "It is the point where it becomes profitable to take action against a pest." },
-              { "id": "agec-q20", "question": "Marketable Surplus is:", "options": ["Total production - family consumption", "Total production + family consumption", "Only what is eaten", "Only what is wasted"], "correctOptionIndex": 0, "explanation": "It is the portion of the harvest that the farmer can actually sell in the market." }
-            ]
-          ]
+          "id": "cs-ch2",
+          "name": "Operating Systems",
+          "questions": []
+        },
+        {
+          "id": "cs-ch3",
+          "name": "Database Systems",
+          "questions": []
+        },
+        {
+          "id": "cs-ch4",
+          "name": "Computer Networks",
+          "questions": []
+        },
+        {
+          "id": "cs-ch5",
+          "name": "Software Engineering",
+          "questions": []
         }
       ]
     },
@@ -1059,38 +167,60 @@
       "name": "Educational Planning & Management (EDPM)",
       "chapters": [
         {
-          "id": "school-admin",
+          "id": "edpm-ch1",
+          "name": "Educational Planning Basics",
+          "questions": []
+        },
+        {
+          "id": "edpm-ch2",
           "name": "School Administration",
-          "questions": [
-            {
-              "id": "edpm-q1",
-              "question": "Which leadership style involves teachers in the decision-making process?",
-              "options": ["Autocratic", "Laissez-faire", "Democratic", "Bureaucratic"],
-              "correctOptionIndex": 2,
-              "explanation": "Democratic leadership encourages participation and shared decision-making."
-            },
-            [
-              { "id": "edpm-q2", "question": "What is the primary purpose of Educational Planning?", "options": ["To build more buildings", "To distribute resources effectively to meet educational goals", "To hire only family members", "To increase student fees"], "correctOptionIndex": 1, "explanation": "Educational planning is about preparing for the future by allocating resources to achieve specific educational objectives." },
-              { "id": "edpm-q3", "question": "Which management function involves monitoring school activities to ensure they follow the plan?", "options": ["Planning", "Organizing", "Controlling/Evaluating", "Staffing"], "correctOptionIndex": 2, "explanation": "Controlling (or evaluating) ensures that the actual performance aligns with the school's set standards and goals." },
-              { "id": "edpm-q4", "question": "What is 'Supervision' in a school context?", "options": ["Spying on teachers", "A process of improving the teaching-learning process through support", "Giving orders only", "Collecting money"], "correctOptionIndex": 1, "explanation": "Educational supervision is a collaborative process aimed at professional growth and instructional improvement." },
-              { "id": "edpm-q5", "question": "A school's 'Mission Statement' describes:", "options": ["The school's history", "The current purpose and focus of the school", "The principal's salary", "The color of the uniform"], "correctOptionIndex": 1, "explanation": "A mission statement defines the school's core identity and its reason for existence." },
-              { "id": "edpm-q6", "question": "Which leadership style is often called 'boss-centered'?", "options": ["Democratic", "Laissez-faire", "Autocratic", "Transformational"], "correctOptionIndex": 2, "explanation": "Autocratic leaders make decisions alone without consulting staff." },
-              { "id": "edpm-q7", "question": "What is the 'Line and Staff' organizational structure?", "options": ["A structure where everyone has the same power", "A structure with clear vertical authority and specialized support staff", "A circle structure", "None"], "correctOptionIndex": 1, "explanation": "Line refers to direct authority (Principal to Teacher), while Staff refers to advisory or support roles." },
-              { "id": "edpm-q8", "question": "Financial management in schools involves:", "options": ["Buying personal items", "Budgeting, accounting, and auditing school funds", "Hiding money", "Increasing taxes"], "correctOptionIndex": 1, "explanation": "It ensures school funds are used transparently and efficiently for educational purposes." },
-              { "id": "edpm-q9", "question": "What is 'Curriculum Management'?", "options": ["Printing textbooks", "Planning, implementing, and evaluating what is taught in schools", "Selling school supplies", "None"], "correctOptionIndex": 1, "explanation": "It involves the systematic oversight of the instructional program." },
-              { "id": "edpm-q10", "question": "The acronym 'POSDCORB' in management stands for:", "options": ["Planning, Organizing, Staffing, Directing, Coordinating, Reporting, Budgeting", "Power, Order, Strategy, Data, Control, Rules, Business", "Personal Office System for Data", "None"], "correctOptionIndex": 0, "explanation": "Coined by Luther Gulick, it represents the key functions of an administrator." },
-              { "id": "edpm-q11", "question": "What is 'Decentralization' in education?", "options": ["Moving the school to a city", "Transferring decision-making power from central authorities to local levels", "Hiring more managers", "Closing small schools"], "correctOptionIndex": 1, "explanation": "Decentralization aims to make schools more responsive to local community needs." },
-              { "id": "edpm-q12", "question": "Which document contains a school's rules and regulations for students?", "options": ["Teacher's Diary", "Student Handbook/Code of Conduct", "Audit Report", "Attendance Sheet"], "correctOptionIndex": 1, "explanation": "The handbook outlines expectations and disciplinary procedures." },
-              { "id": "edpm-q13", "question": "What is 'Strategic Planning'?", "options": ["Planning for tomorrow", "Long-term planning (usually 3-5 years) for the school's future", "Planning a lunch break", "None"], "correctOptionIndex": 1, "explanation": "Strategic planning sets the long-term direction and priorities of the institution." },
-              { "id": "edpm-q14", "question": "Human Resource Management (HRM) in schools focuses on:", "options": ["Managing buildings", "Managing teachers and non-teaching staff", "Managing textbooks", "Managing water pipes"], "correctOptionIndex": 1, "explanation": "HRM includes recruitment, training, and motivation of school personnel." },
-              { "id": "edpm-q15", "question": "What is 'SWOT Analysis' used for in school management?", "options": ["Checking student grades", "Assessing Strengths, Weaknesses, Opportunities, and Threats", "Buying furniture", "Cleaning the school"], "correctOptionIndex": 1, "explanation": "It is a tool used during the planning process to evaluate the school's internal and external environment." },
-              { "id": "edpm-q16", "question": "A 'Unit Plan' is a detailed plan for:", "options": ["The whole year", "A specific topic or theme within a subject", "One single lesson", "The principal's meeting"], "correctOptionIndex": 1, "explanation": "A unit plan covers a series of lessons focused on a specific area of the curriculum." },
-              { "id": "edpm-q17", "question": "What is 'In-service Training'?", "options": ["Training before hiring", "Professional development for teachers while they are employed", "Student exams", "Parent meetings"], "correctOptionIndex": 1, "explanation": "In-service training keeps teachers updated with new methods and knowledge." },
-              { "id": "edpm-q18", "question": "School-Community Relationship (SCR) aims to:", "options": ["Keep parents away", "Build a partnership between the school and its stakeholders", "Ask for money only", "None"], "correctOptionIndex": 1, "explanation": "Strong SCR leads to better support and resources for the school." },
-              { "id": "edpm-q19", "question": "Which of these is a 'Physical Resource' in a school?", "options": ["Teachers", "Classroom furniture and buildings", "Student motivation", "Lesson plans"], "correctOptionIndex": 1, "explanation": "Physical resources are tangible items like infrastructure and equipment." },
-              { "id": "edpm-q20", "question": "Educational leadership that inspires followers to exceed expectations is called:", "options": ["Transactional", "Transformational", "Bureaucratic", "Passive"], "correctOptionIndex": 1, "explanation": "Transformational leaders motivate staff through a shared vision and personal inspiration." }
-            ]
-          ]
+          "questions": []
+        },
+        {
+          "id": "edpm-ch3",
+          "name": "Leadership in Education",
+          "questions": []
+        },
+        {
+          "id": "edpm-ch4",
+          "name": "Curriculum Management",
+          "questions": []
+        },
+        {
+          "id": "edpm-ch5",
+          "name": "Educational Finance",
+          "questions": []
+        }
+      ]
+    },
+    {
+      "id": "econ",
+      "name": "Economics",
+      "chapters": [
+        {
+          "id": "econ-ch1",
+          "name": "Microeconomics",
+          "questions": []
+        },
+        {
+          "id": "econ-ch2",
+          "name": "Macroeconomics",
+          "questions": []
+        },
+        {
+          "id": "econ-ch3",
+          "name": "Development Economics",
+          "questions": []
+        },
+        {
+          "id": "econ-ch4",
+          "name": "Public Finance",
+          "questions": []
+        },
+        {
+          "id": "econ-ch5",
+          "name": "International Economics",
+          "questions": []
         }
       ]
     }
