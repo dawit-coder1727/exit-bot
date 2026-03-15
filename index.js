@@ -80,8 +80,9 @@ function getTotalQuestions(deptId, chapterId) {
 // Keyboard Builders
 function buildDepartmentsKeyboard() {
     const departments = getDepartments();
-    const buttons = departments.map((dept) => Markup.button.callback(dept.name, `dept:${dept.id}`));
-    return Markup.inlineKeyboard(buttons.map((b) => [b]));
+    const buttons = departments.map((dept) => Markup.button.callback(dept.name, `dept:${dept.id}`)).reply_markup;
+    return Markup.inlineKeyboard(buttons.map((b) => [b])).reply_markup;
+    
 }
 
 function buildChaptersKeyboard(deptId) {
