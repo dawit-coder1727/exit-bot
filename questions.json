@@ -94,27 +94,732 @@
         {
           "id": "mkt-ch1",
           "name": "Marketing Fundamentals",
-          "questions": []
-        },
+          "questions": [
+                {
+                  "id": "mkt-ch1-q1",
+                  "question": "What is the core goal of marketing?",
+                  "options": ["To sell as much as possible", "To create and deliver value to customers", "To trick people into buying", "To increase production"],
+                  "correctOptionIndex": 1,
+                  "explanation": "Modern marketing focuses on creating, communicating, and delivering value to customers to manage profitable relationships."
+                },
+                {
+                  "id": "mkt-ch1-q2",
+                  "question": "State of felt deprivation is known as:",
+                  "options": ["Want", "Demand", "Need", "Exchange"],
+                  "correctOptionIndex": 2,
+                  "explanation": "A human 'Need' is a state of felt deprivation of some basic satisfaction (like food, clothing, or safety)."
+                },
+                {
+                  "id": "mkt-ch1-q3",
+                  "question": "When a 'Want' is backed by buying power, it becomes a:",
+                  "options": ["Need", "Demand", "Product", "Market"],
+                  "correctOptionIndex": 1,
+                  "explanation": "Demands are human wants that are backed by the ability and willingness to buy them."
+                },
+                {
+                  "id": "mkt-ch1-q4",
+                  "question": "Which marketing philosophy focuses on high production efficiency and wide distribution?",
+                  "options": ["Product Concept", "Production Concept", "Selling Concept", "Marketing Concept"],
+                  "correctOptionIndex": 1,
+                  "explanation": "The Production Concept assumes consumers will favor products that are available and highly affordable."
+                },
+                {
+                  "id": "mkt-ch1-q5",
+                  "question": "The 'Product Concept' emphasizes:",
+                  "options": ["Low prices", "Aggressive advertising", "Quality, performance, and innovative features", "Social responsibility"],
+                  "correctOptionIndex": 2,
+                  "explanation": "The Product Concept focuses on making continuous product improvements and superior quality."
+                },
+                {
+                  "id": "mkt-ch1-q6",
+                  "question": "Which orientation assumes that customers will not buy enough unless the firm undertakes large-scale promotion?",
+                  "options": ["Societal Concept", "Marketing Concept", "Selling Concept", "Production Concept"],
+                  "correctOptionIndex": 2,
+                  "explanation": "The Selling Concept is typically practiced with unsought goods, where the focus is on a hard sell."
+                },
+                {
+                  "id": "mkt-ch1-q7",
+                  "question": "The 'Marketing Concept' starts with a well-defined:",
+                  "options": ["Factory", "Existing product", "Target market", "Global strategy"],
+                  "correctOptionIndex": 2,
+                  "explanation": "The Marketing Concept is customer-centered; it starts by understanding the needs of a specific target market."
+                },
+                {
+                  "id": "mkt-ch1-q8",
+                  "question": "What are the traditional 'Four Ps' of the marketing mix?",
+                  "options": ["People, Price, Power, Promotion", "Product, Price, Place, Promotion", "Product, Profit, Place, Positioning", "Plan, Price, People, Product"],
+                  "correctOptionIndex": 1,
+                  "explanation": "The 4Ps represent the tools marketers use to implement their strategy: Product, Price, Place, and Promotion."
+                },
+                {
+                  "id": "mkt-ch1-q9",
+                  "question": "In the 4Ps, 'Place' refers to:",
+                  "options": ["A physical building", "Distribution and making the product available to customers", "The target market's city", "The manufacturing plant"],
+                  "correctOptionIndex": 1,
+                  "explanation": "Place (Distribution) includes all activities that make the product available to target consumers."
+                },
+                {
+                  "id": "mkt-ch1-q10",
+                  "question": "Which concept considers the long-term welfare of both the consumer and society?",
+                  "options": ["Marketing Concept", "Product Concept", "Societal Marketing Concept", "Selling Concept"],
+                  "correctOptionIndex": 2,
+                  "explanation": "The Societal Marketing Concept balances company profits, consumer wants, and society's interests."
+                },
+                {
+                  "id": "mkt-ch1-q11",
+                  "question": "Customer Relationship Management (CRM) is focused on:",
+                  "options": ["Lowering taxes", "Building and maintaining profitable customer relationships", "Hiring more sales staff", "Reducing production costs"],
+                  "correctOptionIndex": 1,
+                  "explanation": "CRM is the process of managing detailed information about individual customers to maximize loyalty."
+                },
+                {
+                  "id": "mkt-ch1-q12",
+                  "explanation": "Customer-perceived value is the difference between total customer value and total customer cost.",
+                  "options": ["Customer Satisfaction", "Customer Loyalty", "Customer-Perceived Value", "Market Share"],
+                  "correctOptionIndex": 2,
+                  "question": "The difference between the benefits a customer gets and the cost they pay is:"
+                },
+                {
+                  "id": "mkt-ch1-q13",
+                  "question": "What is a 'Market' in marketing terms?",
+                  "options": ["A physical place to buy vegetables", "The set of actual and potential buyers of a product", "A stock exchange", "A warehouse"],
+                  "correctOptionIndex": 1,
+                  "explanation": "A market is the collection of all people or organizations who have a need for a product and the ability to buy it."
+                },
+                {
+                  "id": "mkt-ch1-q14",
+                  "question": "Selling a product through as many outlets as possible is called:",
+                  "options": ["Selective distribution", "Exclusive distribution", "Intensive distribution", "Direct distribution"],
+                  "correctOptionIndex": 2,
+                  "explanation": "Intensive distribution aims to provide maximum product coverage by using all available outlets."
+                },
+                {
+                  "id": "mkt-ch1-q15",
+                  "question": "The act of obtaining a desired object from someone by offering something in return is:",
+                  "options": ["Barter", "Exchange", "Transaction", "Donation"],
+                  "correctOptionIndex": 1,
+                  "explanation": "Exchange is the core concept of marketing, involving two parties and something of value."
+                },
+                {
+                  "id": "mkt-ch1-q16",
+                  "question": "Which of the following is an 'Unsought Good'?",
+                  "options": ["Bread", "Life insurance", "Luxury watch", "Laptop"],
+                  "correctOptionIndex": 1,
+                  "explanation": "Unsought goods are products consumers do not normally think of buying, like funeral services or life insurance."
+                },
+                {
+                  "id": "mkt-ch1-q17",
+                  "question": "Market Segmentation is the process of:",
+                  "options": ["Merging two companies", "Dividing a market into distinct groups of buyers", "Increasing the price", "Closing down stores"],
+                  "correctOptionIndex": 1,
+                  "explanation": "Segmentation allows marketers to group consumers with similar needs or characteristics."
+                },
+                {
+                  "id": "mkt-ch1-q18",
+                  "question": "The 'Value Proposition' is:",
+                  "options": ["The price tag", "The set of benefits or values a brand promises to deliver", "The profit margin", "A legal document"],
+                  "correctOptionIndex": 1,
+                  "explanation": "The value proposition tells the customer why they should buy your brand instead of a competitor's."
+                },
+                {
+                  "id": "mkt-ch1-q19",
+                  "question": "Marketing myopia refers to:",
+                  "options": ["Having good vision", "Focusing on products rather than customer needs", "Rapid growth", "High advertising costs"],
+                  "correctOptionIndex": 1,
+                  "explanation": "Marketing Myopia occurs when a company pays more attention to its specific products than to the benefits produced by them."
+                },
+                {
+                  "id": "mkt-ch1-q20",
+                  "question": "The '4Cs' model (from the customer's view) replaces 'Product' with:",
+                  "options": ["Cost", "Convenience", "Customer Solution", "Communication"],
+                  "correctOptionIndex": 2,
+                  "explanation": "In the 4Cs model, Product becomes Customer Solution, Price becomes Cost, Place becomes Convenience, and Promotion becomes Communication."
+                }
+              ]
+            },
         {
           "id": "mkt-ch2",
           "name": "Consumer Behavior",
-          "questions": []
-        },
+            "questions": [
+              {
+                "id": "cb-q1",
+                "question": "Consumer behavior is the study of ______ and the processes they use to select, secure, use, and dispose of products.",
+                "options": ["Government agencies", "Individuals, groups, or organizations", "Competitors", "Factories"],
+                "correctOptionIndex": 1,
+                "explanation": "Consumer behavior involves studying how various entities (individuals or groups) make purchasing and consumption decisions."
+              },
+              {
+                "id": "cb-q2",
+                "question": "Which factor exerts the broadest and deepest influence on consumer behavior?",
+                "options": ["Social factors", "Personal factors", "Cultural factors", "Psychological factors"],
+                "correctOptionIndex": 2,
+                "explanation": "Culture is the most fundamental determinant of a person's wants and behavior as it is learned from family and other institutions."
+              },
+              {
+                "id": "cb-q3",
+                "question": "What is the first stage in the Buyer Decision Process?",
+                "options": ["Information search", "Evaluation of alternatives", "Need recognition", "Purchase decision"],
+                "correctOptionIndex": 2,
+                "explanation": "The process starts when a buyer senses a difference between their actual state and a desired state (Need Recognition)."
+              },
+              {
+                "id": "cb-q4",
+                "question": "A person’s consistent behaviors or responses to recurring situations is called:",
+                "options": ["Motivation", "Perception", "Personality", "Learning"],
+                "correctOptionIndex": 2,
+                "explanation": "Personality refers to the unique psychological characteristics that lead to relatively consistent and lasting responses to one's environment."
+              },
+              {
+                "id": "cb-q5",
+                "question": "Reference groups that a person wishes to belong to are called:",
+                "options": ["Membership groups", "Aspirational groups", "Dissociative groups", "Family groups"],
+                "correctOptionIndex": 1,
+                "explanation": "An aspirational group is one to which the individual wishes to belong or be identified with."
+              },
+              {
+                "id": "cb-q6",
+                "question": "What is 'Cognitive Dissonance'?",
+                "options": ["Happiness after buying", "Buyer discomfort caused by post-purchase conflict", "A marketing strategy", "Searching for products"],
+                "correctOptionIndex": 1,
+                "explanation": "Cognitive dissonance is the 'buyer’s remorse' or tension consumers feel after making a difficult purchase decision."
+              },
+              {
+                "id": "cb-q7",
+                "question": "The process by which people select, organize, and interpret information is:",
+                "options": ["Learning", "Perception", "Attitude", "Belief"],
+                "correctOptionIndex": 1,
+                "explanation": "Perception is how we make sense of the world around us based on the sensory information we receive."
+              },
+              {
+                "id": "cb-q8",
+                "question": "According to Maslow, which needs are at the bottom of the hierarchy (most basic)?",
+                "options": ["Social needs", "Safety needs", "Physiological needs", "Self-actualization"],
+                "correctOptionIndex": 2,
+                "explanation": "Physiological needs (food, water, shelter) must be satisfied before an individual moves to higher-level needs."
+              },
+              {
+                "id": "cb-q9",
+                "question": "In the 'Diffusion of Innovation', the first 2.5% of people to adopt a new product are:",
+                "options": ["Early Adopters", "Innovators", "Early Majority", "Laggards"],
+                "correctOptionIndex": 1,
+                "explanation": "Innovators are venturesome; they are willing to take risks and try new ideas first."
+              },
+              {
+                "id": "cb-q10",
+                "question": "What is 'Selective Retention'?",
+                "options": ["Remembering everything", "Remembering good points about a brand one favors and forgetting good points about competing brands", "Forgetting all ads", "Buying only one brand"],
+                "correctOptionIndex": 1,
+                "explanation": "Consumers tend to retain information that supports their existing attitudes and beliefs."
+              },
+              {
+                "id": "cb-q11",
+                "question": "The 'Opinion Leader' is a person who:",
+                "options": ["Owns a factory", "Exerts social influence on others due to special skills or knowledge", "Always buys the cheapest product", "Works for the government"],
+                "correctOptionIndex": 1,
+                "explanation": "Opinion leaders provide informal advice or information about a specific product category."
+              },
+              {
+                "id": "cb-q12",
+                "question": "Which buying situation involves the most complex decision-making?",
+                "options": ["Habitual buying behavior", "Variety-seeking behavior", "Complex buying behavior", "Dissonance-reducing behavior"],
+                "correctOptionIndex": 2,
+                "explanation": "Complex buying behavior occurs when consumers are highly involved in a purchase and perceive significant differences among brands (e.g., buying a car)."
+              },
+              {
+                "id": "cb-q13",
+                "question": "Subculture includes groups of people with shared value systems based on:",
+                "options": ["Common life experiences and situations", "Income only", "Age only", "Favorite colors"],
+                "correctOptionIndex": 0,
+                "explanation": "Subcultures include nationalities, religions, racial groups, and geographic regions."
+              },
+              {
+                "id": "cb-q14",
+                "question": "The changes in an individual’s behavior arising from experience is:",
+                "options": ["Motivation", "Perception", "Learning", "Belief"],
+                "correctOptionIndex": 2,
+                "explanation": "Learning occurs through the interplay of drives, stimuli, cues, responses, and reinforcement."
+              },
+              {
+                "id": "cb-q15",
+                "question": "Family is considered a ______ social factor.",
+                "options": ["Secondary", "Primary", "Tertiary", "Minor"],
+                "correctOptionIndex": 1,
+                "explanation": "The family is the most important consumer buying organization in society and is a primary reference group."
+              },
+              {
+                "id": "cb-q16",
+                "question": "Lifestyles are often measured by 'AIO' dimensions. AIO stands for:",
+                "options": ["Attitude, Income, Occupation", "Activities, Interests, Opinions", "Age, Industry, Origin", "Achievement, Intelligence, Order"],
+                "correctOptionIndex": 1,
+                "explanation": "Psychographics (lifestyle measurement) uses Activities, Interests, and Opinions to understand consumers."
+              },
+              {
+                "id": "cb-q17",
+                "question": "What is 'Selective Distortion'?",
+                "options": ["Ignoring ads", "Interpreting information in a way that supports what you already believe", "Forgetting information", "Buying based on price"],
+                "correctOptionIndex": 1,
+                "explanation": "Selective distortion describes the tendency of people to adapt incoming information to personal meanings."
+              },
+              {
+                "id": "cb-q18",
+                "question": "Which stage comes after the Purchase Decision in the buyer process?",
+                "options": ["Information search", "Evaluation of alternatives", "Post-purchase behavior", "Need recognition"],
+                "correctOptionIndex": 2,
+                "explanation": "After buying, the consumer will be satisfied or dissatisfied and will engage in post-purchase actions."
+              },
+              {
+                "id": "cb-q19",
+                "question": "Consumers who are traditional and suspicious of change are:",
+                "options": ["Innovators", "Early Majority", "Laggards", "Late Majority"],
+                "correctOptionIndex": 2,
+                "explanation": "Laggards are the last to adopt an innovation; they are tradition-bound and suspicious of new ideas."
+              },
+              {
+                "id": "cb-q20",
+                "question": "A 'Motive' (or drive) is a need that is:",
+                "options": ["Ignored", "Sufficiently pressing to direct the person to seek satisfaction", "Not important", "Always physical"],
+                "correctOptionIndex": 1,
+                "explanation": "A motive is a need that has reached a high enough level of intensity to drive a person to act."
+              }
+            ]
+          },
         {
           "id": "mkt-ch3",
           "name": "Marketing Strategy",
-          "questions": []
-        },
+          "questions": [
+              {
+                "id": "str-q1",
+                "question": "What does 'STP' stand for in marketing strategy?",
+                "options": ["Sales, Trade, Pricing", "Segmentation, Targeting, Positioning", "Strategy, Tactics, Planning", "Standard, Total, Process"],
+                "correctOptionIndex": 1,
+                "explanation": "STP is the core of modern marketing strategy, used to focus on specific customer segments and position a brand effectively."
+              },
+              {
+                "id": "str-q2",
+                "question": "Dividing a market into distinct groups of buyers who have different needs is called:",
+                "options": ["Market Targeting", "Market Positioning", "Market Segmentation", "Market Coverage"],
+                "correctOptionIndex": 2,
+                "explanation": "Market segmentation is the process of splitting a broad market into manageable sub-groups based on shared characteristics."
+              },
+              {
+                "id": "str-q3",
+                "question": "Evaluating each market segment's attractiveness and selecting one or more to enter is:",
+                "options": ["Positioning", "Mass Marketing", "Targeting", "Differentiation"],
+                "correctOptionIndex": 2,
+                "explanation": "Targeting involves choosing which segments the company can best serve and provide value to."
+              },
+              {
+                "id": "str-q4",
+                "question": "Arranging for a product to occupy a clear, distinctive, and desirable place relative to competing products is:",
+                "options": ["Segmentation", "Targeting", "Positioning", "Branding"],
+                "correctOptionIndex": 2,
+                "explanation": "Positioning is how the target customers perceive the product compared to competitors' offerings."
+              },
+              {
+                "id": "str-q5",
+                "question": "Which of Porter’s Generic Strategies focuses on being the lowest-cost producer in the industry?",
+                "options": ["Differentiation", "Focus Strategy", "Cost Leadership", "Niche Strategy"],
+                "correctOptionIndex": 2,
+                "explanation": "Cost Leadership strategy aims to gain competitive advantage by having the lowest operational and production costs."
+              },
+              {
+                "id": "str-q6",
+                "question": "A strategy of providing unique products that are widely valued by buyers is called:",
+                "options": ["Cost Leadership", "Differentiation", "Price Skimming", "Mass Marketing"],
+                "correctOptionIndex": 1,
+                "explanation": "Differentiation involves creating a product that is perceived as unique through quality, features, or brand image."
+              },
+              {
+                "id": "str-q7",
+                "question": "The 'Ansoff Matrix' is used to identify growth opportunities. Which strategy involves selling existing products in new markets?",
+                "options": ["Market Penetration", "Product Development", "Market Development", "Diversification"],
+                "correctOptionIndex": 2,
+                "explanation": "Market Development is the growth strategy where a company seeks to find new geographic or demographic markets for current products."
+              },
+              {
+                "id": "str-q8",
+                "question": "What is 'Market Penetration'?",
+                "options": ["Selling new products to new markets", "Selling more of existing products to existing markets", "Closing down a business", "Reducing product quality"],
+                "correctOptionIndex": 1,
+                "explanation": "Market penetration focuses on increasing sales of current products to current customers through better promotion or pricing."
+              },
+              {
+                "id": "str-q9",
+                "question": "Which growth strategy is the riskiest because it involves new products and new markets?",
+                "options": ["Market Penetration", "Market Development", "Product Development", "Diversification"],
+                "correctOptionIndex": 3,
+                "explanation": "Diversification is risky because the firm has little or no experience in the new product area or the new market."
+              },
+              {
+                "id": "str-q10",
+                "question": "A 'Niche Marketing' strategy focuses on:",
+                "options": ["The entire market", "A small, well-defined market segment", "Lowering all prices", "Mass production"],
+                "correctOptionIndex": 1,
+                "explanation": "Niche marketing targets a specific, often overlooked sub-segment with specialized needs."
+              },
+              {
+                "id": "str-q11",
+                "question": "Competitive advantage is an advantage over competitors gained by offering consumers:",
+                "options": ["Higher prices", "Greater value", "Fewer features", "Less information"],
+                "correctOptionIndex": 1,
+                "explanation": "Greater value can be offered through lower prices or by providing more benefits that justify higher prices."
+              },
+              {
+                "id": "str-q12",
+                "question": "The 'Marketing Mix' (4Ps) is the set of ______ tools the firm uses to pursue its marketing objectives.",
+                "options": ["Strategic", "Tactical", "Financial", "Human Resource"],
+                "correctOptionIndex": 1,
+                "explanation": "The 4Ps (Product, Price, Place, Promotion) are tactical tools used to implement the broader marketing strategy."
+              },
+              {
+                "id": "str-q13",
+                "question": "Which strategy involves setting a high price for a new product to 'skim' maximum revenues from the segments willing to pay the high price?",
+                "options": ["Penetration Pricing", "Market-Skimming Pricing", "Discount Pricing", "Psychological Pricing"],
+                "correctOptionIndex": 1,
+                "explanation": "Price skimming is often used for new technology where early adopters are willing to pay a premium."
+              },
+              {
+                "id": "str-q14",
+                "question": "What is a 'Competitive Profile Matrix' (CPM) used for?",
+                "options": ["Calculating employee salaries", "Identifying a firm's key competitors and their strengths and weaknesses", "Setting office hours", "Designing a logo"],
+                "correctOptionIndex": 1,
+                "explanation": "CPM allows a firm to compare itself against competitors based on critical success factors."
+              },
+              {
+                "id": "str-q15",
+                "question": "A 'Market Follower' strategy is one where the firm:",
+                "options": ["Challenges the leader aggressively", "Leads the market in innovation", "Learns from the leader’s experience and copies its products", "Focuses only on one small niche"],
+                "correctOptionIndex": 2,
+                "explanation": "Followers prefer to copy the leader's successful products with less investment and risk."
+              },
+              {
+                "id": "str-q16",
+                "question": "In the BCG Matrix, products with high market share in a slow-growth market are called:",
+                "options": ["Stars", "Question Marks", "Cash Cows", "Dogs"],
+                "correctOptionIndex": 2,
+                "explanation": "Cash Cows generate more cash than is needed to maintain their market share."
+              },
+              {
+                "id": "str-q17",
+                "question": "What is 'Differentiation'?",
+                "options": ["Making the product identical to competitors", "Differentiating the market offering to create superior customer value", "Reducing the number of products", "Ignoring customer feedback"],
+                "correctOptionIndex": 1,
+                "explanation": "Differentiation creates a unique position for the firm that provides a competitive edge."
+              },
+              {
+                "id": "str-q18",
+                "question": "A 'First-Mover' advantage refers to:",
+                "options": ["Being the last to enter a market", "The benefit of being the first to enter a new market with a new product", "Hiring the first employee", "Moving the office to a new city"],
+                "correctOptionIndex": 1,
+                "explanation": "First movers can build brand loyalty and secure resources before competitors enter."
+              },
+              {
+                "id": "str-q19",
+                "question": "What is 'Sustainable Competitive Advantage'?",
+                "options": ["An advantage that lasts only for a week", "An advantage that is difficult for competitors to copy or surpass in the long run", "Having more cash in the bank", "Having a big office"],
+                "correctOptionIndex": 1,
+                "explanation": "Sustainability ensures that the competitive edge remains over a long period."
+              },
+              {
+                "id": "str-q20",
+                "question": "The 'Value Chain' concept identifies activities that:",
+                "options": ["Cost the most money", "Create value for customers", "Are illegal", "Only the CEO does"],
+                "correctOptionIndex": 1,
+                "explanation": "Value chain analysis helps identify where value is added in the process of creating a product."
+              }
+            ]
+          },
         {
           "id": "mkt-ch4",
           "name": "Digital Marketing",
-          "questions": []
+          "questions": [
+              {
+                "id": "dm-q1",
+                "question": "What does SEO stand for in Digital Marketing?",
+                "options": ["Social Economic Optimization", "Search Engine Optimization", "Secure Electronic Objects", "Social Engagement Operation"],
+                "correctOptionIndex": 1,
+                "explanation": "SEO is the process of improving a website's visibility on search engines like Google to increase organic traffic."
+              },
+              {
+                "id": "dm-q2",
+                "question": "Which of the following is an example of 'Owned Media'?",
+                "options": ["Facebook Ads", "A company's official website", "News articles written by journalists", "Google Search results"],
+                "correctOptionIndex": 1,
+                "explanation": "Owned media includes channels that a brand controls, such as its website, blog, and social media profiles."
+              },
+              {
+                "id": "dm-q3",
+                "question": "What is 'PPC' in the context of online advertising?",
+                "options": ["Pay-Per-Customer", "Private-Public Connection", "Pay-Per-Click", "Product Price Control"],
+                "correctOptionIndex": 2,
+                "explanation": "PPC is an advertising model where advertisers pay a fee each time one of their ads is clicked (e.g., Google Ads)."
+              },
+              {
+                "id": "dm-q4",
+                "question": "The percentage of visitors who leave a website after viewing only one page is called:",
+                "options": ["Conversion Rate", "Bounce Rate", "Click-Through Rate (CTR)", "Churn Rate"],
+                "correctOptionIndex": 1,
+                "explanation": "A high bounce rate often indicates that the landing page is not relevant or engaging to the visitors."
+              },
+              {
+                "id": "dm-q5",
+                "question": "Which digital marketing tool is most effective for building long-term, direct relationships with customers?",
+                "options": ["Banner Ads", "Email Marketing", "Pop-up Ads", "Radio Ads"],
+                "correctOptionIndex": 1,
+                "explanation": "Email marketing allows for personalized communication and direct engagement with an opted-in audience."
+              },
+              {
+                "id": "dm-q6",
+                "question": "What is 'Social Media Marketing' (SMM)?",
+                "options": ["Selling products door-to-door", "Using social platforms to connect with the audience and build a brand", "Printing ads in newspapers", "Cold calling customers"],
+                "correctOptionIndex": 1,
+                "explanation": "SMM involves using platforms like Facebook, Instagram, and LinkedIn to promote products and engage with users."
+              },
+              {
+                "id": "dm-q7",
+                "question": "In digital marketing, a 'Conversion' occurs when:",
+                "options": ["A user visits the homepage", "A user completes a desired action (e.g., making a purchase)", "A user deletes their account", "A user complains about a product"],
+                "correctOptionIndex": 1,
+                "explanation": "A conversion happens when a visitor fulfills a specific goal, such as buying a product or signing up for a newsletter."
+              },
+              {
+                "id": "dm-q8",
+                "question": "What is 'Content Marketing'?",
+                "options": ["Creating and sharing valuable, relevant content to attract a defined audience", "Buying expensive TV commercials", "Focusing only on the price of a product", "Deleting old website data"],
+                "correctOptionIndex": 0,
+                "explanation": "Content marketing focuses on providing value through blogs, videos, and infographics to build trust with customers."
+              },
+              {
+                "id": "dm-q9",
+                "question": "Which of these is a 'Key Performance Indicator' (KPI) for social media engagement?",
+                "options": ["Office rent cost", "Number of likes, shares, and comments", "Employee attendance", "The color of the logo"],
+                "correctOptionIndex": 1,
+                "explanation": "Engagement metrics help measure how effectively a brand is interacting with its social media audience."
+              },
+              {
+                "id": "dm-q10",
+                "question": "What is 'Affiliate Marketing'?",
+                "options": ["Hiring full-time sales staff", "A performance-based marketing where a business rewards partners for each visitor/customer brought by their efforts", "Selling products to family only", "Marketing in physical stores only"],
+                "correctOptionIndex": 1,
+                "explanation": "Affiliates earn a commission for promoting another company's products and driving sales."
+              },
+              {
+                "id": "dm-q11",
+                "question": "The process of optimizing a website to rank higher for local searches (e.g., 'Bakery near me') is:",
+                "options": ["Global SEO", "Local SEO", "Email SEO", "Affiliate SEO"],
+                "correctOptionIndex": 1,
+                "explanation": "Local SEO is crucial for businesses that serve a specific geographic area."
+              },
+              {
+                "id": "dm-q12",
+                "question": "What is 'CTR' (Click-Through Rate)?",
+                "options": ["Total sales divided by clicks", "The ratio of users who click on a specific link to the total number of users who view the page", "The speed of the internet", "The number of hours spent online"],
+                "correctOptionIndex": 1,
+                "explanation": "CTR measures the effectiveness of an ad or an email campaign in encouraging users to take action."
+              },
+              {
+                "id": "dm-q13",
+                "question": "Mobile Marketing focuses on reaching audiences on their:",
+                "options": ["Desktop computers", "Smartphones and tablets", "Printed billboards", "Landline phones"],
+                "correctOptionIndex": 1,
+                "explanation": "Mobile marketing uses SMS, apps, and mobile-optimized websites to reach users on the go."
+              },
+              {
+                "id": "dm-q14",
+                "question": "What is an 'Influencer' in digital marketing?",
+                "options": ["A person who hates technology", "An individual with the power to affect the purchasing decisions of others due to their authority or relationship", "A government official", "A web developer"],
+                "correctOptionIndex": 1,
+                "explanation": "Influencers use their social media reach to promote products to their dedicated followers."
+              },
+              {
+                "id": "dm-q15",
+                "question": "What is 'Remarketing' (or Retargeting)?",
+                "options": ["Marketing to a completely new audience", "Serving ads to users who have previously visited your website but didn't convert", "Changing the name of a brand", "Sending physical mail to customers"],
+                "correctOptionIndex": 1,
+                "explanation": "Remarketing keeps your brand in front of interested visitors to encourage them to return and buy."
+              },
+              {
+                "id": "dm-q16",
+                "question": "Which of the following is a search engine?",
+                "options": ["Facebook", "Google", "WhatsApp", "Photoshop"],
+                "correctOptionIndex": 1,
+                "explanation": "Google is the most widely used search engine, followed by others like Bing and Yahoo."
+              },
+              {
+                "id": "dm-q17",
+                "question": "What is 'Inbound Marketing'?",
+                "options": ["Interrupting customers with cold calls", "Attracting customers through relevant and helpful content", "Only using billboard ads", "Marketing inside the company only"],
+                "correctOptionIndex": 1,
+                "explanation": "Inbound marketing 'pulls' customers in by providing solutions to their problems."
+              },
+              {
+                "id": "dm-q18",
+                "question": "What is a 'Landing Page'?",
+                "options": ["The page where an airplane lands", "The specific webpage a user arrives at after clicking an ad or link", "The 'About Us' page only", "A page with no images"],
+                "correctOptionIndex": 1,
+                "explanation": "A landing page is designed with a single focus or goal, known as a Call to Action (CTA)."
+              },
+              {
+                "id": "dm-q19",
+                "question": "The '4Ms' of Digital Marketing include Merchandising, Marketing, Market, and:",
+                "options": ["Money", "Message", "Measurement", "Manual"],
+                "correctOptionIndex": 2,
+                "explanation": "Measurement is critical in digital marketing to track performance and ROI using data analytics."
+              },
+              {
+                "id": "dm-q20",
+                "question": "What is 'Viral Marketing'?",
+                "options": ["Marketing for medicine", "A strategy that encourages individuals to pass on a marketing message to others, creating exponential growth", "Marketing that is illegal", "Using only computer viruses"],
+                "correctOptionIndex": 1,
+                "explanation": "Viral marketing relies on high-quality or entertaining content that people want to share with their network."
+              }
+            ]
         },
         {
           "id": "mkt-ch5",
           "name": "Services Marketing",
-          "questions": []
+          "questions": [
+              {
+                "id": "sm-q1",
+                "question": "Which characteristic of service means that services cannot be seen, tasted, felt, or smelled before they are bought?",
+                "options": ["Inseparability", "Intangibility", "Variability", "Perishability"],
+                "correctOptionIndex": 1,
+                "explanation": "Intangibility is the most basic characteristic of a service; customers look for signs or 'evidence' of quality before buying."
+              },
+              {
+                "id": "sm-q2",
+                "question": "The fact that services are produced and consumed at the same time is known as:",
+                "options": ["Intangibility", "Inseparability", "Variability", "Perishability"],
+                "correctOptionIndex": 1,
+                "explanation": "Inseparability means the service provider is part of the service, and the customer is often present during the process."
+              },
+              {
+                "id": "sm-q3",
+                "question": "Because services depend on who provides them and when, their quality may vary. This is called:",
+                "options": ["Intangibility", "Inseparability", "Variability (Heterogeneity)", "Perishability"],
+                "correctOptionIndex": 2,
+                "explanation": "Variability means service quality depends on the provider, the time, the place, and the customer's interaction."
+              },
+              {
+                "id": "sm-q4",
+                "question": "Services cannot be stored for later sale or use. This characteristic is:",
+                "options": ["Intangibility", "Perishability", "Inseparability", "Variability"],
+                "correctOptionIndex": 1,
+                "explanation": "Perishability is why empty hotel rooms or unsold airplane seats represent lost revenue that can never be recovered."
+              },
+              {
+                "id": "sm-q5",
+                "question": "In addition to the traditional 4Ps, what are the 3 extra Ps of Services Marketing?",
+                "options": ["People, Process, Physical Evidence", "Planning, Profit, Promotion", "People, Power, Positioning", "Performance, Price, Place"],
+                "correctOptionIndex": 0,
+                "explanation": "The 'Extended Marketing Mix' for services includes People (staff), Process (delivery flow), and Physical Evidence (environment)."
+              },
+              {
+                "id": "sm-q6",
+                "question": "The environment in which the service is delivered and where the firm and customer interact is:",
+                "options": ["Process", "People", "Physical Evidence", "Product"],
+                "correctOptionIndex": 2,
+                "explanation": "Physical evidence (Servicescape) helps customers evaluate the service before purchase (e.g., a clean hospital or a modern bank office)."
+              },
+              {
+                "id": "sm-q7",
+                "question": "Which type of marketing involves the interaction between the employee and the customer?",
+                "options": ["Internal Marketing", "External Marketing", "Interactive Marketing", "Social Marketing"],
+                "correctOptionIndex": 2,
+                "explanation": "Interactive marketing focuses on the service encounter quality, which depends heavily on the employee's skill and attitude."
+              },
+              {
+                "id": "sm-q8",
+                "question": "Internal Marketing refers to the firm orientation to train and motivate its:",
+                "options": ["Customers", "Suppliers", "Employees", "Competitors"],
+                "correctOptionIndex": 2,
+                "explanation": "Internal marketing means the firm must successfully train and motivate its customer-contact employees to work as a team."
+              },
+              {
+                "id": "sm-q9",
+                "question": "What is 'Service Recovery'?",
+                "options": ["Firing an employee", "The action a service provider takes in response to a service failure", "Increasing the price of a service", "Closing the business"],
+                "correctOptionIndex": 1,
+                "explanation": "Effective service recovery can turn an angry customer into a loyal one by quickly fixing a mistake."
+              },
+              {
+                "id": "sm-q10",
+                "question": "The 'Service-Profit Chain' links service firm profits with:",
+                "options": ["Low prices", "Employee and customer satisfaction", "Advertising budgets", "Legal regulations"],
+                "correctOptionIndex": 1,
+                "explanation": "Satisfied employees create satisfied customers, who then lead to higher profits and growth."
+              },
+              {
+                "id": "sm-q11",
+                "question": "Which tool is used to visualize the service process by mapping out the steps and 'line of visibility'?",
+                "options": ["BCG Matrix", "Service Blueprint", "SWOT Analysis", "Ansoff Matrix"],
+                "correctOptionIndex": 1,
+                "explanation": "A service blueprint helps managers see the front-stage and back-stage activities of a service delivery."
+              },
+              {
+                "id": "sm-q12",
+                "question": "In the SERVQUAL model, 'Reliability' refers to the ability to:",
+                "options": ["Have modern equipment", "Perform the promised service dependably and accurately", "Be nice to customers", "Give free gifts"],
+                "correctOptionIndex": 1,
+                "explanation": "Reliability is often considered the most important dimension of service quality for customers."
+              },
+              {
+                "id": "sm-q13",
+                "question": "The SERVQUAL dimension that refers to the knowledge and courtesy of employees and their ability to convey trust is:",
+                "options": ["Tangibles", "Empathy", "Responsiveness", "Assurance"],
+                "correctOptionIndex": 3,
+                "explanation": "Assurance involves making the customer feel safe and confident in the service provider's expertise."
+              },
+              {
+                "id": "sm-q14",
+                "question": "Providing individualized attention to customers is which SERVQUAL dimension?",
+                "options": ["Reliability", "Empathy", "Tangibles", "Responsiveness"],
+                "correctOptionIndex": 1,
+                "explanation": "Empathy means the firm understands the customer's needs and provides personalized care."
+              },
+              {
+                "id": "sm-q15",
+                "question": "What is the 'Line of Visibility' in a service blueprint?",
+                "options": ["A line that separates high and low prices", "The boundary between activities the customer sees and those they do not", "The line outside a store", "A marketing slogan"],
+                "correctOptionIndex": 1,
+                "explanation": "Activities 'above the line' are visible to the customer; 'below the line' activities are back-office support."
+              },
+              {
+                "id": "sm-q16",
+                "question": "Managing demand and supply is a major challenge in services because of:",
+                "options": ["Intangibility", "Perishability", "Variability", "Equity"],
+                "correctOptionIndex": 1,
+                "explanation": "Since services can't be inventoried, firms must use strategies like peak-pricing to balance demand and supply."
+              },
+              {
+                "id": "sm-q17",
+                "question": "The 'Seven Ps' are most relevant to which sector?",
+                "options": ["Manufacturing", "Agriculture", "Service Sector", "Mining"],
+                "correctOptionIndex": 2,
+                "explanation": "The extended 7Ps are designed to address the unique complexities of marketing services."
+              },
+              {
+                "id": "sm-q18",
+                "question": "Customers often use 'Price' as an indicator of quality in services because services are:",
+                "options": ["Perishable", "Intangible", "Separable", "Standardized"],
+                "correctOptionIndex": 1,
+                "explanation": "Due to intangibility, customers use price and other cues to judge the quality of a service before they experience it."
+              },
+              {
+                "id": "sm-q19",
+                "question": "A 'Service Encounter' is often called:",
+                "options": ["A business meeting", "The Moment of Truth", "A sales pitch", "A conflict"],
+                "correctOptionIndex": 1,
+                "explanation": "The moment of truth is when the customer interacts with the service and forms an opinion about its quality."
+              },
+              {
+                "id": "sm-q20",
+                "question": "Which of the following is an example of 'Physical Evidence' for a restaurant?",
+                "options": ["The cooking recipe", "The menu design and table setting", "The chef's mood", "The food's calories"],
+                "correctOptionIndex": 1,
+                "explanation": "Menu design, decor, and table settings provide tangible clues about the restaurant's quality."
+              }
+            ]
         }
       ]
     },
@@ -126,39 +831,731 @@
           "id": "cs-ch1",
           "name": "Algorithms & Data Structures",
           "questions": [
-            {
-              "id": "cs-q1",
-              "question": "Which data structure uses LIFO (Last-In-First-Out)?",
-              "options": [
-                "Queue",
-                "Stack",
-                "Array",
-                "Linked List"
-              ],
-              "correctOptionIndex": 1,
-              "explanation": "A stack removes the most recently added element first."
-            }
-          ]
+              {
+                "id": "ds-q1",
+                "question": "Which data structure follows the Last-In-First-Out (LIFO) principle?",
+                "options": ["Queue", "Linked List", "Stack", "Array"],
+                "correctOptionIndex": 2,
+                "explanation": "A Stack uses LIFO, meaning the last element added is the first one to be removed (like a stack of plates)."
+              },
+              {
+                "id": "ds-q2",
+                "question": "What is the time complexity of searching for an element in a balanced Binary Search Tree (BST)?",
+                "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                "correctOptionIndex": 2,
+                "explanation": "In a balanced BST, each comparison skips half of the remaining nodes, leading to logarithmic time complexity O(log n)."
+              },
+              {
+                "id": "ds-q3",
+                "question": "Which data structure is best for implementing a Breadth-First Search (BFS) on a graph?",
+                "options": ["Stack", "Queue", "Priority Queue", "Hash Table"],
+                "correctOptionIndex": 1,
+                "explanation": "BFS explores neighbors level by level, and a Queue is used to keep track of nodes to visit in the order they were discovered."
+              },
+              {
+                "id": "ds-q4",
+                "question": "What is the worst-case time complexity of QuickSort?",
+                "options": ["O(n log n)", "O(n)", "O(n^2)", "O(log n)"],
+                "correctOptionIndex": 2,
+                "explanation": "QuickSort's worst case is O(n^2), which happens when the pivot is always the smallest or largest element (e.g., sorted array)."
+              },
+              {
+                "id": "ds-q5",
+                "question": "Which sorting algorithm is known for being 'Stable' and having O(n log n) worst-case complexity?",
+                "options": ["QuickSort", "MergeSort", "Selection Sort", "Bubble Sort"],
+                "correctOptionIndex": 1,
+                "explanation": "MergeSort is stable (preserves order of equal elements) and consistently runs in O(n log n) time."
+              },
+              {
+                "id": "ds-q6",
+                "question": "A Linked List where the last node points back to the first node is called:",
+                "options": ["Doubly Linked List", "Singly Linked List", "Circular Linked List", "Binary Tree"],
+                "correctOptionIndex": 2,
+                "explanation": "In a Circular Linked List, there is no NULL at the end; instead, it circles back to the head."
+              },
+              {
+                "id": "ds-q7",
+                "question": "What is the main advantage of a Hash Table?",
+                "options": ["It keeps data sorted", "It uses very little memory", "It provides O(1) average time complexity for search and insertion", "It is easy to implement manually"],
+                "correctOptionIndex": 2,
+                "explanation": "Hash Tables use a hash function to map keys to indices, allowing for nearly constant time access."
+              },
+              {
+                "id": "ds-q8",
+                "question": "In a Max-Heap, where is the largest element located?",
+                "options": ["At a leaf node", "At the root node", "In the middle", "It can be anywhere"],
+                "correctOptionIndex": 1,
+                "explanation": "By definition, the root of a Max-Heap contains the maximum value in the entire heap."
+              },
+              {
+                "id": "ds-q9",
+                "question": "Which algorithm is used to find the shortest path in a weighted graph with no negative edges?",
+                "options": ["Prim's Algorithm", "Kruskal's Algorithm", "Dijkstra's Algorithm", "Depth-First Search"],
+                "correctOptionIndex": 2,
+                "explanation": "Dijkstra's algorithm efficiently finds the shortest path from a source node to all other nodes in a weighted graph."
+              },
+              {
+                "id": "ds-q10",
+                "question": "The process of a function calling itself is known as:",
+                "options": ["Iteration", "Recursion", "Looping", "Encapsulation"],
+                "correctOptionIndex": 1,
+                "explanation": "Recursion occurs when a function calls itself to solve smaller instances of the same problem."
+              },
+              {
+                "id": "ds-q11",
+                "question": "Which data structure is used to implement Depth-First Search (DFS)?",
+                "options": ["Queue", "Stack", "Array", "Linked List"],
+                "correctOptionIndex": 1,
+                "explanation": "DFS goes deep into a branch before backtracking, making a Stack (or the call stack in recursion) the ideal structure."
+              },
+              {
+                "id": "ds-q12",
+                "question": "What is 'Big O' notation used for?",
+                "options": ["To describe the physical size of a computer", "To describe the upper bound of an algorithm's running time", "To name a new variable", "To count the lines of code"],
+                "correctOptionIndex": 1,
+                "explanation": "Big O notation describes the asymptotic worst-case complexity of an algorithm as the input size grows."
+              },
+              {
+                "id": "ds-q13",
+                "question": "Which of the following is NOT a linear data structure?",
+                "options": ["Array", "Linked List", "Binary Tree", "Queue"],
+                "correctOptionIndex": 2,
+                "explanation": "Trees and Graphs are non-linear data structures because elements are organized hierarchically rather than sequentially."
+              },
+              {
+                "id": "ds-q14",
+                "question": "What is the time complexity of Binary Search on a sorted array of size n?",
+                "options": ["O(n)", "O(n log n)", "O(log n)", "O(1)"],
+                "correctOptionIndex": 2,
+                "explanation": "Binary Search halves the search space in each step, resulting in O(log n) complexity."
+              },
+              {
+                "id": "ds-q15",
+                "question": "Which graph algorithm is used to find the Minimum Spanning Tree (MST)?",
+                "options": ["Dijkstra's", "Bellman-Ford", "Kruskal's", "Floyd-Warshall"],
+                "correctOptionIndex": 2,
+                "explanation": "Both Kruskal's and Prim's algorithms are used to find the Minimum Spanning Tree of a connected, weighted graph."
+              },
+              {
+                "id": "ds-q16",
+                "question": "An array is considered a ______ data structure.",
+                "options": ["Dynamic", "Static", "Non-linear", "Hierarchical"],
+                "correctOptionIndex": 1,
+                "explanation": "Standard arrays are static because their size must be defined at the time of creation and cannot be easily changed."
+              },
+              {
+                "id": "ds-q17",
+                "question": "In a Doubly Linked List, each node contains:",
+                "options": ["Only a data field", "Data, next pointer, and previous pointer", "Data and next pointer only", "Data and a key"],
+                "correctOptionIndex": 1,
+                "explanation": "Doubly Linked Lists allow traversal in both directions because each node knows about both its successor and predecessor."
+              },
+              {
+                "id": "ds-q18",
+                "question": "What is 'Space Complexity'?",
+                "options": ["The amount of disk space a program takes", "The amount of memory (RAM) an algorithm uses relative to input size", "The speed of the CPU", "The number of users who can use the app"],
+                "correctOptionIndex": 1,
+                "explanation": "Space complexity measures the total memory used by an algorithm, including both auxiliary space and space used by the input."
+              },
+              {
+                "id": "ds-q19",
+                "question": "Which collision resolution technique in Hashing uses a linked list at each bucket?",
+                "options": ["Open Addressing", "Linear Probing", "Chaining", "Double Hashing"],
+                "correctOptionIndex": 2,
+                "explanation": "In Chaining, all elements that hash to the same index are stored in a linked list at that index."
+              },
+              {
+                "id": "ds-q20",
+                "question": "A Binary Tree where every node has either 0 or 2 children is called a:",
+                "options": ["Full Binary Tree", "Complete Binary Tree", "Perfect Binary Tree", "Balanced Binary Tree"],
+                "correctOptionIndex": 0,
+                "explanation": "A Full Binary Tree is a tree in which every node other than the leaves has two children."
+              }
+            ]
         },
         {
           "id": "cs-ch2",
           "name": "Operating Systems",
-          "questions": []
+          "questions": [
+              {
+                "id": "os-q1",
+                "question": "What is the main purpose of an Operating System?",
+                "options": ["To compile code", "To act as an intermediary between the user and computer hardware", "To design websites", "To manage social media"],
+                "correctOptionIndex": 1,
+                "explanation": "An OS manages hardware resources and provides a platform for application programs to run."
+              },
+              {
+                "id": "os-q2",
+                "question": "What is a 'Process' in OS terms?",
+                "options": ["A program in execution", "A hardware component", "A text file", "A type of memory"],
+                "correctOptionIndex": 0,
+                "explanation": "While a program is a passive entity (like a file on disk), a process is an active entity—a program currently being executed."
+              },
+              {
+                "id": "os-q3",
+                "question": "Which of the following is NOT a state of a process?",
+                "options": ["New", "Running", "Waiting", "Finished"],
+                "correctOptionIndex": 3,
+                "explanation": "The standard process states are New, Ready, Running, Waiting (Blocked), and Terminated."
+              },
+              {
+                "id": "os-q4",
+                "question": "The situation where a set of processes are blocked because each process is holding a resource and waiting for another resource held by another process is called:",
+                "options": ["Starvation", "Deadlock", "Context Switch", "Interrupt"],
+                "correctOptionIndex": 1,
+                "explanation": "Deadlock occurs when four conditions are met: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait."
+              },
+              {
+                "id": "os-q5",
+                "question": "Which scheduling algorithm gives a fixed time slice (quantum) to each process?",
+                "options": ["First-Come, First-Served (FCFS)", "Shortest Job First (SJF)", "Round Robin (RR)", "Priority Scheduling"],
+                "correctOptionIndex": 2,
+                "explanation": "Round Robin is designed for time-sharing systems where each process gets a small unit of CPU time (quantum)."
+              },
+              {
+                "id": "os-q6",
+                "question": "What is 'Virtual Memory'?",
+                "options": ["Extra RAM you buy", "A technique that allows execution of processes that are not completely in main memory", "A type of cache", "Memory used by a virtual reality headset"],
+                "correctOptionIndex": 1,
+                "explanation": "Virtual memory simulates more RAM than is physically available by using a portion of the hard drive."
+              },
+              {
+                "id": "os-q7",
+                "question": "The process of moving a process from main memory to disk to free up space is called:",
+                "options": ["Paging", "Caching", "Swapping", "Segmentation"],
+                "correctOptionIndex": 2,
+                "explanation": "Swapping allows the OS to manage memory more efficiently by moving idle processes to the backing store (disk)."
+              },
+              {
+                "id": "os-q8",
+                "question": "What is a 'Kernel'?",
+                "options": ["A user application", "The core part of the OS that manages system resources", "A type of virus", "The hardware monitor"],
+                "correctOptionIndex": 1,
+                "explanation": "The kernel is the first part of the OS to load and stays in memory to handle low-level tasks like memory and process management."
+              },
+              {
+                "id": "os-q9",
+                "question": "A 'Context Switch' is:",
+                "options": ["Changing the desktop wallpaper", "Saving the state of an old process and loading the saved state for a new process", "Turning off the computer", "Switching between WiFi networks"],
+                "correctOptionIndex": 1,
+                "explanation": "Context switching allows a single CPU to handle multiple processes by rapidly switching between them."
+              },
+              {
+                "id": "os-q10",
+                "question": "Which memory management scheme divides physical memory into fixed-sized blocks?",
+                "options": ["Segmentation", "Paging", "Fragmentation", "Allocation"],
+                "correctOptionIndex": 1,
+                "explanation": "In paging, physical memory is broken into 'frames' and logical memory into 'pages' of the same size."
+              },
+              {
+                "id": "os-q11",
+                "question": "What is 'Thrashing'?",
+                "options": ["Deleting files quickly", "A state where the system spends more time paging than executing", "A hardware failure", "High-speed data transfer"],
+                "correctOptionIndex": 1,
+                "explanation": "Thrashing occurs when a process does not have enough pages, causing a high frequency of page faults."
+              },
+              {
+                "id": "os-q12",
+                "question": "Which of these is a technique to handle deadlocks by ensuring at least one of the four necessary conditions cannot hold?",
+                "options": ["Deadlock Avoidance", "Deadlock Prevention", "Deadlock Detection", "Deadlock Recovery"],
+                "correctOptionIndex": 1,
+                "explanation": "Deadlock prevention provides a set of methods for ensuring that at least one of the necessary conditions for deadlock cannot occur."
+              },
+              {
+                "id": "os-q13",
+                "question": "The 'Banker's Algorithm' is used for:",
+                "options": ["Banking transactions", "Deadlock Avoidance", "File compression", "Sorting data"],
+                "correctOptionIndex": 1,
+                "explanation": "It tests for safety by simulating the allocation of predetermined maximum possible amounts of all resources."
+              },
+              {
+                "id": "os-q14",
+                "question": "What is a 'Sema-phore'?",
+                "options": ["A hardware signal", "A synchronization tool used to manage concurrent processes", "A type of memory error", "A network cable"],
+                "correctOptionIndex": 1,
+                "explanation": "Semaphores are integer variables used to solve critical section problems and synchronize processes."
+              },
+              {
+                "id": "os-q15",
+                "question": "A 'Thread' is often called a:",
+                "options": ["Heavyweight process", "Lightweight process", "Program counter", "Data bus"],
+                "correctOptionIndex": 1,
+                "explanation": "A thread is a basic unit of CPU utilization; multiple threads can exist within the same process, sharing resources."
+              },
+              {
+                "id": "os-q16",
+                "question": "Fragmentation that occurs when there is enough total memory space to satisfy a request but the available spaces are not contiguous is:",
+                "options": ["Internal Fragmentation", "External Fragmentation", "Dynamic Fragmentation", "Fixed Fragmentation"],
+                "correctOptionIndex": 1,
+                "explanation": "External fragmentation results in many small 'holes' in memory that cannot be used for a large process."
+              },
+              {
+                "id": "os-q17",
+                "question": "Which file allocation method uses a table to store pointers to file blocks?",
+                "options": ["Contiguous Allocation", "Linked Allocation", "Indexed Allocation", "Random Allocation"],
+                "correctOptionIndex": 2,
+                "explanation": "Indexed allocation brings all pointers together into one location called the index block."
+              },
+              {
+                "id": "os-q18",
+                "question": "The first block of a disk that contains the code to load the OS is the:",
+                "options": ["File Header", "Boot Block", "Data Block", "Kernel Block"],
+                "correctOptionIndex": 1,
+                "explanation": "The boot block (or MBR) contains the initial instructions to start the system and load the kernel."
+              },
+              {
+                "id": "os-q19",
+                "question": "Which of the following is a 'Preemptive' scheduling algorithm?",
+                "options": ["FCFS", "Non-preemptive SJF", "Priority Scheduling (Preemptive)", "All of the above"],
+                "correctOptionIndex": 2,
+                "explanation": "Preemptive algorithms can interrupt a currently running process to give the CPU to a higher-priority process."
+              },
+              {
+                "id": "os-q20",
+                "question": "What does 'GUI' stand for?",
+                "options": ["General User Interface", "Graphical User Interface", "Global Unit Integration", "Group User Interaction"],
+                "correctOptionIndex": 1,
+                "explanation": "GUI allows users to interact with the OS using visual elements like icons and windows instead of text commands."
+              }
+            ]
         },
         {
           "id": "cs-ch3",
           "name": "Database Systems",
-          "questions": []
+            "questions": [
+              {
+                "id": "db-q1",
+                "question": "Which of the following is a collection of interrelated data and a set of programs to access that data?",
+                "options": ["Operating System", "Database Management System", "Data Structure", "Search Engine"],
+                "correctOptionIndex": 1,
+                "explanation": "A DBMS is software designed to store, retrieve, and manage data in a database efficiently."
+              },
+              {
+                "id": "db-q2",
+                "question": "In a relational database, a 'Relation' is also known as a:",
+                "options": ["Row", "Column", "Table", "Key"],
+                "correctOptionIndex": 2,
+                "explanation": "In relational model terminology, a relation refers to a table, a tuple refers to a row, and an attribute refers to a column."
+              },
+              {
+                "id": "db-q3",
+                "question": "Which SQL command is used to remove all records from a table but keep the structure?",
+                "options": ["DELETE", "DROP", "TRUNCATE", "REMOVE"],
+                "correctOptionIndex": 2,
+                "explanation": "TRUNCATE is a DDL command that deletes all rows in a table, while DROP removes the table structure itself."
+              },
+              {
+                "id": "db-q4",
+                "question": "What does the 'ACID' property in a DBMS stand for?",
+                "options": ["Atomicity, Consistency, Isolation, Durability", "Accuracy, Completeness, Integrity, Design", "Access, Control, Internal, Direct", "Atomicity, Concurrency, Intelligence, Data"],
+                "correctOptionIndex": 0,
+                "explanation": "ACID properties ensure that database transactions are processed reliably."
+              },
+              {
+                "id": "db-q5",
+                "question": "Which key uniquely identifies each record in a table and cannot be NULL?",
+                "options": ["Foreign Key", "Primary Key", "Candidate Key", "Super Key"],
+                "correctOptionIndex": 1,
+                "explanation": "A Primary Key must contain unique values and cannot contain NULL values."
+              },
+              {
+                "id": "db-q6",
+                "question": "Normalization is used to:",
+                "options": ["Increase data redundancy", "Eliminate data redundancy and dependency", "Speed up data entry", "Encrypt the database"],
+                "correctOptionIndex": 1,
+                "explanation": "Normalization organizes data to minimize duplication and ensure data is stored logically."
+              },
+              {
+                "id": "db-q7",
+                "question": "A table is in ________ if it is in 1NF and all non-key attributes are fully functionally dependent on the primary key.",
+                "options": ["2NF", "3NF", "BCNF", "4NF"],
+                "correctOptionIndex": 0,
+                "explanation": "Second Normal Form (2NF) removes partial functional dependencies."
+              },
+              {
+                "id": "db-q8",
+                "question": "Which SQL clause is used to filter the results of an aggregate function?",
+                "options": ["WHERE", "ORDER BY", "HAVING", "GROUP BY"],
+                "correctOptionIndex": 2,
+                "explanation": "While WHERE filters rows, HAVING is used specifically to filter groups created by GROUP BY."
+              },
+              {
+                "id": "db-q9",
+                "question": "Which level of database abstraction describes 'how' the data is actually stored on the disk?",
+                "options": ["Physical Level", "Logical Level", "View Level", "Conceptual Level"],
+                "correctOptionIndex": 0,
+                "explanation": "The Physical level is the lowest level of abstraction that describes complex low-level data structures."
+              },
+              {
+                "id": "db-q10",
+                "question": "A Foreign Key is used to establish a relationship between:",
+                "options": ["Two rows in the same table", "Two columns in the same table", "Two tables", "Database and OS"],
+                "correctOptionIndex": 2,
+                "explanation": "A foreign key in one table points to a primary key in another table to link them."
+              },
+              {
+                "id": "db-q11",
+                "question": "Which join returns all records when there is a match in either left or right table?",
+                "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+                "correctOptionIndex": 3,
+                "explanation": "FULL OUTER JOIN combines the results of both LEFT and RIGHT joins."
+              },
+              {
+                "id": "db-q12",
+                "question": "In an ER Diagram, what does a 'Diamond' shape represent?",
+                "options": ["Entity", "Attribute", "Relationship", "Primary Key"],
+                "correctOptionIndex": 2,
+                "explanation": "In Entity-Relationship modeling, rectangles represent entities, ovals represent attributes, and diamonds represent relationships."
+              },
+              {
+                "id": "db-q13",
+                "question": "What is 'Data Independence'?",
+                "options": ["The ability to use the database without a password", "The ability to modify a schema definition in one level without affecting the schema definition in the next higher level", "The database can run without an OS", "Data can be stored in any format"],
+                "correctOptionIndex": 1,
+                "explanation": "Data independence separates the data from the programs that use it."
+              },
+              {
+                "id": "db-q14",
+                "question": "Which SQL statement is used to add a new column to an existing table?",
+                "options": ["UPDATE TABLE", "MODIFY TABLE", "ALTER TABLE", "INSERT INTO"],
+                "correctOptionIndex": 2,
+                "explanation": "ALTER TABLE is used to add, delete, or modify columns in an existing table."
+              },
+              {
+                "id": "db-q15",
+                "question": "The 'Consistency' property of a transaction ensures that:",
+                "options": ["The transaction is completed in one second", "The database moves from one valid state to another valid state", "Only one user can access the database", "Data is compressed"],
+                "correctOptionIndex": 1,
+                "explanation": "Consistency ensures that all database rules (constraints, triggers) are followed during the transaction."
+              },
+              {
+                "id": "db-q16",
+                "question": "Which integrity constraint ensures that a value appearing in one relation for a given set of attributes also appears for a certain set of attributes in another relation?",
+                "options": ["Entity Integrity", "Referential Integrity", "Domain Integrity", "Unique Constraint"],
+                "correctOptionIndex": 1,
+                "explanation": "Referential integrity is maintained through the use of foreign keys."
+              },
+              {
+                "id": "db-q17",
+                "question": "What is a 'View' in SQL?",
+                "options": ["A physical table stored on disk", "A virtual table based on the result-set of an SQL statement", "A type of index", "The database administrator's screen"],
+                "correctOptionIndex": 1,
+                "explanation": "A view contains rows and columns just like a real table, but it does not store data physically."
+              },
+              {
+                "id": "db-q18",
+                "question": "The process of recovering a database to a consistent state after a crash is called:",
+                "options": ["Normalization", "Transaction Management", "Database Recovery", "Concurrency Control"],
+                "correctOptionIndex": 2,
+                "explanation": "Recovery techniques (like log-based recovery) restore the database after hardware or software failures."
+              },
+              {
+                "id": "db-q19",
+                "question": "Which of the following is an example of a NoSQL database?",
+                "options": ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
+                "correctOptionIndex": 2,
+                "explanation": "MongoDB is a document-oriented NoSQL database, whereas the others are relational (RDBMS)."
+              },
+              {
+                "id": "db-q20",
+                "question": "The 'GRANT' and 'REVOKE' commands belong to which SQL sub-language?",
+                "options": ["DDL", "DML", "DCL", "TCL"],
+                "correctOptionIndex": 2,
+                "explanation": "DCL (Data Control Language) is used to control access to data in the database."
+              }
+            ]
         },
         {
           "id": "cs-ch4",
           "name": "Computer Networks",
-          "questions": []
+            "questions": [
+              {
+                "id": "cn-q1",
+                "question": "Which layer of the OSI model is responsible for logical addressing and routing?",
+                "options": ["Data Link Layer", "Network Layer", "Transport Layer", "Physical Layer"],
+                "correctOptionIndex": 1,
+                "explanation": "The Network Layer handles IP addressing and finds the best path for data packets to reach their destination."
+              },
+              {
+                "id": "cn-q2",
+                "question": "What is the correct order of the OSI layers from bottom to top?",
+                "options": ["Physical, Data Link, Network, Transport, Session, Presentation, Application", "Application, Presentation, Session, Transport, Network, Data Link, Physical", "Physical, Network, Data Link, Transport, Session, Application, Presentation", "Data Link, Physical, Network, Transport, Session, Presentation, Application"],
+                "correctOptionIndex": 0,
+                "explanation": "The OSI model consists of 7 layers starting from Physical (Layer 1) up to Application (Layer 7)."
+              },
+              {
+                "id": "cn-q3",
+                "question": "Which protocol is used to map an IP address to a physical MAC address?",
+                "options": ["DNS", "DHCP", "ARP", "HTTP"],
+                "correctOptionIndex": 2,
+                "explanation": "ARP (Address Resolution Protocol) finds the hardware address (MAC) associated with a known IP address."
+              },
+              {
+                "id": "cn-q4",
+                "question": "What is the purpose of a Subnet Mask?",
+                "options": ["To identify the MAC address", "To distinguish between the network portion and the host portion of an IP address", "To encrypt data packets", "To speed up the internet"],
+                "correctOptionIndex": 1,
+                "explanation": "A subnet mask determines which part of an IP address belongs to the network and which part belongs to the specific device (host)."
+              },
+              {
+                "id": "cn-q5",
+                "question": "Which Transport Layer protocol is connection-oriented and ensures reliable delivery?",
+                "options": ["UDP", "IP", "TCP", "ICMP"],
+                "correctOptionIndex": 2,
+                "explanation": "TCP (Transmission Control Protocol) uses a three-way handshake to establish a connection and guarantees data arrival."
+              },
+              {
+                "id": "cn-q6",
+                "question": "What is the function of the DNS (Domain Name System)?",
+                "options": ["To assign IP addresses to devices", "To translate human-readable domain names (like google.com) into IP addresses", "To filter network traffic", "To send emails"],
+                "correctOptionIndex": 1,
+                "explanation": "DNS acts like a phonebook for the internet, mapping names to numbers (IPs)."
+              },
+              {
+                "id": "cn-q7",
+                "question": "In a Star topology, all devices are connected to a central device called a:",
+                "options": ["Router", "Bridge", "Hub or Switch", "Gateway"],
+                "correctOptionIndex": 2,
+                "explanation": "In a star topology, if the central hub or switch fails, the entire network goes down."
+              },
+              {
+                "id": "cn-q8",
+                "question": "Which of the following is a private IP address?",
+                "options": ["8.8.8.8", "172.16.0.1", "200.100.10.1", "1.1.1.1"],
+                "correctOptionIndex": 1,
+                "explanation": "172.16.0.0 to 172.31.255.255 is a reserved range for private networks (Class B)."
+              },
+              {
+                "id": "cn-q9",
+                "question": "What is 'CSMA/CD' used for in Ethernet?",
+                "options": ["Data encryption", "Routing packets", "Collision detection in shared media", "Assigning port numbers"],
+                "correctOptionIndex": 2,
+                "explanation": "Carrier Sense Multiple Access with Collision Detection helps devices manage data transmission to avoid collisions."
+              },
+              {
+                "id": "cn-q10",
+                "question": "Which layer of the OSI model handles data compression and encryption?",
+                "options": ["Application Layer", "Presentation Layer", "Session Layer", "Transport Layer"],
+                "correctOptionIndex": 1,
+                "explanation": "The Presentation Layer ensures that data is in a format the application layer can understand, including encryption."
+              },
+              {
+                "id": "cn-q11",
+                "question": "An IPv6 address consists of how many bits?",
+                "options": ["32 bits", "64 bits", "128 bits", "256 bits"],
+                "correctOptionIndex": 2,
+                "explanation": "IPv6 was developed to replace IPv4 (32-bit) to provide a much larger pool of unique IP addresses."
+              },
+              {
+                "id": "cn-q12",
+                "question": "Which network device operates at the Data Link Layer (Layer 2) and uses MAC addresses to forward data?",
+                "options": ["Hub", "Repeater", "Switch", "Router"],
+                "correctOptionIndex": 2,
+                "explanation": "A Switch is 'intelligent' compared to a Hub; it sends data only to the specific port where the destination device is connected."
+              },
+              {
+                "id": "cn-q13",
+                "question": "What is the standard port number for the HTTP protocol?",
+                "options": ["21", "25", "80", "443"],
+                "correctOptionIndex": 2,
+                "explanation": "Port 80 is used for unencrypted web traffic (HTTP), while Port 443 is used for secure traffic (HTTPS)."
+              },
+              {
+                "id": "cn-q14",
+                "question": "The 'Ping' command uses which protocol to test connectivity?",
+                "options": ["TCP", "UDP", "ICMP", "SMTP"],
+                "correctOptionIndex": 2,
+                "explanation": "ICMP (Internet Control Message Protocol) is used for network diagnostics and error reporting."
+              },
+              {
+                "id": "cn-q15",
+                "question": "Which of the following is an example of a 'Full-Duplex' communication?",
+                "options": ["Radio broadcasting", "Walkie-talkie", "Telephone conversation", "TV remote control"],
+                "correctOptionIndex": 2,
+                "explanation": "Full-duplex allows both parties to send and receive data simultaneously."
+              },
+              {
+                "id": "cn-q16",
+                "question": "What is the primary function of a Router?",
+                "options": ["Connecting devices in a single LAN", "Connecting different networks and routing packets between them", "Boosting WiFi signals", "Storing files"],
+                "correctOptionIndex": 1,
+                "explanation": "Routers operate at the Network Layer and use routing tables to direct traffic across multiple networks."
+              },
+              {
+                "id": "cn-q17",
+                "question": "Which protocol is used by a host to automatically obtain an IP address from a server?",
+                "options": ["DNS", "DHCP", "FTP", "SSH"],
+                "correctOptionIndex": 1,
+                "explanation": "DHCP (Dynamic Host Configuration Protocol) automates the process of network configuration for devices."
+              },
+              {
+                "id": "cn-q18",
+                "question": "What is a 'Firewall' used for?",
+                "options": ["To speed up the CPU", "To monitor and control incoming/outgoing network traffic based on security rules", "To cool down the server", "To connect a mouse to the PC"],
+                "correctOptionIndex": 1,
+                "explanation": "A firewall acts as a barrier between a trusted internal network and untrusted external networks (like the internet)."
+              },
+              {
+                "id": "cn-q19",
+                "question": "Which of the following is a connectionless transport protocol?",
+                "options": ["TCP", "UDP", "HTTP", "FTP"],
+                "correctOptionIndex": 1,
+                "explanation": "UDP (User Datagram Protocol) does not establish a connection before sending data, making it faster but less reliable."
+              },
+              {
+                "id": "cn-q20",
+                "question": "What is the range of Class C IP addresses?",
+                "options": ["1-126", "128-191", "192-223", "224-239"],
+                "correctOptionIndex": 2,
+                "explanation": "Class C addresses start with a first octet in the range of 192 to 223."
+              }
+            ]
         },
         {
           "id": "cs-ch5",
           "name": "Software Engineering",
-          "questions": []
+            "questions": [
+              {
+                "id": "se-q1",
+                "question": "What is the primary goal of Software Engineering?",
+                "options": ["To write code as fast as possible", "To produce high-quality software in a cost-effective and efficient manner", "To build hardware components", "To use the latest programming language"],
+                "correctOptionIndex": 1,
+                "explanation": "Software Engineering applies engineering principles to software development to ensure reliability, quality, and maintainability."
+              },
+              {
+                "id": "se-q2",
+                "question": "Which SDLC model is a linear and sequential approach where each phase must be completed before the next begins?",
+                "options": ["Agile Model", "Waterfall Model", "Spiral Model", "V-Model"],
+                "correctOptionIndex": 1,
+                "explanation": "The Waterfall model is the oldest and simplest model, following a strict sequence from requirements to maintenance."
+              },
+              {
+                "id": "se-q3",
+                "question": "What does the 'Agile Manifesto' prioritize?",
+                "options": ["Comprehensive documentation", "Following a strict plan", "Individuals and interactions over processes and tools", "Contract negotiation"],
+                "correctOptionIndex": 2,
+                "explanation": "Agile emphasizes flexibility, customer collaboration, and working software over rigid processes."
+              },
+              {
+                "id": "se-q4",
+                "question": "In Requirement Engineering, 'Functional Requirements' describe:",
+                "options": ["How the system should behave (performance)", "What the system should do (services/features)", "The budget of the project", "The programming language to be used"],
+                "correctOptionIndex": 1,
+                "explanation": "Functional requirements define specific behaviors or functions, while non-functional requirements define quality attributes like security and speed."
+              },
+              {
+                "id": "se-q5",
+                "question": "Which type of testing is performed by developers to test individual components of the code?",
+                "options": ["System Testing", "Acceptance Testing", "Unit Testing", "Integration Testing"],
+                "correctOptionIndex": 2,
+                "explanation": "Unit testing focuses on the smallest testable parts of an application in isolation."
+              },
+              {
+                "id": "se-q6",
+                "question": "What is 'Software Maintenance'?",
+                "options": ["Buying new computers", "The process of modifying software after delivery to correct faults or improve performance", "Writing the first line of code", "Designing the database"],
+                "correctOptionIndex": 1,
+                "explanation": "Maintenance is the final stage of SDLC and often the most expensive part of the software life cycle."
+              },
+              {
+                "id": "se-q7",
+                "question": "The 'Spiral Model' is best suited for projects that are:",
+                "options": ["Small and simple", "Large, complex, and high-risk", "Very short-term", "Done by a single person"],
+                "correctOptionIndex": 1,
+                "explanation": "The Spiral model focuses heavily on risk assessment and iterative development."
+              },
+              {
+                "id": "se-q8",
+                "question": "What is a 'Feasibility Study' intended to determine?",
+                "options": ["The color of the UI", "Whether the project is technically and financially possible", "The number of lines of code", "The best sorting algorithm"],
+                "correctOptionIndex": 1,
+                "explanation": "A feasibility study evaluates if the proposed system is worth the investment before the actual development starts."
+              },
+              {
+                "id": "se-q9",
+                "question": "Which testing level ensures that different modules or services work together correctly?",
+                "options": ["Unit Testing", "Integration Testing", "Alpha Testing", "Beta Testing"],
+                "correctOptionIndex": 1,
+                "explanation": "Integration testing identifies issues in the interaction between integrated units."
+              },
+              {
+                "id": "se-q10",
+                "question": "What is 'White-Box Testing'?",
+                "options": ["Testing without knowing the internal code structure", "Testing with knowledge of the internal code and logic", "Testing only the user interface", "Testing performed by the end-user"],
+                "correctOptionIndex": 1,
+                "explanation": "White-box testing (or structural testing) examines the internal logic and paths of the code."
+              },
+              {
+                "id": "se-q11",
+                "question": "What does 'SRS' stand for in Software Engineering?",
+                "options": ["System Recovery Suite", "Software Requirements Specification", "Standard Report System", "Software Resource Selection"],
+                "correctOptionIndex": 1,
+                "explanation": "The SRS document is a formal report that lists all requirements for the system to be developed."
+              },
+              {
+                "id": "se-q12",
+                "question": "Which design principle suggests that a module should focus on a single task?",
+                "options": ["Coupling", "Cohesion", "Abstraction", "Encapsulation"],
+                "correctOptionIndex": 1,
+                "explanation": "High cohesion is desirable because it means a module is focused and manageable."
+              },
+              {
+                "id": "se-q13",
+                "question": "What is 'Low Coupling' in software design?",
+                "options": ["High dependency between modules", "Minimal dependency between modules", "Modules that have no code", "Modules written in the same language"],
+                "correctOptionIndex": 1,
+                "explanation": "Low coupling is a sign of a well-structured system, making it easier to modify one module without affecting others."
+              },
+              {
+                "id": "se-q14",
+                "question": "In the V-Model, 'Validation' is often associated with:",
+                "options": ["Checking if we are building the product right", "Checking if we built the right product according to user needs", "Writing documentation", "Hiring developers"],
+                "correctOptionIndex": 1,
+                "explanation": "Validation asks 'Did we build what the user actually wanted?', while verification asks 'Does the product meet the specs?'."
+              },
+              {
+                "id": "se-q15",
+                "question": "What is 'Regression Testing'?",
+                "options": ["Testing a new feature", "Re-running tests to ensure that new changes haven't broken existing functionality", "Testing the system's speed", "Deleting the database"],
+                "correctOptionIndex": 1,
+                "explanation": "Regression testing is crucial after every update to ensure stability."
+              },
+              {
+                "id": "se-q16",
+                "question": "Which of the following is a 'Non-functional Requirement'?",
+                "options": ["The system shall allow users to log in", "The system shall process 1000 transactions per second", "The system shall generate monthly reports", "The system shall send email alerts"],
+                "correctOptionIndex": 1,
+                "explanation": "Performance, scalability, and security are non-functional requirements (quality attributes)."
+              },
+              {
+                "id": "se-q17",
+                "question": "What is 'Beta Testing'?",
+                "options": ["Testing done by the development team", "Testing performed by real users in their own environment before final release", "Testing using robots", "Testing only the database"],
+                "correctOptionIndex": 1,
+                "explanation": "Beta testing is a type of external acceptance testing."
+              },
+              {
+                "id": "se-q18",
+                "question": "In UML, an 'Actor' represents:",
+                "options": ["A programmer", "An external entity that interacts with the system", "A variable in the code", "A hardware server"],
+                "correctOptionIndex": 1,
+                "explanation": "In Use Case diagrams, actors can be humans or other systems interacting with the software."
+              },
+              {
+                "id": "se-q19",
+                "question": "What is the purpose of 'Software Prototyping'?",
+                "options": ["To build the final product directly", "To create an early, simplified version of the system to clarify requirements", "To save money by not testing", "To replace documentation"],
+                "correctOptionIndex": 1,
+                "explanation": "Prototyping helps stakeholders visualize the system and provide early feedback."
+              },
+              {
+                "id": "se-q20",
+                "question": "Which Agile framework uses 'Sprints' and 'Scrum Masters'?",
+                "options": ["Kanban", "Scrum", "Extreme Programming (XP)", "Lean"],
+                "correctOptionIndex": 1,
+                "explanation": "Scrum is a popular Agile framework for managing complex software development through iterative cycles."
+              }
+            ]
         }
       ]
     },
@@ -169,12 +1566,294 @@
         {
           "id": "edpm-ch1",
           "name": "Educational Planning Basics",
-          "questions": []
+            "questions": [
+              {
+                "id": "edpm-q1",
+                "question": "What is the primary goal of educational planning?",
+                "options": ["To build more schools only", "To achieve educational goals by making the best use of available resources", "To increase teacher salaries", "To reduce the number of students"],
+                "correctOptionIndex": 1,
+                "explanation": "Educational planning is a rational process of preparing a set of decisions for future action directed at achieving goals with optimal resource use."
+              },
+              {
+                "id": "edpm-q2",
+                "question": "Which type of planning covers a period of 10 to 20 years and sets the long-term vision?",
+                "options": ["Short-term planning", "Medium-term planning", "Perspective (Long-term) planning", "Operational planning"],
+                "correctOptionIndex": 2,
+                "explanation": "Perspective planning provides a long-range framework within which shorter plans are developed."
+              },
+              {
+                "id": "edpm-q3",
+                "question": "The 'Social Demand Approach' to educational planning focuses on:",
+                "options": ["The manpower needs of the economy", "The educational needs and desires of the general public", "The cost-benefit ratio of education", "The number of teachers available"],
+                "correctOptionIndex": 1,
+                "explanation": "The Social Demand approach attempts to provide education to all individuals who want it and are qualified for it."
+              },
+              {
+                "id": "edpm-q4",
+                "question": "Which approach to educational planning views education as an investment in human capital to drive economic growth?",
+                "options": ["Social Demand Approach", "Manpower Requirement Approach", "Rate of Return Approach", "Synthetic Approach"],
+                "correctOptionIndex": 2,
+                "explanation": "The Rate of Return approach compares the costs of education with the expected increase in income for the individual and society."
+              },
+              {
+                "id": "edpm-q5",
+                "question": "What is the first stage in the educational planning process?",
+                "options": ["Plan implementation", "Diagnosis of the current situation", "Formulation of objectives", "Evaluation of the plan"],
+                "correctOptionIndex": 1,
+                "explanation": "Planning must start with a thorough assessment (diagnosis) of the existing educational system to identify problems and gaps."
+              },
+              {
+                "id": "edpm-q6",
+                "question": "The 'Manpower Requirement Approach' is primarily concerned with:",
+                "options": ["Social justice", "Providing enough skilled workers for different sectors of the economy", "Lowering school fees", "Increasing student enrollment in arts"],
+                "correctOptionIndex": 1,
+                "explanation": "This approach estimates the number of graduates needed in specific professions (engineers, doctors, etc.) based on economic forecasts."
+              },
+              {
+                "id": "edpm-q7",
+                "question": "Strategic planning in education is typically performed by:",
+                "options": ["School principals only", "Top-level education officials and policymakers", "Classroom teachers", "Parents"],
+                "correctOptionIndex": 1,
+                "explanation": "Strategic planning involves high-level decisions regarding the mission, vision, and broad policies of the education system."
+              },
+              {
+                "id": "edpm-q8",
+                "question": "What does 'Efficiency' in educational planning refer to?",
+                "options": ["The ability to build tall schools", "The relationship between inputs (money, teachers) and outputs (graduates)", "The number of holidays in a year", "The quality of textbooks"],
+                "correctOptionIndex": 1,
+                "explanation": "Efficiency is about achieving the maximum possible output from a given set of inputs."
+              },
+              {
+                "id": "edpm-q9",
+                "question": "An educational plan that is broken down into yearly targets and specific tasks is called:",
+                "options": ["Perspective plan", "Operational (Annual) plan", "Strategic plan", "Regional plan"],
+                "correctOptionIndex": 1,
+                "explanation": "Operational plans translate broad goals into concrete, short-term actions and budgets."
+              },
+              {
+                "id": "edpm-q10",
+                "question": "Which of the following is a 'Non-monetary' resource in educational planning?",
+                "options": ["Government grants", "Time and expertise", "Tuition fees", "School equipment costs"],
+                "correctOptionIndex": 1,
+                "explanation": "Human resources, time, and curriculum quality are critical non-monetary inputs in planning."
+              },
+              {
+                "id": "edpm-q11",
+                "question": "What is 'Bottom-up' planning in education?",
+                "options": ["The Ministry of Education making all decisions", "Planning that starts from the school and community level up to the national level", "Ignoring the needs of students", "Planning only for primary schools"],
+                "correctOptionIndex": 1,
+                "explanation": "Bottom-up planning encourages decentralization and local participation in decision-making."
+              },
+              {
+                "id": "edpm-q12",
+                "question": "Which of these is a major constraint in educational planning in developing countries?",
+                "options": ["Too much data", "Limited financial resources and lack of accurate data", "Having too many qualified planners", "Low population growth"],
+                "correctOptionIndex": 1,
+                "explanation": "Financial limitations and poor statistical data often hinder effective planning in many regions."
+              },
+              {
+                "id": "edpm-q13",
+                "question": "The process of monitoring the implementation of a plan to ensure it stays on track is called:",
+                "options": ["Diagnosis", "Formulation", "Supervision and Control", "Evaluation"],
+                "correctOptionIndex": 2,
+                "explanation": "Supervision ensures that resources are being used as planned and targets are being met during the implementation phase."
+              },
+              {
+                "id": "edpm-q14",
+                "question": "What is 'Equity' in education?",
+                "options": ["Ensuring everyone has the same color uniform", "Fair distribution of educational opportunities regardless of gender, region, or wealth", "Building schools only in cities", "Focusing only on the brightest students"],
+                "correctOptionIndex": 1,
+                "explanation": "Equity focuses on fairness and removing barriers that prevent marginalized groups from accessing quality education."
+              },
+              {
+                "id": "edpm-q15",
+                "question": "A 'SWOT Analysis' in educational planning evaluates:",
+                "options": ["Only the teachers' performance", "Strengths, Weaknesses, Opportunities, and Threats of the education system", "The cost of school lunches", "The number of students who failed"],
+                "correctOptionIndex": 1,
+                "explanation": "SWOT analysis is a strategic tool used during the diagnosis phase to understand internal and external factors."
+              },
+              {
+                "id": "edpm-q16",
+                "question": "Educational 'Output' refers to:",
+                "options": ["The number of students enrolled", "The number of students who successfully complete a cycle (graduates)", "The amount of money spent per student", "The number of classrooms built"],
+                "correctOptionIndex": 1,
+                "explanation": "Outputs are the direct results of the educational process, such as graduates or literacy rates."
+              },
+              {
+                "id": "edpm-q17",
+                "question": "Which level of planning focuses on a specific town or province?",
+                "options": ["Macro-planning", "Micro-planning (Regional/Local)", "International planning", "Institutional planning"],
+                "correctOptionIndex": 1,
+                "explanation": "Micro-planning focuses on the specific needs of local communities and individual institutions."
+              },
+              {
+                "id": "edpm-q18",
+                "question": "The 'Synthetic (Integrated) Approach' to educational planning combines:",
+                "options": ["Science and Arts subjects", "Primary and Secondary education", "Social demand, manpower needs, and rate of return approaches", "Public and Private schools"],
+                "correctOptionIndex": 2,
+                "explanation": "Because no single approach is perfect, planners often use a combination of methods to balance social and economic needs."
+              },
+              {
+                "id": "edpm-q19",
+                "question": "What is the purpose of 'Plan Evaluation'?",
+                "options": ["To punish teachers", "To determine if the plan achieved its intended goals and learn for future planning", "To increase the length of the school year", "To hire new planners"],
+                "correctOptionIndex": 1,
+                "explanation": "Evaluation is the final stage where the success or failure of the plan is measured against its original objectives."
+              },
+              {
+                "id": "edpm-q20",
+                "question": "In educational planning, 'Quality' is best measured by:",
+                "options": ["The height of the school fence", "Student learning outcomes and the relevance of education", "The number of students in a class", "The weight of the textbooks"],
+                "correctOptionIndex": 1,
+                "explanation": "Quality education is defined by how well students learn and how useful that learning is for their lives and society."
+              }
+            ]
         },
         {
           "id": "edpm-ch2",
           "name": "School Administration",
-          "questions": []
+          "questions": [
+              {
+                "id": "adm-q1",
+                "question": "What is the primary purpose of school administration?",
+                "options": ["To collect school fees", "To facilitate teaching and learning and achieve educational goals", "To keep the school gates closed", "To punish misbehaving students"],
+                "correctOptionIndex": 1,
+                "explanation": "Administration exists to manage resources and processes in a way that creates an optimal environment for student learning."
+              },
+              {
+                "id": "adm-q2",
+                "question": "Which of the following is considered a 'Technical Skill' for a school principal?",
+                "options": ["The ability to communicate with parents", "Knowledge of curriculum development and instructional techniques", "The ability to manage stress", "Being a good public speaker"],
+                "correctOptionIndex": 1,
+                "explanation": "Technical skills involve specialized knowledge related to the specific field of education and instruction."
+              },
+              {
+                "id": "adm-q3",
+                "question": "The administrative process that involves assigning duties and authority to subordinates is called:",
+                "options": ["Planning", "Delegation", "Controlling", "Supervision"],
+                "correctOptionIndex": 1,
+                "explanation": "Delegation allows a principal to share the workload and empower other staff members."
+              },
+              {
+                "id": "adm-q4",
+                "question": "In school management, 'Human Resource Management' (HRM) primarily focuses on:",
+                "options": ["Buying new textbooks", "Recruiting, developing, and retaining qualified teachers and staff", "Building new classrooms", "Managing the school bus"],
+                "correctOptionIndex": 1,
+                "explanation": "HRM is about managing the people who work in the school to ensure they are effective and motivated."
+              },
+              {
+                "id": "adm-q5",
+                "question": "Which leadership style involves the leader making all decisions without consulting staff?",
+                "options": ["Democratic Style", "Laissez-faire Style", "Autocratic (Authoritarian) Style", "Participatory Style"],
+                "correctOptionIndex": 2,
+                "explanation": "Autocratic leaders maintain total control and centralized decision-making power."
+              },
+              {
+                "id": "adm-q6",
+                "question": "What is the main role of a 'School Board' or 'Parent-Teacher Association' (PTA)?",
+                "options": ["To teach students daily", "To provide a link between the school and the community", "To grade exams", "To choose the school uniform only"],
+                "correctOptionIndex": 1,
+                "explanation": "PTAs and boards foster community involvement and support for school development."
+              },
+              {
+                "id": "adm-q7",
+                "question": "The document that outlines the school’s daily schedule, including lessons and breaks, is the:",
+                "options": ["School Budget", "School Timetable", "School Prospectus", "Lesson Plan"],
+                "correctOptionIndex": 1,
+                "explanation": "The timetable is an essential administrative tool for organizing time and resources efficiently."
+              },
+              {
+                "id": "adm-q8",
+                "question": "Which type of supervision focuses on helping teachers improve their classroom instruction rather than judging them?",
+                "options": ["Corrective Supervision", "Clinical (Developmental) Supervision", "Administrative Supervision", "Authoritarian Supervision"],
+                "correctOptionIndex": 1,
+                "explanation": "Clinical supervision is collaborative and aims at the professional growth of the teacher."
+              },
+              {
+                "id": "adm-q9",
+                "question": "What is the primary goal of 'School Records Management'?",
+                "options": ["To waste paper", "To provide accurate information for decision-making and accountability", "To hide the school's problems", "To fill up storage rooms"],
+                "correctOptionIndex": 1,
+                "explanation": "Proper records (attendance, grades, financial) are vital for transparency and effective planning."
+              },
+              {
+                "id": "adm-q10",
+                "question": "In a 'Democratic' leadership style, decisions are made:",
+                "options": ["By the principal alone", "Through consultation and participation of staff members", "By the students only", "By no one"],
+                "correctOptionIndex": 1,
+                "explanation": "Democratic leadership encourages input and teamwork, often leading to higher staff morale."
+              },
+              {
+                "id": "adm-q11",
+                "question": "What is 'School Climate'?",
+                "options": ["The weather at the school location", "The social and emotional atmosphere and 'feel' of the school", "The number of trees in the school yard", "The type of heating system used"],
+                "correctOptionIndex": 1,
+                "explanation": "A positive school climate supports student well-being and academic success."
+              },
+              {
+                "id": "adm-q12",
+                "question": "Which administrative function involves comparing actual performance with set standards and taking corrective action?",
+                "options": ["Planning", "Organizing", "Controlling (Evaluation)", "Directing"],
+                "correctOptionIndex": 2,
+                "explanation": "Controlling ensures that the school is meeting its objectives as planned."
+              },
+              {
+                "id": "adm-q13",
+                "question": "The 'Span of Control' in a school refers to:",
+                "options": ["The size of the school compound", "The number of staff members a principal can effectively manage", "The duration of the school day", "The power of the Ministry of Education"],
+                "correctOptionIndex": 1,
+                "explanation": "Managing too many direct reports can lead to inefficiency and lack of supervision."
+              },
+              {
+                "id": "adm-q14",
+                "question": "What is a 'School Budget'?",
+                "options": ["A list of all students", "A financial plan estimating income and expenditures for a specific period", "A history of the school", "The school's curriculum"],
+                "correctOptionIndex": 1,
+                "explanation": "Budgeting is a critical administrative task that ensures funds are allocated to educational priorities."
+              },
+              {
+                "id": "adm-q15",
+                "question": "Which of these is a 'Line' position in a school hierarchy?",
+                "options": ["Department Head", "Administrative Assistant", "External Auditor", "School Counselor"],
+                "correctOptionIndex": 0,
+                "explanation": "Line positions have direct authority and responsibility for achieving the primary goals (teaching)."
+              },
+              {
+                "id": "adm-q16",
+                "question": "The process of helping new teachers adjust to the school environment is called:",
+                "options": ["Recruitment", "Selection", "Induction (Orientation)", "Retirement"],
+                "correctOptionIndex": 2,
+                "explanation": "Induction helps new staff understand school policies, culture, and expectations."
+              },
+              {
+                "id": "adm-q17",
+                "question": "What is 'Instructional Leadership'?",
+                "options": ["Managing the school finances", "Leadership focused on improving the quality of teaching and student learning", "Fixing broken chairs", "Organizing sports events"],
+                "correctOptionIndex": 1,
+                "explanation": "Instructional leaders prioritize the academic core of the school."
+              },
+              {
+                "id": "adm-q18",
+                "question": "Conflict in a school is best managed by:",
+                "options": ["Ignoring it", "Firing everyone involved", "Addressing it through communication and finding common ground", "Suspending students immediately"],
+                "correctOptionIndex": 2,
+                "explanation": "Effective administrators use conflict resolution skills to maintain a harmonious environment."
+              },
+              {
+                "id": "adm-q19",
+                "question": "The 'Laissez-faire' leadership style is characterized by:",
+                "options": ["Strict control", "High levels of support", "Giving complete freedom to subordinates to make decisions", "Frequent meetings"],
+                "correctOptionIndex": 2,
+                "explanation": "In this style, the leader provides little guidance, which can work with highly expert staff but may lead to lack of direction."
+              },
+              {
+                "id": "adm-q20",
+                "question": "The principle of 'Unity of Command' means:",
+                "options": ["Everyone should be friends", "Each employee should report to only one supervisor", "The school should have only one classroom", "All subjects are equal"],
+                "correctOptionIndex": 1,
+                "explanation": "This principle avoids confusion and conflicting instructions for staff members."
+              }
+            ]
         },
         {
           "id": "edpm-ch3",
