@@ -7,52 +7,737 @@
         {
           "id": "acc-ch1",
           "name": "Financial Accounting Basics",
-          "questions": [
+          "questions": 
+        [
+          {
+            "id": "q1-1",
+            "question": "Which accounting principle states that a business is separate from its owner?",
+            "options": ["Going Concern", "Business Entity Concept", "Matching Principle", "Revenue Recognition"],
+            "correctOptionIndex": 1,
+            "explanation": "The Business Entity concept ensures that the personal transactions of the owner are not mixed with the business transactions."
+          },
+          {
+            "id": "q1-2",
+            "question": "What is the accounting equation?",
+            "options": ["Assets = Liabilities - Equity", "Assets + Liabilities = Equity", "Assets = Liabilities + Equity", "Equity = Assets + Liabilities"],
+            "correctOptionIndex": 2,
+            "explanation": "Assets = Liabilities + Equity is the fundamental basis for the balance sheet."
+          },
+          {
+            "id": "q1-3",
+            "question": "What are the rules for increasing an Asset account?",
+            "options": ["Debit", "Credit", "Neither", "Both"],
+            "correctOptionIndex": 0,
+            "explanation": "Under the double-entry system, assets are increased with a debit entry (Left side)."
+          },
+          {
+            "id": "q1-4",
+            "question": "Which of these is a 'Contra-Asset' account?",
+            "options": ["Accounts Payable", "Accumulated Depreciation", "Sales Revenue", "Common Stock"],
+            "correctOptionIndex": 1,
+            "explanation": "Accumulated Depreciation is a contra-asset account that reduces the net value of fixed assets."
+          },
+          {
+            "id": "q1-5",
+            "question": "The 'Going Concern' assumption implies that:",
+            "options": ["The business will close soon", "The business will continue to operate indefinitely", "The owner is leaving", "The business has no debt"],
+            "correctOptionIndex": 1,
+            "explanation": "Going concern assumes the business will remain in operation for the foreseeable future."
+          },
+          {
+            "id": "q1-6",
+            "question": "Which principle requires assets to be recorded at their original purchase price?",
+            "options": ["Fair Value Principle", "Historical Cost Principle", "Full Disclosure", "Materiality"],
+            "correctOptionIndex": 1,
+            "explanation": "The Historical Cost Principle dictates that companies record assets at their actual cost."
+          },
+          {
+            "id": "q1-7",
+            "question": "What is the primary purpose of financial accounting?",
+            "options": ["To help managers make daily decisions", "To provide information to external users", "To calculate employee bonuses", "To hide debt from the public"],
+            "correctOptionIndex": 1,
+            "explanation": "Financial accounting focuses on reporting to external parties like investors, creditors, and regulators."
+          },
+          {
+            "id": "q1-8",
+            "question": "A debit to a Liability account results in a(n):",
+            "options": ["Increase", "Decrease", "No change", "Error"],
+            "correctOptionIndex": 1,
+            "explanation": "Liabilities have a normal credit balance; therefore, a debit decreases them."
+          },
+          {
+            "id": "q1-9",
+            "question": "Which of the following is an Intangible Asset?",
+            "options": ["Inventory", "Land", "Copyright", "Supplies"],
+            "correctOptionIndex": 2,
+            "explanation": "Intangible assets lack physical substance but provide long-term value, like copyrights or patents."
+          },
+          {
+            "id": "q1-10",
+            "question": "The 'Matching Principle' is best described as:",
+            "options": ["Matching cash with bank statements", "Recording expenses in the period they help generate revenue", "Matching assets with liabilities", "Matching the owner's investment with profit"],
+            "correctOptionIndex": 1,
+            "explanation": "The matching principle ensures efforts (expenses) are matched with results (revenues) in the same period."
+          },
+          {
+            "id": "q1-11",
+            "question": "What does 'Double-Entry' accounting mean?",
+            "options": ["Entering data twice", "Every transaction affects at least two accounts", "Using two different currencies", "Having two accountants"],
+            "correctOptionIndex": 1,
+            "explanation": "Every transaction must have at least one debit and one credit that equal each other."
+          },
+          {
+            "id": "q1-12",
+            "question": "Prepaid Rent is classified as a(n):",
+            "options": ["Expense", "Liability", "Asset", "Equity"],
+            "correctOptionIndex": 2,
+            "explanation": "It is an asset because it represents a future economic benefit (use of space)."
+          },
+          {
+            "id": "q1-13",
+            "question": "Which organization sets US GAAP?",
+            "options": ["IASB", "SEC", "FASB", "IRS"],
+            "correctOptionIndex": 2,
+            "explanation": "The Financial Accounting Standards Board (FASB) is the primary body that sets GAAP in the US."
+          },
+          {
+            "id": "q1-14",
+            "question": "If a company buys equipment for cash, the effect on the accounting equation is:",
+            "options": ["Total assets increase", "Total assets decrease", "Total assets remain unchanged", "Equity increases"],
+            "correctOptionIndex": 2,
+            "explanation": "One asset (Equipment) increases while another asset (Cash) decreases by the same amount."
+          },
+          {
+            "id": "q1-15",
+            "question": "Unearned Revenue is reported as a:",
+            "options": ["Revenue", "Liability", "Asset", "Expense"],
+            "correctOptionIndex": 1,
+            "explanation": "It is a liability because the company owes a service or product to the customer who already paid."
+          },
+          {
+            "id": "q1-16",
+            "question": "What is 'Net Income'?",
+            "options": ["Assets minus Liabilities", "Revenues minus Expenses", "Cash in minus Cash out", "Total Equity"],
+            "correctOptionIndex": 1,
+            "explanation": "Net income is the excess of total revenues over total expenses for a period."
+          },
+          {
+            "id": "q1-17",
+            "question": "Which account has a normal Credit balance?",
+            "options": ["Cash", "Service Revenue", "Dividends", "Equipment"],
+            "correctOptionIndex": 1,
+            "explanation": "Revenue, Liabilities, and Equity accounts have normal credit balances."
+          },
+          {
+            "id": "q1-18",
+            "question": "The 'Full Disclosure' principle requires:",
+            "options": ["Hiding secrets", "Reporting all circumstances that make a difference to users", "Showing every single receipt", "Disclosing the owner's home address"],
+            "correctOptionIndex": 1,
+            "explanation": "Companies must report all relevant info that could influence an investor's decision."
+          },
+          {
+            "id": "q1-19",
+            "question": "In accounting, 'Liquidity' refers to:",
+            "options": ["The amount of water in a product", "How quickly an asset can be converted to cash", "The total debt of a company", "The company's stock price"],
+            "correctOptionIndex": 1,
+            "explanation": "Liquidity measures how easily assets like inventory or receivables can become cash."
+          },
+          {
+            "id": "q1-20",
+            "question": "If Equity is $50,000 and Liabilities are $30,000, what are the Total Assets?",
+            "options": ["$20,000", "$80,000", "$50,000", "$30,000"],
+            "correctOptionIndex": 1,
+            "explanation": "Assets = Liabilities ($30k) + Equity ($50k) = $80,000."
+          }
+        ]
+      },
+        {
+          "id": "acc-ch2",
+          "name": "Managerial Accounting",
+          "questions": 
+          [
             {
-              "id": "acc-q1",
-              "question": "According to the accounting equation, Assets are equal to:",
-              "options": [
-                "Liabilities - Equity",
-                "Liabilities + Equity",
-                "Equity - Liabilities",
-                "Revenue + Expenses"
-              ],
+              "id": "man-q1",
+              "question": "What is the primary focus of Managerial Accounting?",
+              "options": ["External reporting", "Internal decision making", "Tax preparation", "Auditing"],
               "correctOptionIndex": 1,
-              "explanation": "The basic accounting equation is Assets = Liabilities + Equity."
+              "explanation": "Managerial accounting provides information to internal managers for planning and control, unlike financial accounting which is for external users."
             },
             {
-              "id": "acc-q2",
-              "question": "Which financial statement reports a company's financial position at a specific point in time?",
-              "options": [
-                "Income Statement",
-                "Statement of Cash Flows",
-                "Balance Sheet",
-                "Statement of Retained Earnings"
-              ],
+              "id": "man-q2",
+              "question": "Which of the following is a 'Fixed Cost'?",
+              "options": ["Direct materials", "Sales commissions", "Factory rent", "Direct labor"],
               "correctOptionIndex": 2,
-              "explanation": "The Balance Sheet shows assets, liabilities and equity on a specific date."
+              "explanation": "Fixed costs like rent remain constant in total regardless of changes in the level of production activity."
+            },
+            {
+              "id": "man-q3",
+              "question": "Variable costs are costs that:",
+              "options": ["Remain constant in total", "Vary in total in direct proportion to changes in activity", "Do not change per unit", "Are always indirect costs"],
+              "correctOptionIndex": 1,
+              "explanation": "Variable costs change in total as activity levels change, but remain constant on a per-unit basis."
+            },
+            {
+              "id": "man-q4",
+              "question": "The 'Break-even Point' is where:",
+              "options": ["Total Revenue = Total Variable Cost", "Total Revenue = Total Fixed Cost", "Total Revenue = Total Cost", "Net Income is at maximum"],
+              "correctOptionIndex": 2,
+              "explanation": "Break-even point is the level of sales where total revenues equal total costs (fixed + variable), resulting in zero profit."
+            },
+            {
+              "id": "man-q5",
+              "question": "What is 'Contribution Margin'?",
+              "options": ["Sales minus Fixed Costs", "Sales minus Variable Costs", "Net Income plus Tax", "Assets minus Liabilities"],
+              "correctOptionIndex": 1,
+              "explanation": "Contribution margin is the amount remaining from sales revenue after variable expenses have been deducted."
+            },
+            {
+              "id": "man-q6",
+              "question": "Which cost is NOT included in 'Product Costs'?",
+              "options": ["Direct Labor", "Manufacturing Overhead", "Direct Materials", "Advertising Expense"],
+              "correctOptionIndex": 3,
+              "explanation": "Advertising is a period cost (selling and administrative), not a product cost associated with manufacturing."
+            },
+            {
+              "id": "man-q7",
+              "question": "In CVP analysis, 'Margin of Safety' is:",
+              "options": ["Total sales minus break-even sales", "Total assets minus total liabilities", "Fixed costs plus variable costs", "The amount of cash in bank"],
+              "correctOptionIndex": 0,
+              "explanation": "Margin of safety indicates how much sales can drop before the company begins to incur a loss."
+            },
+            {
+              "id": "man-q8",
+              "question": "A 'Sunk Cost' is a cost that:",
+              "options": ["Will be incurred in the future", "Has already been incurred and cannot be changed", "Changes with production volume", "Is used for tax calculation"],
+              "correctOptionIndex": 1,
+              "explanation": "Sunk costs are past costs that are irrelevant to future decision-making because they cannot be recovered."
+            },
+            {
+              "id": "man-q9",
+              "question": "Which budget is prepared first in the Master Budget process?",
+              "options": ["Production Budget", "Cash Budget", "Sales Budget", "Direct Labor Budget"],
+              "correctOptionIndex": 2,
+              "explanation": "The Sales Budget is the starting point because production and other expenses depend on expected sales volume."
+            },
+            {
+              "id": "man-q10",
+              "question": "What is 'Manufacturing Overhead'?",
+              "options": ["Direct materials plus labor", "All manufacturing costs except direct materials and labor", "Selling and admin expenses", "The cost of the CEO's salary"],
+              "correctOptionIndex": 1,
+              "explanation": "Overhead includes indirect materials, indirect labor, and factory-related costs like utilities and depreciation."
+            },
+            {
+              "id": "man-q11",
+              "question": "Opportunity cost is defined as:",
+              "options": ["The total cost of a project", "The benefit foregone by choosing one alternative over another", "The cost of interest on a loan", "A cost that is recorded in the ledger"],
+              "correctOptionIndex": 1,
+              "explanation": "Opportunity cost represents the potential benefit lost when one option is selected over the next best alternative."
+            },
+            {
+              "id": "man-q12",
+              "question": "A 'Mixed Cost' contains:",
+              "options": ["Only variable elements", "Only fixed elements", "Both variable and fixed elements", "None of the above"],
+              "correctOptionIndex": 2,
+              "explanation": "Mixed costs (like a utility bill with a flat fee plus usage charge) have both fixed and variable components."
+            },
+            {
+              "id": "man-q13",
+              "question": "The 'High-Low Method' is used to:",
+              "options": ["Calculate net income", "Separate mixed costs into fixed and variable components", "Determine the highest sales price", "Predict stock market trends"],
+              "correctOptionIndex": 1,
+              "explanation": "The high-low method uses the highest and lowest activity levels to estimate the variable and fixed elements of a mixed cost."
+            },
+            {
+              "id": "man-q14",
+              "question": "Job-Order Costing is most likely used by a:",
+              "options": ["Oil refinery", "Custom furniture maker", "Beverage company", "Flour mill"],
+              "correctOptionIndex": 1,
+              "explanation": "Job-order costing is used when products are unique or made to order, like custom furniture or specialized construction."
+            },
+            {
+              "id": "man-q15",
+              "question": "Process Costing is typically used when:",
+              "options": ["Products are unique", "Large quantities of identical products are produced", "Service is provided to one client", "No overhead is involved"],
+              "correctOptionIndex": 1,
+              "explanation": "Process costing is for continuous production of uniform products, like chemicals, gasoline, or canned foods."
+            },
+            {
+              "id": "man-q16",
+              "question": "What is a 'Favorable Variance' in budgeting?",
+              "options": ["Actual cost is higher than budgeted cost", "Actual revenue is lower than budgeted revenue", "Actual cost is lower than budgeted cost", "Budgeted cost is zero"],
+              "correctOptionIndex": 2,
+              "explanation": "A variance is favorable if it leads to higher net income (e.g., spending less than planned)."
+            },
+            {
+              "id": "man-q17",
+              "question": "Standard Costs are:",
+              "options": ["Actual costs incurred", "Budgeted costs per unit of product", "Costs set by the government", "The highest possible costs"],
+              "correctOptionIndex": 1,
+              "explanation": "Standard costs are 'benchmarks' or planned costs for producing a single unit under normal conditions."
+            },
+            {
+              "id": "man-q18",
+              "question": "The 'Relevant Range' is the level of activity where:",
+              "options": ["Fixed costs remain constant in total", "Variable costs per unit change", "Profit is always zero", "Only one product is sold"],
+              "correctOptionIndex": 0,
+              "explanation": "The relevant range is the activity span over which the assumptions about cost behavior (fixed vs variable) remain valid."
+            },
+            {
+              "id": "man-q19",
+              "question": "Relevant costs for decision-making are:",
+              "options": ["Future costs that differ between alternatives", "All past costs", "Fixed costs that do not change", "Depreciation expenses"],
+              "correctOptionIndex": 0,
+              "explanation": "Only future costs and revenues that differ among options are relevant for making a choice."
+            },
+            {
+              "id": "man-q20",
+              "question": "What is the purpose of a 'Flexible Budget'?",
+              "options": ["To show costs at only one activity level", "To adjust budgeted costs for different levels of activity", "To ignore variable costs", "To replace the master budget"],
+              "correctOptionIndex": 1,
+              "explanation": "A flexible budget allows managers to compare actual results with what costs should have been for the actual level of activity achieved."
             }
           ]
         },
         {
-          "id": "acc-ch2",
-          "name": "Managerial Accounting",
-          "questions": []
-        },
-        {
           "id": "acc-ch3",
           "name": "Financial Reporting",
-          "questions": []
+          "questions": 
+          [
+            {
+              "id": "man-q1",
+              "question": "What is the primary focus of Managerial Accounting?",
+              "options": ["External reporting", "Internal decision making", "Tax preparation", "Auditing"],
+              "correctOptionIndex": 1,
+              "explanation": "Managerial accounting provides information to internal managers for planning and control, unlike financial accounting which is for external users."
+            },
+            {
+              "id": "man-q2",
+              "question": "Which of the following is a 'Fixed Cost'?",
+              "options": ["Direct materials", "Sales commissions", "Factory rent", "Direct labor"],
+              "correctOptionIndex": 2,
+              "explanation": "Fixed costs like rent remain constant in total regardless of changes in the level of production activity."
+            },
+            {
+              "id": "man-q3",
+              "question": "Variable costs are costs that:",
+              "options": ["Remain constant in total", "Vary in total in direct proportion to changes in activity", "Do not change per unit", "Are always indirect costs"],
+              "correctOptionIndex": 1,
+              "explanation": "Variable costs change in total as activity levels change, but remain constant on a per-unit basis."
+            },
+            {
+              "id": "man-q4",
+              "question": "The 'Break-even Point' is where:",
+              "options": ["Total Revenue = Total Variable Cost", "Total Revenue = Total Fixed Cost", "Total Revenue = Total Cost", "Net Income is at maximum"],
+              "correctOptionIndex": 2,
+              "explanation": "Break-even point is the level of sales where total revenues equal total costs (fixed + variable), resulting in zero profit."
+            },
+            {
+              "id": "man-q5",
+              "question": "What is 'Contribution Margin'?",
+              "options": ["Sales minus Fixed Costs", "Sales minus Variable Costs", "Net Income plus Tax", "Assets minus Liabilities"],
+              "correctOptionIndex": 1,
+              "explanation": "Contribution margin is the amount remaining from sales revenue after variable expenses have been deducted."
+            },
+            {
+              "id": "man-q6",
+              "question": "Which cost is NOT included in 'Product Costs'?",
+              "options": ["Direct Labor", "Manufacturing Overhead", "Direct Materials", "Advertising Expense"],
+              "correctOptionIndex": 3,
+              "explanation": "Advertising is a period cost (selling and administrative), not a product cost associated with manufacturing."
+            },
+            {
+              "id": "man-q7",
+              "question": "In CVP analysis, 'Margin of Safety' is:",
+              "options": ["Total sales minus break-even sales", "Total assets minus total liabilities", "Fixed costs plus variable costs", "The amount of cash in bank"],
+              "correctOptionIndex": 0,
+              "explanation": "Margin of safety indicates how much sales can drop before the company begins to incur a loss."
+            },
+            {
+              "id": "man-q8",
+              "question": "A 'Sunk Cost' is a cost that:",
+              "options": ["Will be incurred in the future", "Has already been incurred and cannot be changed", "Changes with production volume", "Is used for tax calculation"],
+              "correctOptionIndex": 1,
+              "explanation": "Sunk costs are past costs that are irrelevant to future decision-making because they cannot be recovered."
+            },
+            {
+              "id": "man-q9",
+              "question": "Which budget is prepared first in the Master Budget process?",
+              "options": ["Production Budget", "Cash Budget", "Sales Budget", "Direct Labor Budget"],
+              "correctOptionIndex": 2,
+              "explanation": "The Sales Budget is the starting point because production and other expenses depend on expected sales volume."
+            },
+            {
+              "id": "man-q10",
+              "question": "What is 'Manufacturing Overhead'?",
+              "options": ["Direct materials plus labor", "All manufacturing costs except direct materials and labor", "Selling and admin expenses", "The cost of the CEO's salary"],
+              "correctOptionIndex": 1,
+              "explanation": "Overhead includes indirect materials, indirect labor, and factory-related costs like utilities and depreciation."
+            },
+            {
+              "id": "man-q11",
+              "question": "Opportunity cost is defined as:",
+              "options": ["The total cost of a project", "The benefit foregone by choosing one alternative over another", "The cost of interest on a loan", "A cost that is recorded in the ledger"],
+              "correctOptionIndex": 1,
+              "explanation": "Opportunity cost represents the potential benefit lost when one option is selected over the next best alternative."
+            },
+            {
+              "id": "man-q12",
+              "question": "A 'Mixed Cost' contains:",
+              "options": ["Only variable elements", "Only fixed elements", "Both variable and fixed elements", "None of the above"],
+              "correctOptionIndex": 2,
+              "explanation": "Mixed costs (like a utility bill with a flat fee plus usage charge) have both fixed and variable components."
+            },
+            {
+              "id": "man-q13",
+              "question": "The 'High-Low Method' is used to:",
+              "options": ["Calculate net income", "Separate mixed costs into fixed and variable components", "Determine the highest sales price", "Predict stock market trends"],
+              "correctOptionIndex": 1,
+              "explanation": "The high-low method uses the highest and lowest activity levels to estimate the variable and fixed elements of a mixed cost."
+            },
+            {
+              "id": "man-q14",
+              "question": "Job-Order Costing is most likely used by a:",
+              "options": ["Oil refinery", "Custom furniture maker", "Beverage company", "Flour mill"],
+              "correctOptionIndex": 1,
+              "explanation": "Job-order costing is used when products are unique or made to order, like custom furniture or specialized construction."
+            },
+            {
+              "id": "man-q15",
+              "question": "Process Costing is typically used when:",
+              "options": ["Products are unique", "Large quantities of identical products are produced", "Service is provided to one client", "No overhead is involved"],
+              "correctOptionIndex": 1,
+              "explanation": "Process costing is for continuous production of uniform products, like chemicals, gasoline, or canned foods."
+            },
+            {
+              "id": "man-q16",
+              "question": "What is a 'Favorable Variance' in budgeting?",
+              "options": ["Actual cost is higher than budgeted cost", "Actual revenue is lower than budgeted revenue", "Actual cost is lower than budgeted cost", "Budgeted cost is zero"],
+              "correctOptionIndex": 2,
+              "explanation": "A variance is favorable if it leads to higher net income (e.g., spending less than planned)."
+            },
+            {
+              "id": "man-q17",
+              "question": "Standard Costs are:",
+              "options": ["Actual costs incurred", "Budgeted costs per unit of product", "Costs set by the government", "The highest possible costs"],
+              "correctOptionIndex": 1,
+              "explanation": "Standard costs are 'benchmarks' or planned costs for producing a single unit under normal conditions."
+            },
+            {
+              "id": "man-q18",
+              "question": "The 'Relevant Range' is the level of activity where:",
+              "options": ["Fixed costs remain constant in total", "Variable costs per unit change", "Profit is always zero", "Only one product is sold"],
+              "correctOptionIndex": 0,
+              "explanation": "The relevant range is the activity span over which the assumptions about cost behavior (fixed vs variable) remain valid."
+            },
+            {
+              "id": "man-q19",
+              "question": "Relevant costs for decision-making are:",
+              "options": ["Future costs that differ between alternatives", "All past costs", "Fixed costs that do not change", "Depreciation expenses"],
+              "correctOptionIndex": 0,
+              "explanation": "Only future costs and revenues that differ among options are relevant for making a choice."
+            },
+            {
+              "id": "man-q20",
+              "question": "What is the purpose of a 'Flexible Budget'?",
+              "options": ["To show costs at only one activity level", "To adjust budgeted costs for different levels of activity", "To ignore variable costs", "To replace the master budget"],
+              "correctOptionIndex": 1,
+              "explanation": "A flexible budget allows managers to compare actual results with what costs should have been for the actual level of activity achieved."
+            }
+          ]
         },
         {
           "id": "acc-ch4",
           "name": "Corporate Finance",
-          "questions": []
+          "questions": 
+          [
+            {
+              "id": "fr-q1",
+              "question": "Which of the following is the primary objective of financial reporting?",
+              "options": ["To help the government collect taxes", "To provide useful information to investors and creditors", "To calculate employee salaries", "To monitor internal office activities"],
+              "correctOptionIndex": 1,
+              "explanation": "The primary objective is to provide financial information about the reporting entity that is useful to existing and potential investors, lenders, and other creditors."
+            },
+            {
+              "id": "fr-q2",
+              "question": "Under IFRS, which of the following is NOT a complete set of financial statements?",
+              "options": ["Statement of Financial Position", "Statement of Profit or Loss", "Management Discussion and Analysis", "Statement of Cash Flows"],
+              "correctOptionIndex": 2,
+              "explanation": "While useful, Management Discussion and Analysis (MD&A) is not considered a required financial statement under IFRS IAS 1."
+            },
+            {
+              "id": "fr-q3",
+              "question": "The 'Conceptual Framework' defines Assets as:",
+              "options": ["Something you can touch", "A present economic resource controlled by the entity as a result of past events", "Cash in the bank", "Future sales revenue"],
+              "correctOptionIndex": 1,
+              "explanation": "An asset is a present economic resource controlled by the entity as a result of past events that has the potential to produce economic benefits."
+            },
+            {
+              "id": "fr-q4",
+              "question": "Which qualitative characteristic ensures that information is available to users in time to be capable of influencing their decisions?",
+              "options": ["Comparability", "Verifiability", "Timeliness", "Understandability"],
+              "correctOptionIndex": 2,
+              "explanation": "Timeliness means having information available to decision-makers in time to be capable of influencing their decisions."
+            },
+            {
+              "id": "fr-q5",
+              "question": "What is the basis of measurement where assets are recorded at the amount of cash paid at the time of their acquisition?",
+              "options": ["Current value", "Historical cost", "Fair value", "Value in use"],
+              "correctOptionIndex": 1,
+              "explanation": "Historical cost is the measurement basis where assets are recorded at the value of the consideration given to acquire them."
+            },
+            {
+              "id": "fr-q6",
+              "question": "In financial reporting, 'Equity' is defined as:",
+              "options": ["Total Assets", "Total Liabilities", "The residual interest in the assets of the entity after deducting all its liabilities", "The market value of the company shares"],
+              "correctOptionIndex": 2,
+              "explanation": "Equity is simply the remaining interest (Assets minus Liabilities) belonging to the owners."
+            },
+            {
+              "id": "fr-q7",
+              "question": "Which of the following is an example of an 'Adjusting Event' after the reporting period?",
+              "options": ["A major fire after year-end", "The bankruptcy of a customer that confirms a loss existed at year-end", "A sudden decline in share prices", "Announcing a plan to close a factory"],
+              "correctOptionIndex": 1,
+              "explanation": "Adjusting events provide evidence of conditions that existed at the end of the reporting period, such as a customer bankruptcy confirming an uncollectible debt."
+            },
+            {
+              "id": "fr-q8",
+              "question": "What is the correct treatment for 'Research' costs under IAS 38 (Intangible Assets)?",
+              "options": ["Capitalize as an asset", "Depreciate over 10 years", "Recognize as an expense when incurred", "Ignore them"],
+              "correctOptionIndex": 2,
+              "explanation": "Research costs must always be expensed. Only development costs can be capitalized if specific criteria are met."
+            },
+            {
+              "id": "fr-q9",
+              "question": "Under IAS 2, Inventories should be measured at:",
+              "options": ["Cost only", "Market value only", "The lower of cost and net realizable value (NRV)", "The higher of cost and NRV"],
+              "correctOptionIndex": 2,
+              "explanation": "Inventories must be reported at the lower of their cost or the amount they can be sold for (NRV) to avoid overstating assets."
+            },
+            {
+              "id": "fr-q10",
+              "question": "Which of the following is a 'Current Liability'?",
+              "options": ["A 5-year bank loan", "Accounts Payable", "Deferred Tax Liability", "Goodwill"],
+              "correctOptionIndex": 1,
+              "explanation": "Current liabilities are obligations the entity expects to settle within its normal operating cycle or within 12 months."
+            },
+            {
+              "id": "fr-q11",
+              "question": "What is 'Comprehensive Income'?",
+              "options": ["Net income only", "The change in equity during a period from non-owner sources", "Total sales revenue", "Gross profit minus tax"],
+              "correctOptionIndex": 1,
+              "explanation": "Comprehensive income includes both net income and 'other comprehensive income' (OCI) like unrealized gains on certain investments."
+            },
+            {
+              "id": "fr-q12",
+              "question": "IAS 16 requires 'Property, Plant and Equipment' to be depreciated over:",
+              "options": ["Its legal life", "Its physical life", "Its useful life", "10 years exactly"],
+              "correctOptionIndex": 2,
+              "explanation": "Depreciation should reflect the pattern in which the asset’s future economic benefits are expected to be consumed over its useful life."
+            },
+            {
+              "id": "fr-q13",
+              "question": "A 'Provision' is defined as:",
+              "options": ["A certain liability", "A liability of uncertain timing or amount", "An asset that might be received", "A reserve for dividends"],
+              "correctOptionIndex": 1,
+              "explanation": "Provisions are liabilities where the exact timing or amount of the payment is not yet fixed but a present obligation exists."
+            },
+            {
+              "id": "fr-q14",
+              "question": "What is the purpose of the 'Notes' to the financial statements?",
+              "options": ["To hide bad information", "To provide descriptions and breakdowns of items presented in the statements", "To replace the Balance Sheet", "To record daily transactions"],
+              "correctOptionIndex": 1,
+              "explanation": "Notes provide essential narrative descriptions or disaggregations of items that aren't fully detailed on the face of the statements."
+            },
+            {
+              "id": "fr-q15",
+              "question": "Which accounting principle justifies why companies use depreciation?",
+              "options": ["Matching (Accrual) Principle", "Consistency", "Materiality", "Cost Principle"],
+              "correctOptionIndex": 0,
+              "explanation": "Depreciation matches the cost of using a long-term asset with the revenue it generates over the same period."
+            },
+            {
+              "id": "fr-q16",
+              "question": "What does 'Consolidated Financial Statements' mean?",
+              "options": ["Statements of a small company", "Statements of a group where a parent controls subsidiaries", "A summary of the cash book", "Tax returns for the owner"],
+              "correctOptionIndex": 1,
+              "explanation": "Consolidated statements present the financial position of a parent and its subsidiaries as if they were a single economic entity."
+            },
+            {
+              "id": "fr-q17",
+              "question": "The 'Going Concern' basis should NOT be used if:",
+              "options": ["Management intends to liquidate the entity", "The company made a small loss", "Stock prices dropped", "Auditors changed"],
+              "correctOptionIndex": 0,
+              "explanation": "If management plans to close the business or has no realistic alternative but to do so, the going concern basis is no longer appropriate."
+            },
+            {
+              "id": "fr-q18",
+              "question": "Which of the following is an 'Intangible Asset' under IAS 38?",
+              "options": ["Computer Hardware", "Investment Property", "Brand names generated internally", "Purchased Patents"],
+              "correctOptionIndex": 3,
+              "explanation": "While purchased patents are intangible assets, internally generated brands are prohibited from being recognized as assets under IAS 38."
+            },
+            {
+              "id": "fr-q19",
+              "question": "Under IAS 7, 'Cash Equivalents' are short-term investments that are:",
+              "options": ["Highly liquid and convertible to known amounts of cash", "Held for more than one year", "Shares in other companies", "Inventory items"],
+              "correctOptionIndex": 0,
+              "explanation": "Cash equivalents are short-term, highly liquid investments that are readily convertible to known amounts of cash."
+            },
+            {
+              "id": "fr-q20",
+              "question": "Which of the following is a 'Non-Current Asset'?",
+              "options": ["Trade Receivables", "Goodwill", "Prepaid Expenses", "Cash at hand"],
+              "correctOptionIndex": 1,
+              "explanation": "Goodwill is an intangible asset that provides benefits over many years, making it a non-current asset."
+            }
+          ]
         },
         {
           "id": "acc-ch5",
           "name": "Auditing & Assurance",
-          "questions": []
+          "questions": 
+          [
+            {
+              "id": "aud-q1",
+              "question": "What is the primary objective of an external audit?",
+              "options": ["To prevent fraud", "To express an opinion on the fairness of financial statements", "To help management increase profits", "To prepare the company's tax returns"],
+              "correctOptionIndex": 1,
+              "explanation": "The main goal of an external audit is to provide reasonable assurance that the financial statements are free from material misstatement."
+            },
+            {
+              "id": "aud-q2",
+              "question": "Which of the following is an example of 'Audit Evidence'?",
+              "options": ["Bank statements", "Physical observation of inventory", "Invoices and receipts", "All of the above"],
+              "correctOptionIndex": 3,
+              "explanation": "Audit evidence includes all information used by the auditor in arriving at the conclusions on which the audit opinion is based."
+            },
+            {
+              "id": "aud-q3",
+              "question": "The risk that the auditor expresses an inappropriate audit opinion is called:",
+              "options": ["Inherent Risk", "Control Risk", "Audit Risk", "Detection Risk"],
+              "correctOptionIndex": 2,
+              "explanation": "Audit risk is the risk that the auditor gives a 'clean' opinion when the financial statements are actually materially misstated."
+            },
+            {
+              "id": "aud-q4",
+              "question": "What is 'Inherent Risk'?",
+              "options": ["Risk due to failure of internal controls", "The susceptibility of an assertion to misstatement before considering controls", "The risk that the auditor will not find a mistake", "Risk of a fire in the office"],
+              "correctOptionIndex": 1,
+              "explanation": "Inherent risk is the natural riskiness of an account or transaction (e.g., complex accounting estimates have high inherent risk)."
+            },
+            {
+              "id": "aud-q5",
+              "question": "Internal control is primarily the responsibility of:",
+              "options": ["The External Auditor", "The Internal Auditor", "Management and those charged with governance", "The Shareholders"],
+              "correctOptionIndex": 2,
+              "explanation": "It is the management's duty to design, implement, and maintain effective internal controls."
+            },
+            {
+              "id": "aud-q6",
+              "question": "What does 'Professional Skepticism' mean?",
+              "options": ["Always assuming management is dishonest", "Having a questioning mind and critically assessing audit evidence", "Never trusting any document", "Being angry with the client"],
+              "correctOptionIndex": 1,
+              "explanation": "Professional skepticism requires auditors to remain alert to conditions that may indicate possible misstatement due to error or fraud."
+            },
+            {
+              "id": "aud-q7",
+              "question": "Which audit report is issued when the auditor finds a material but NOT pervasive misstatement?",
+              "options": ["Unmodified Opinion", "Qualified Opinion", "Adverse Opinion", "Disclaimer of Opinion"],
+              "correctOptionIndex": 1,
+              "explanation": "A Qualified Opinion (the 'Except for' opinion) is used when there's a specific issue that is material but doesn't affect the whole set of statements."
+            },
+            {
+              "id": "aud-q8",
+              "question": "A 'Disclaimer of Opinion' is issued when:",
+              "options": ["Everything is perfect", "There is a massive disagreement with management", "The auditor is unable to obtain sufficient appropriate audit evidence", "The auditor found fraud"],
+              "correctOptionIndex": 2,
+              "explanation": "A disclaimer is issued when the auditor cannot form an opinion due to extreme limitations on the scope of the audit."
+            },
+            {
+              "id": "aud-q9",
+              "question": "What is the purpose of a 'Management Representation Letter'?",
+              "options": ["To fire the auditor", "To document management's oral responses to audit inquiries", "To increase the audit fee", "To prove that the auditor did a good job"],
+              "correctOptionIndex": 1,
+              "explanation": "This letter confirms management's responsibility for the financial statements and that they provided all necessary info to the auditor."
+            },
+            {
+              "id": "aud-q10",
+              "question": "Which of the following is a 'Substantive Procedure'?",
+              "options": ["Testing if a door is locked", "Checking the math accuracy of a sales invoice", "Asking about the company's vacation policy", "Looking at the organization chart"],
+              "correctOptionIndex": 1,
+              "explanation": "Substantive procedures are audit tests designed to detect material misstatements at the assertion level (checking numbers and details)."
+            },
+            {
+              "id": "aud-q11",
+              "question": "The 'Independence' of an auditor is essential to ensure:",
+              "options": ["The auditor gets paid", "Objectivity and credibility of the audit report", "The audit is done quickly", "The auditor can work from home"],
+              "correctOptionIndex": 1,
+              "explanation": "Independence ensures that the auditor's judgment is not influenced by personal or financial relationships with the client."
+            },
+            {
+              "id": "aud-q12",
+              "question": "Which of the following is a 'Control Activity'?",
+              "options": ["Physical counts of inventory", "Segregation of duties", "Authorization of transactions", "All of the above"],
+              "correctOptionIndex": 3,
+              "explanation": "Control activities are the specific policies and procedures that help ensure management directives are carried out."
+            },
+            {
+              "id": "aud-q13",
+              "question": "What is 'Detection Risk'?",
+              "options": ["Risk that internal controls fail", "Risk that the auditor's procedures will not detect a material misstatement", "Risk that management steals cash", "Risk of a computer virus"],
+              "correctOptionIndex": 1,
+              "explanation": "Detection risk is the only part of audit risk that auditors can control by changing the nature, timing, or extent of their tests."
+            },
+            {
+              "id": "aud-q14",
+              "question": "What is a 'Material' misstatement?",
+              "options": ["Any mistake over $1", "A misstatement that could influence the economic decisions of users", "A typo in the company's name", "A mistake made by a junior accountant"],
+              "correctOptionIndex": 1,
+              "explanation": "Materiality depends on the size and nature of the error; if it changes a user's decision, it is material."
+            },
+            {
+              "id": "aud-q15",
+              "question": "Who appoints the external auditor in a public company?",
+              "options": ["The CEO", "The Human Resources Manager", "The Shareholders", "The Government"],
+              "correctOptionIndex": 2,
+              "explanation": "In most jurisdictions, the shareholders appoint the auditor during the Annual General Meeting (AGM)."
+            },
+            {
+              "id": "aud-q16",
+              "question": "An 'Audit Trail' is:",
+              "options": ["A map to the client's office", "The step-by-step evidence linking a transaction to the financial statements", "A list of all employees", "The auditor's travel expenses"],
+              "correctOptionIndex": 1,
+              "explanation": "The audit trail allows an auditor to trace a transaction from its source (invoice) to the final ledger entry or vice versa."
+            },
+            {
+              "id": "aud-q17",
+              "question": "What is 'Audit Sampling'?",
+              "options": ["Testing 100% of all items", "Testing less than 100% of items to draw a conclusion about the whole population", "Testing only the easy items", "Asking the manager to pick the items to test"],
+              "correctOptionIndex": 1,
+              "explanation": "Sampling allows auditors to form an opinion without checking every single transaction, which would be too expensive and time-consuming."
+            },
+            {
+              "id": "aud-q18",
+              "question": "Which of the following is a threat to auditor independence?",
+              "options": ["Self-interest (e.g., owning shares in the client)", "Familiarity (e.g., being a close friend of the CEO)", "Intimidation (e.g., being threatened with dismissal)", "All of the above"],
+              "correctOptionIndex": 3,
+              "explanation": "Ethical codes identify several threats to independence that auditors must identify and mitigate."
+            },
+            {
+              "id": "aud-q19",
+              "question": "What is the purpose of an 'Engagement Letter'?",
+              "options": ["To propose a marriage", "To define the scope and terms of the audit assignment", "To report fraud to the police", "To congratulate the client on their profits"],
+              "correctOptionIndex": 1,
+              "explanation": "The engagement letter is a contract that prevents misunderstandings regarding the objective and scope of the audit."
+            },
+            {
+              "id": "aud-q20",
+              "question": "Which type of audit is focused on the efficiency and effectiveness of operations?",
+              "options": ["Financial Audit", "Operational Audit", "Compliance Audit", "Tax Audit"],
+              "correctOptionIndex": 1,
+              "explanation": "Operational audits evaluate how well an organization is meeting its goals and using its resources."
+            }
+          ]
         }
       ]
     },
@@ -63,27 +748,763 @@
         {
           "id": "bm-ch1",
           "name": "Principles of Management",
-          "questions": []
+          "questions": 
+          {
+            "id": "mgmt",
+            "name": "Business Management",
+            "chapters": [
+              {
+                "id": "mgmt-ch1",
+                "name": "Chapter 1: Principles of Management",
+                "questions": [
+                  {
+                    "id": "m-q1",
+                    "question": "Who is known as the 'Father of Scientific Management'?",
+                    "options": ["Henri Fayol", "Frederick W. Taylor", "Max Weber", "Peter Drucker"],
+                    "correctOptionIndex": 1,
+                    "explanation": "F.W. Taylor developed the Scientific Management theory, focusing on improving economic efficiency and labor productivity."
+                  },
+                  {
+                    "id": "m-q2",
+                    "question": "Which management function involves setting goals and deciding how to achieve them?",
+                    "options": ["Organizing", "Leading", "Planning", "Controlling"],
+                    "correctOptionIndex": 2,
+                    "explanation": "Planning is the primary management function that involves defining goals and determining the best course of action."
+                  },
+                  {
+                    "id": "m-q3",
+                    "question": "Henri Fayol listed how many principles of management?",
+                    "options": ["10", "12", "14", "16"],
+                    "correctOptionIndex": 2,
+                    "explanation": "Henri Fayol identified 14 principles of management, such as Division of Work and Unity of Command."
+                  },
+                  {
+                    "id": "m-q4",
+                    "question": "The 'Unity of Command' principle means:",
+                    "options": ["All employees report to one supervisor only", "Employees should work together", "There should be one goal", "Managers must be kind"],
+                    "correctOptionIndex": 0,
+                    "explanation": "Unity of Command states that an employee should receive orders from only one superior to avoid conflict."
+                  },
+                  {
+                    "id": "m-q5",
+                    "question": "Which level of management is responsible for making organization-wide decisions?",
+                    "options": ["First-line managers", "Middle managers", "Top managers", "Team leaders"],
+                    "correctOptionIndex": 2,
+                    "explanation": "Top-level managers (CEOs, Presidents) develop long-term plans and affect the entire organization."
+                  },
+                  {
+                    "id": "m-q6",
+                    "question": "The 'Hawthorne Studies' led to the development of which management approach?",
+                    "options": ["Scientific Management", "Administrative Management", "Human Relations Movement", "Bureaucracy"],
+                    "correctOptionIndex": 2,
+                    "explanation": "The Hawthorne Studies highlighted the importance of social factors and employee morale in productivity."
+                  },
+                  {
+                    "id": "m-q7",
+                    "question": "What are the three essential skills of a manager identified by Robert Katz?",
+                    "options": ["Technical, Human, and Conceptual", "Financial, Marketing, and Sales", "Leading, Following, and Acting", "Speaking, Writing, and Reading"],
+                    "correctOptionIndex": 0,
+                    "explanation": "Managers need Technical skills (job-specific), Human skills (working with people), and Conceptual skills (thinking strategically)."
+                  },
+                  {
+                    "id": "m-q8",
+                    "question": "In a SWOT analysis, 'Opportunities' and 'Threats' are:",
+                    "options": ["Internal factors", "External factors", "Financial factors", "Management styles"],
+                    "correctOptionIndex": 1,
+                    "explanation": "Strengths and Weaknesses are internal; Opportunities and Threats come from the external environment."
+                  },
+                  {
+                    "id": "m-q9",
+                    "question": "Which management function involves monitoring performance and taking corrective action?",
+                    "options": ["Planning", "Organizing", "Leading", "Controlling"],
+                    "correctOptionIndex": 3,
+                    "explanation": "Controlling ensures that actual performance aligns with planned goals."
+                  },
+                  {
+                    "id": "m-q10",
+                    "question": "According to Maslow's Hierarchy of Needs, which need must be met first?",
+                    "options": ["Safety", "Self-actualization", "Physiological (Basic)", "Social"],
+                    "correctOptionIndex": 2,
+                    "explanation": "Physiological needs (food, water, shelter) are the most basic level of human needs."
+                  },
+                  {
+                    "id": "m-q11",
+                    "question": "Bureaucracy as a form of organization was proposed by:",
+                    "options": ["Max Weber", "Elton Mayo", "Douglas McGregor", "Adam Smith"],
+                    "correctOptionIndex": 0,
+                    "explanation": "Max Weber defined bureaucracy as a highly structured, formalized, and impersonal organization."
+                  },
+                  {
+                    "id": "m-q12",
+                    "question": "A manager who believes employees are lazy and must be forced to work follows:",
+                    "options": ["Theory X", "Theory Y", "Theory Z", "Scientific Management"],
+                    "correctOptionIndex": 0,
+                    "explanation": "Douglas McGregor's Theory X assumes employees dislike work and need constant supervision."
+                  },
+                  {
+                    "id": "m-q13",
+                    "question": "The process of assigning authority to another person is called:",
+                    "options": ["Centralization", "Delegation", "Departmentalization", "Span of Control"],
+                    "correctOptionIndex": 1,
+                    "explanation": "Delegation is the transfer of authority from a manager to a subordinate to carry out specific tasks."
+                  },
+                  {
+                    "id": "m-q14",
+                    "question": "What is 'Span of Control'?",
+                    "options": ["The number of employees a manager can effectively direct", "The power of the CEO", "The size of the office", "The length of a work shift"],
+                    "correctOptionIndex": 0,
+                    "explanation": "Span of control refers to how many subordinates report directly to a single manager."
+                  },
+                  {
+                    "id": "m-q15",
+                    "question": "Centralization refers to:",
+                    "options": ["Moving the office to the city center", "Decision-making authority held at the top of the organization", "Spreading power to all levels", "Hiring more employees"],
+                    "correctOptionIndex": 1,
+                    "explanation": "In centralized organizations, primary decision-making stays with top management."
+                  },
+                  {
+                    "id": "m-q16",
+                    "question": "What is the 'Double-Loop' in management feedback?",
+                    "options": ["Doing the same thing twice", "Checking the plan and the goals themselves", "Working 16 hours", "A circular office design"],
+                    "correctOptionIndex": 1,
+                    "explanation": "Double-loop learning involves questioning the underlying assumptions and goals, not just fixing errors."
+                  },
+                  {
+                    "id": "m-q17",
+                    "question": "The 'Matrix' organizational structure combines which two forms?",
+                    "options": ["Functional and Product/Project", "Top and Bottom", "Small and Large", "Internal and External"],
+                    "correctOptionIndex": 0,
+                    "explanation": "A matrix structure creates a dual chain of command, usually based on function and product/project."
+                  },
+                  {
+                    "id": "m-q18",
+                    "question": "Which of these is NOT part of the 'Leading' function?",
+                    "options": ["Motivating employees", "Managing conflict", "Budgeting", "Communicating"],
+                    "correctOptionIndex": 2,
+                    "explanation": "Budgeting is part of the Planning and Controlling functions, while Leading focuses on people."
+                  },
+                  {
+                    "id": "m-q19",
+                    "question": "What does the 'P' in POSDCORB stand for?",
+                    "options": ["Profit", "Planning", "Product", "People"],
+                    "correctOptionIndex": 1,
+                    "explanation": "Luther Gulick's POSDCORB stands for Planning, Organizing, Staffing, Directing, Coordinating, Reporting, and Budgeting."
+                  },
+                  {
+                    "id": "m-q20",
+                    "question": "An 'Autocratic' leadership style is one where:",
+                    "options": ["The leader allows the group to decide", "The leader makes all decisions without consulting others", "There is no leader", "The leader works for the employees"],
+                    "correctOptionIndex": 1,
+                    "explanation": "Autocratic leaders maintain total control and do not seek input from subordinates."
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "bm-ch2",
           "name": "Organizational Behavior",
-          "questions": []
+          "questions": 
+          {
+            "id": "mgmt-ch2",
+            "name": "Chapter 2: Organizational Behavior",
+            "questions": [
+              {
+                "id": "ob-q1",
+                "question": "What is the primary goal of Organizational Behavior (OB)?",
+                "options": ["To increase taxes", "To understand, predict, and influence human behavior in organizations", "To replace managers with robots", "To reduce the number of employees"],
+                "correctOptionIndex": 1,
+                "explanation": "OB focuses on how people act within organizations to improve individual performance and organizational effectiveness."
+              },
+              {
+                "id": "ob-q2",
+                "question": "Which of the following are the three levels of analysis in OB?",
+                "options": ["Technical, Social, Economic", "Individual, Group, and Organization", "Local, National, International", "Past, Present, Future"],
+                "correctOptionIndex": 1,
+                "explanation": "OB studies behavior at three levels: the individual (personality/motivation), the group (teams/leadership), and the organization (culture/structure)."
+              },
+              {
+                "id": "ob-q3",
+                "question": "The 'Big Five' model is used to measure:",
+                "options": ["Company profits", "Personality traits", "Leadership styles", "Product quality"],
+                "correctOptionIndex": 1,
+                "explanation": "The Big Five model identifies five key personality dimensions: Openness, Conscientiousness, Extraversion, Agreeableness, and Emotional Stability (Neuroticism)."
+              },
+              {
+                "id": "ob-q4",
+                "question": "What is 'Cognitive Dissonance'?",
+                "options": ["A type of loud music", "The discomfort felt when attitudes and behaviors do not match", "High intelligence", "Working in a group"],
+                "correctOptionIndex": 1,
+                "explanation": "Cognitive dissonance occurs when an individual holds conflicting beliefs or when their behavior contradicts their attitude."
+              },
+              {
+                "id": "ob-q5",
+                "question": "According to Herzberg's Two-Factor Theory, which of these is a 'Motivator'?",
+                "options": ["Salary", "Company Policy", "Recognition and Growth", "Working Conditions"],
+                "correctOptionIndex": 2,
+                "explanation": "Herzberg argued that salary and conditions are 'hygiene factors' (prevent dissatisfaction), while recognition and growth truly motivate employees."
+              },
+              {
+                "id": "ob-q6",
+                "question": "What is 'Locus of Control'?",
+                "options": ["The location of the office", "The degree to which people believe they control their own fate", "A management style", "The size of a team"],
+                "correctOptionIndex": 1,
+                "explanation": "Individuals with an 'internal' locus of control believe they control their life, while 'externals' believe outside forces or luck control it."
+              },
+              {
+                "id": "ob-q7",
+                "question": "Which stage of group development involves conflict over leadership and goals?",
+                "options": ["Forming", "Storming", "Norming", "Performing"],
+                "correctOptionIndex": 1,
+                "explanation": "In Tuckman's model, the 'Storming' stage is characterized by internal competition and disagreement before the group settles down."
+              },
+              {
+                "id": "ob-q8",
+                "question": "What is 'Groupthink'?",
+                "options": ["Thinking together to solve problems", "When the desire for harmony overrides realistic appraisal of alternatives", "Using a computer for group work", "Hiring people who think the same way"],
+                "correctOptionIndex": 1,
+                "explanation": "Groupthink is a psychological phenomenon where group members prioritize consensus over making a good, critical decision."
+              },
+              {
+                "id": "ob-q9",
+                "question": "Emotional Intelligence (EI) includes all of the following EXCEPT:",
+                "options": ["Self-awareness", "Empathy", "Financial planning", "Social skills"],
+                "correctOptionIndex": 2,
+                "explanation": "EI focuses on understanding and managing emotions, not technical or financial skills."
+              },
+              {
+                "id": "ob-q10",
+                "question": "A 'Transformational Leader' is one who:",
+                "options": ["Exchanges rewards for effort", "Inspires followers to transcend their self-interest for the good of the organization", "Strictly follows the rules", "Works only in the tech industry"],
+                "correctOptionIndex": 1,
+                "explanation": "Transformational leaders motivate by creating a vision and inspiring followers through personal charisma and intellectual stimulation."
+              },
+              {
+                "id": "ob-q11",
+                "question": "What is 'Organizational Culture'?",
+                "options": ["The country the company is in", "The shared values, beliefs, and norms within an organization", "The company's logo", "The employee handbook"],
+                "correctOptionIndex": 1,
+                "explanation": "Organizational culture is the 'personality' of the company—the way things are done and what is valued."
+              },
+              {
+                "id": "ob-q12",
+                "question": "What is the 'Halo Effect' in perception?",
+                "options": ["A religious symbol", "Drawing a general impression based on a single characteristic", "Being nice to everyone", "Ignoring all mistakes"],
+                "correctOptionIndex": 1,
+                "explanation": "The halo effect occurs when our overall impression of a person (e.g., they are handsome) influences our judgment of their other traits (e.g., they must be smart)."
+              },
+              {
+                "id": "ob-q13",
+                "question": "The 'Expectancy Theory' of motivation suggests that effort depends on:",
+                "options": ["How much others are working", "The belief that effort will lead to performance and rewards", "The time of day", "The office temperature"],
+                "correctOptionIndex": 1,
+                "explanation": "Victor Vroom's theory focuses on three relationships: Expectancy (effort-performance), Instrumentality (performance-reward), and Valence (value of reward)."
+              },
+              {
+                "id": "ob-q14",
+                "question": "Which type of power comes from a person's formal position in an organization?",
+                "options": ["Expert Power", "Referent Power", "Legitimate Power", "Reward Power"],
+                "correctOptionIndex": 2,
+                "explanation": "Legitimate power is derived from the official hierarchy or job title held by an individual."
+              },
+              {
+                "id": "ob-q15",
+                "question": "What is 'Job Enlargement'?",
+                "options": ["Giving an employee more pay", "Increasing the number of different tasks in a job", "Moving the desk to a bigger room", "Hiring more people for one job"],
+                "correctOptionIndex": 1,
+                "explanation": "Job enlargement involves expanding the scope of a job by adding more tasks at the same level (horizontal expansion)."
+              },
+              {
+                "id": "ob-q16",
+                "question": "Organizational Citizenship Behavior (OCB) refers to:",
+                "options": ["Working only the required hours", "Discretionary behavior that promotes the effective functioning of the organization", "The legal status of the company", "Reporting to the government"],
+                "correctOptionIndex": 1,
+                "explanation": "OCB includes voluntary actions, like helping a coworker or staying late, that go beyond the basic job requirements."
+              },
+              {
+                "id": "ob-q17",
+                "question": "In the communication process, 'Noise' is:",
+                "options": ["Only loud sounds", "Any barrier that distorts or interferes with the message", "The radio in the background", "The boss shouting"],
+                "correctOptionIndex": 1,
+                "explanation": "Noise can be psychological (stress), physical (static), or semantic (language barriers) that disrupt communication."
+              },
+              {
+                "id": "ob-q18",
+                "question": "What is 'Social Loafing'?",
+                "options": ["Eating lunch together", "The tendency for individuals to expend less effort when working collectively than alone", "Using social media at work", "Promoting friends"],
+                "correctOptionIndex": 1,
+                "explanation": "Social loafing occurs in groups where individuals feel their contribution isn't being measured directly."
+              },
+              {
+                "id": "ob-q19",
+                "question": "Which conflict management style involves a 'win-win' solution?",
+                "options": ["Avoiding", "Competing", "Collaborating", "Accommodating"],
+                "correctOptionIndex": 2,
+                "explanation": "Collaboration seeks to satisfy the needs of both parties fully, leading to an integrative or win-win outcome."
+              },
+              {
+                "id": "ob-q20",
+                "question": "What is 'Organizational Commitment'?",
+                "options": ["The legal contract", "The degree to which an employee identifies with a particular organization and its goals", "Paying the membership fee", "The company's promise to pay"],
+                "correctOptionIndex": 1,
+                "explanation": "Committed employees have a strong sense of loyalty and a desire to remain a member of the organization."
+              }
+            ]
+          }
         },
         {
           "id": "bm-ch3",
           "name": "Strategic Management",
-          "questions": []
+          "questions": 
+          {
+            "id": "mgmt-ch3",
+            "name": "Chapter 3: Strategic Management",
+            "questions": [
+              {
+                "id": "st-q1",
+                "question": "What is the primary purpose of Strategic Management?",
+                "options": ["To manage daily tasks", "To achieve long-term competitive advantage", "To hire new staff", "To record daily sales"],
+                "correctOptionIndex": 1,
+                "explanation": "Strategic management focuses on high-level, long-term planning to ensure the organization's survival and success in a competitive market."
+              },
+              {
+                "id": "st-q2",
+                "question": "The 'Vision Statement' of a company answers which question?",
+                "options": ["What is our business?", "What do we want to become?", "How much profit did we make?", "Who are our competitors?"],
+                "correctOptionIndex": 1,
+                "explanation": "A vision statement describes the future aspirations and the ultimate goal of the organization."
+              },
+              {
+                "id": "st-q3",
+                "question": "In SWOT analysis, 'Weaknesses' are:",
+                "options": ["Internal factors that hinder performance", "External market trends", "Government regulations", "Competitor actions"],
+                "correctOptionIndex": 0,
+                "explanation": "Strengths and Weaknesses are internal factors within the control of the organization."
+              },
+              {
+                "id": "st-q4",
+                "question": "Which tool is used to analyze the macro-environmental factors of a business?",
+                "options": ["SWOT", "BCG Matrix", "PESTEL", "Value Chain Analysis"],
+                "correctOptionIndex": 2,
+                "explanation": "PESTEL analysis looks at Political, Economic, Social, Technological, Environmental, and Legal factors."
+              },
+              {
+                "id": "st-q5",
+                "question": "Michael Porter’s 'Five Forces' model is used to analyze:",
+                "options": ["Employee performance", "Industry attractiveness and competition", "Internal accounting", "Product quality"],
+                "correctOptionIndex": 1,
+                "explanation": "The Five Forces model evaluates the competitive intensity and profitability potential of an industry."
+              },
+              {
+                "id": "st-q6",
+                "question": "Which of Porter’s Generic Strategies focuses on having the lowest costs in the industry?",
+                "options": ["Differentiation", "Cost Leadership", "Focus Strategy", "Market Penetration"],
+                "correctOptionIndex": 1,
+                "explanation": "Cost Leadership involves becoming the low-cost producer in an industry for a given level of quality."
+              },
+              {
+                "id": "st-q7",
+                "question": "What does a 'Differentiation' strategy involve?",
+                "options": ["Selling at the lowest price", "Creating unique products that customers perceive as valuable", "Closing down small branches", "Selling only one type of product"],
+                "correctOptionIndex": 1,
+                "explanation": "Differentiation focuses on making a product unique and attractive compared to competitors' offerings."
+              },
+              {
+                "id": "st-q8",
+                "question": "The BCG Matrix classifies products into four categories. What are they?",
+                "options": ["High, Medium, Low, Zero", "Stars, Cash Cows, Question Marks, Dogs", "Internal, External, Good, Bad", "First, Second, Third, Fourth"],
+                "correctOptionIndex": 1,
+                "explanation": "The BCG Matrix evaluates products based on market growth and market share."
+              },
+              {
+                "id": "st-q9",
+                "question": "A 'Cash Cow' in the BCG Matrix represents a product with:",
+                "options": ["High market share in a slow-growth industry", "Low market share in a fast-growth industry", "No market share", "High market share in a fast-growth industry"],
+                "correctOptionIndex": 0,
+                "explanation": "Cash Cows generate more cash than they consume and are used to fund other business units."
+              },
+              {
+                "id": "st-q10",
+                "question": "What is 'Backward Integration'?",
+                "options": ["Buying a competitor", "A firm moving into the business of its suppliers", "A firm moving into the business of its distributors", "Returning to old management styles"],
+                "correctOptionIndex": 1,
+                "explanation": "Backward integration occurs when a company gains control over its inputs/suppliers."
+              },
+              {
+                "id": "st-q11",
+                "question": "The 'Value Chain Analysis' was developed by:",
+                "options": ["Igor Ansoff", "Michael Porter", "Peter Drucker", "Henry Mintzberg"],
+                "correctOptionIndex": 1,
+                "explanation": "Michael Porter developed the Value Chain to identify activities that create value for customers."
+              },
+              {
+                "id": "st-q12",
+                "question": "Which of Ansoff’s strategies involves selling new products to new markets?",
+                "options": ["Market Penetration", "Market Development", "Product Development", "Diversification"],
+                "correctOptionIndex": 3,
+                "explanation": "Diversification is the riskiest growth strategy as it involves both new products and new markets."
+              },
+              {
+                "id": "st-q13",
+                "question": "What is 'Strategic Intent'?",
+                "options": ["A mistake in the plan", "The long-term obsession with winning and leadership in the industry", "Following the government's rules", "Hiring a new CEO"],
+                "correctOptionIndex": 1,
+                "explanation": "Strategic intent is a high-level statement of the firm's ambition and the direction it wants to take."
+              },
+              {
+                "id": "st-q14",
+                "question": "Which of these is a 'Primary Activity' in Porter’s Value Chain?",
+                "options": ["Human Resource Management", "Procurement", "Inbound Logistics", "Technology Development"],
+                "correctOptionIndex": 2,
+                "explanation": "Primary activities include Inbound Logistics, Operations, Outbound Logistics, Marketing, and Service."
+              },
+              {
+                "id": "st-q15",
+                "question": "What is 'Horizontal Integration'?",
+                "options": ["Buying a supplier", "Acquiring or merging with a competitor", "Selling all assets", "Changing the company name"],
+                "correctOptionIndex": 1,
+                "explanation": "Horizontal integration involves expanding by taking over companies at the same level of the value chain."
+              },
+              {
+                "id": "st-q16",
+                "question": "A 'Blue Ocean' strategy is one where a firm:",
+                "options": ["Competes in an existing crowded market", "Creates an uncontested market space where competition is irrelevant", "Sells only fishing equipment", "Lowers prices below cost"],
+                "correctOptionIndex": 1,
+                "explanation": "Blue ocean strategy focuses on value innovation and creating new demand in a market with no competitors."
+              },
+              {
+                "id": "st-q17",
+                "question": "Which level of strategy is concerned with how a specific business unit competes within its industry?",
+                "options": ["Corporate Strategy", "Business-Level Strategy", "Functional Strategy", "Global Strategy"],
+                "correctOptionIndex": 1,
+                "explanation": "Business-level strategy focuses on the competitive position of a specific business unit."
+              },
+              {
+                "id": "st-q18",
+                "question": "What is 'Core Competency'?",
+                "options": ["The total number of employees", "A unique skill or resource that gives a firm a competitive edge", "The company's bank balance", "The rules of the company"],
+                "correctOptionIndex": 1,
+                "explanation": "Core competencies are resources and capabilities that serve as a source of competitive advantage for a firm."
+              },
+              {
+                "id": "st-q19",
+                "question": "What does 'Retrenchment' strategy involve?",
+                "options": ["Rapidly hiring new people", "Scaling back operations or selling business units to improve performance", "Moving to a new country", "Increasing the marketing budget"],
+                "correctOptionIndex": 1,
+                "explanation": "Retrenchment is a defensive strategy used to reduce costs and reverse declining sales."
+              },
+              {
+                "id": "st-q20",
+                "question": "The 'Balanced Scorecard' measures performance across four perspectives. Which of these is NOT one of them?",
+                "options": ["Financial", "Customer", "Internal Process", "Social Media Followers"],
+                "correctOptionIndex": 3,
+                "explanation": "The four perspectives are Financial, Customer, Internal Processes, and Learning & Growth."
+              }
+            ]
+          }
         },
         {
           "id": "bm-ch4",
           "name": "Operations Management",
-          "questions": []
+          "questions": 
+          {
+            "id": "mgmt-ch4",
+            "name": "Chapter 4: Operations Management",
+            "questions": [
+              {
+                "id": "op-q1",
+                "question": "What is the primary goal of Operations Management?",
+                "options": ["To increase marketing spend", "To manage the process of transforming inputs into outputs efficiently", "To hire financial auditors", "To design the company logo"],
+                "correctOptionIndex": 1,
+                "explanation": "Operations management focuses on effectively managing the production and delivery of goods and services."
+              },
+              {
+                "id": "op-q2",
+                "question": "Which of the following is an 'Input' in a transformation process?",
+                "options": ["Finished goods", "Customer satisfaction", "Raw materials and labor", "After-sales service"],
+                "correctOptionIndex": 2,
+                "explanation": "Inputs are the resources such as labor, capital, and materials that are converted into products or services."
+              },
+              {
+                "id": "op-q3",
+                "question": "What does 'JIT' stand for in inventory management?",
+                "options": ["Just In Time", "Journal Internal Trade", "Job Integration Tool", "Joint Industry Task"],
+                "correctOptionIndex": 0,
+                "explanation": "Just-In-Time (JIT) is a strategy to increase efficiency by receiving goods only as they are needed in the production process."
+              },
+              {
+                "id": "op-q4",
+                "question": "Total Quality Management (TQM) emphasizes:",
+                "options": ["Checking quality only at the end", "Continuous improvement and customer satisfaction", "Hiring more managers", "Increasing price"],
+                "correctOptionIndex": 1,
+                "explanation": "TQM is a management approach centered on quality, based on the participation of all members and aimed at long-term success."
+              },
+              {
+                "id": "op-q5",
+                "question": "In project management, what is the 'Critical Path'?",
+                "options": ["The shortest task", "The longest sequence of activities that determines the project duration", "The easiest path to finish", "The list of employees"],
+                "correctOptionIndex": 1,
+                "explanation": "The critical path is the sequence of stages determining the minimum time needed for an operation or project."
+              },
+              {
+                "id": "op-q6",
+                "question": "Which layout is best suited for high-volume, standardized production (like an assembly line)?",
+                "options": ["Process Layout", "Product Layout", "Fixed-Position Layout", "Cellular Layout"],
+                "correctOptionIndex": 1,
+                "explanation": "A product layout (assembly line) is designed to handle high volumes of similar items efficiently."
+              },
+              {
+                "id": "op-q7",
+                "question": "What is 'Supply Chain Management'?",
+                "options": ["Managing internal staff only", "The management of the flow of goods and services from origin to consumption", "Hiring a new supplier", "Buying a new truck"],
+                "correctOptionIndex": 1,
+                "explanation": "Supply chain management involves coordinating all activities from raw material sourcing to final delivery to the customer."
+              },
+              {
+                "id": "op-q8",
+                "question": "The 'Six Sigma' methodology aims to:",
+                "options": ["Hire six managers", "Reduce defects and variability in processes", "Increase the number of products to six", "Working six days a week"],
+                "correctOptionIndex": 1,
+                "explanation": "Six Sigma uses statistical tools to eliminate defects and improve process quality (targeting 3.4 defects per million)."
+              },
+              {
+                "id": "op-q9",
+                "question": "What is 'Lean Manufacturing'?",
+                "options": ["Hiring thin employees", "Minimizing waste without sacrificing productivity", "Producing only one product", "Reducing the factory size"],
+                "correctOptionIndex": 1,
+                "explanation": "Lean production focuses on creating more value for customers with fewer resources by eliminating waste."
+              },
+              {
+                "id": "op-q10",
+                "question": "A 'Fixed-Position Layout' is used when:",
+                "options": ["The product is very large or heavy (like a ship or bridge)", "Products move on a belt", "There are many small products", "No machines are used"],
+                "correctOptionIndex": 0,
+                "explanation": "In a fixed-position layout, the product stays in one place and workers/equipment come to it."
+              },
+              {
+                "id": "op-q11",
+                "question": "What does 'Capacity' mean in operations?",
+                "options": ["The maximum output rate an operation can achieve", "The amount of money in the bank", "The number of managers", "The size of the parking lot"],
+                "correctOptionIndex": 0,
+                "explanation": "Capacity refers to the upper limit or ceiling on the load that an operating unit can handle."
+              },
+              {
+                "id": "op-q12",
+                "question": "The 'Economic Order Quantity' (EOQ) model helps determine:",
+                "options": ["The highest price to charge", "The optimal order size that minimizes total inventory costs", "How many people to hire", "The fastest delivery route"],
+                "correctOptionIndex": 1,
+                "explanation": "EOQ balances holding costs and ordering costs to find the most cost-effective amount to order."
+              },
+              {
+                "id": "op-q13",
+                "question": "What is 'Outsourcing'?",
+                "options": ["Selling products outside the country", "Hiring an outside party to perform services or create goods", "Hiring new staff", "Moving to a new building"],
+                "correctOptionIndex": 1,
+                "explanation": "Outsourcing is the business practice of hiring a party outside a company to perform services or create goods that were traditionally done in-house."
+              },
+              {
+                "id": "op-q14",
+                "question": "In operations, 'Flexibility' refers to:",
+                "options": ["Employee stretching", "The ability to respond quickly to changes in demand or product mix", "Reducing prices", "Working on weekends"],
+                "correctOptionIndex": 1,
+                "explanation": "Flexibility is a competitive priority that allows a firm to adapt to changing market needs."
+              },
+              {
+                "id": "op-q15",
+                "question": "What is 'Benchmarking'?",
+                "options": ["Buying new benches for the office", "Comparing a company's processes and performance to industry bests", "Firing low-performing staff", "Setting the highest price"],
+                "correctOptionIndex": 1,
+                "explanation": "Benchmarking involves identifying the best practices in other organizations and adapting them to improve one's own performance."
+              },
+              {
+                "id": "op-q16",
+                "question": "The 'Bottleneck' in a process is:",
+                "options": ["The shape of the product", "The step with the lowest capacity that limits the entire process", "The storage area", "The final inspection"],
+                "correctOptionIndex": 1,
+                "explanation": "A bottleneck is the point of congestion in a production system that stops or slows down the workflow."
+              },
+              {
+                "id": "op-q17",
+                "question": "What is 'Mass Customization'?",
+                "options": ["Producing only one item", "The ability to provide individually tailored products using high-volume production resources", "Giving everyone a discount", "Selling to a mass audience"],
+                "correctOptionIndex": 1,
+                "explanation": "Mass customization combines the flexibility of custom-made products with the low unit costs of mass production."
+              },
+              {
+                "id": "op-q18",
+                "question": "Which of these is a 'Holding Cost' in inventory?",
+                "options": ["Shipping costs", "Storage and insurance costs", "Advertising costs", "Purchase price"],
+                "correctOptionIndex": 1,
+                "explanation": "Holding (or carrying) costs include the expense of keeping inventory, such as rent, insurance, and obsolescence."
+              },
+              {
+                "id": "op-q19",
+                "question": "The ISO 9000 series is related to:",
+                "options": ["Environmental standards", "Quality management standards", "Safety standards", "Accounting standards"],
+                "correctOptionIndex": 1,
+                "explanation": "ISO 9000 is a set of international standards on quality management and quality assurance."
+              },
+              {
+                "id": "op-q20",
+                "question": "What is 'Lead Time'?",
+                "options": ["The time the manager spends leading", "The time between placing an order and receiving it", "The time a product lasts", "The time it takes to sell a product"],
+                "correctOptionIndex": 1,
+                "explanation": "Lead time is the latency between the initiation and completion of a process (e.g., from order to delivery)."
+              }
+            ]
+          }
         },
         {
           "id": "bm-ch5",
           "name": "Human Resource Management",
-          "questions": []
+          "questions": 
+          {
+            "id": "mgmt-ch5",
+            "name": "Chapter 5: Human Resource Management",
+            "questions": [
+              {
+                "id": "hr-q1",
+                "question": "What is the main goal of Human Resource Management?",
+                "options": ["To reduce taxes", "To manage and develop the organization's people for maximum productivity", "To replace human labor with machines", "To write company laws"],
+                "correctOptionIndex": 1,
+                "explanation": "HRM focuses on managing people within an organization to achieve a competitive advantage through its workforce."
+              },
+              {
+                "id": "hr-q2",
+                "question": "The process of attracting qualified candidates for a job is called:",
+                "options": ["Selection", "Recruitment", "Orientation", "Induction"],
+                "correctOptionIndex": 1,
+                "explanation": "Recruitment is the process of finding and encouraging potential employees to apply for jobs."
+              },
+              {
+                "id": "hr-q3",
+                "question": "What is 'Job Analysis'?",
+                "options": ["Checking an employee's attendance", "The process of determining the duties and skill requirements of a job", "Firing a worker", "Increasing the salary"],
+                "correctOptionIndex": 1,
+                "explanation": "Job analysis results in a job description (what they do) and a job specification (who they should be)."
+              },
+              {
+                "id": "hr-q4",
+                "question": "Which document lists the human requirements (skills, education, experience) for a job?",
+                "options": ["Job Description", "Job Specification", "Job Evaluation", "Job Rotation"],
+                "correctOptionIndex": 1,
+                "explanation": "A Job Specification focuses on the person, while a Job Description focuses on the tasks."
+              },
+              {
+                "id": "hr-q5",
+                "question": "The process of choosing the best candidate from a pool of applicants is:",
+                "options": ["Recruitment", "Selection", "Training", "Appraisal"],
+                "correctOptionIndex": 1,
+                "explanation": "Selection is the 'filtering' process to pick the most suitable person for the position."
+              },
+              {
+                "id": "hr-q6",
+                "question": "What is 'Orientation' (or Induction)?",
+                "options": ["A map of the office", "Introducing new employees to their jobs and the organization", "A type of training for managers", "The last day of work"],
+                "correctOptionIndex": 1,
+                "explanation": "Orientation helps new hires adjust to the company culture and understand their roles."
+              },
+              {
+                "id": "hr-q7",
+                "question": "Which of these is an example of 'Off-the-Job' training?",
+                "options": ["Apprenticeship", "Job Rotation", "Attending a University or Workshop", "Coaching"],
+                "correctOptionIndex": 2,
+                "explanation": "Off-the-job training happens away from the actual work site, often in a classroom or seminar."
+              },
+              {
+                "id": "hr-q8",
+                "question": "What is the purpose of a 'Performance Appraisal'?",
+                "options": ["To find excuses to fire people", "To evaluate an employee's work performance and provide feedback", "To increase the company's debt", "To count the number of products"],
+                "correctOptionIndex": 1,
+                "explanation": "Performance appraisal is used for salary adjustments, promotions, and identifying training needs."
+              },
+              {
+                "id": "hr-q9",
+                "question": "What is '360-Degree Feedback'?",
+                "options": ["Looking around the office", "Performance feedback from superiors, peers, subordinates, and customers", "Working 24 hours", "Talking in a circle"],
+                "correctOptionIndex": 1,
+                "explanation": "360-degree feedback provides a comprehensive view of an employee's performance from all directions."
+              },
+              {
+                "id": "hr-q10",
+                "question": "Internal recruitment refers to:",
+                "options": ["Hiring from outside the country", "Filling job openings with current employees", "Hiring friends of the manager", "Using a recruitment agency"],
+                "correctOptionIndex": 1,
+                "explanation": "Internal recruitment involves promotions or transfers of people already working in the firm."
+              },
+              {
+                "id": "hr-q11",
+                "question": "What are 'Fringe Benefits'?",
+                "options": ["Basic salary", "Non-wage compensation (like health insurance or pensions)", "The profit of the company", "Money stolen from the firm"],
+                "correctOptionIndex": 1,
+                "explanation": "Fringe benefits are extra incentives provided to employees in addition to their regular salary."
+              },
+              {
+                "id": "hr-q12",
+                "question": "Collective Bargaining is a process between:",
+                "options": ["Two different companies", "Managers and Shareholders", "Employers and Labor Unions", "Customers and Salespeople"],
+                "correctOptionIndex": 2,
+                "explanation": "Collective bargaining is used to negotiate wages, hours, and other conditions of employment."
+              },
+              {
+                "id": "hr-q13",
+                "question": "What is 'Employee Turnover'?",
+                "options": ["Moving employees to a new building", "The rate at which employees leave and are replaced in a company", "Rotating people during the day", "Hiring more managers"],
+                "correctOptionIndex": 1,
+                "explanation": "High turnover can be expensive and may indicate problems with morale or management."
+              },
+              {
+                "id": "hr-q14",
+                "question": "Which of these is a 'Maintenance' or 'Hygiene' factor according to Herzberg?",
+                "options": ["Achievement", "Recognition", "Salary and Working Conditions", "Growth"],
+                "correctOptionIndex": 2,
+                "explanation": "Salary and conditions don't necessarily motivate, but their absence causes dissatisfaction."
+              },
+              {
+                "id": "hr-q15",
+                "question": "What is 'Job Rotation'?",
+                "options": ["Turning the office chairs", "Moving employees between different jobs to increase variety", "Working only on weekends", "Changing the manager every month"],
+                "correctOptionIndex": 1,
+                "explanation": "Job rotation helps reduce boredom and broadens the skills of the employees."
+              },
+              {
+                "id": "hr-q16",
+                "question": "What is the 'Halo Effect' in interviews?",
+                "options": ["The lights in the room", "Letting one strong positive trait influence the entire evaluation", "Hiring only religious people", "Ignoring all candidates"],
+                "correctOptionIndex": 1,
+                "explanation": "The halo effect is a bias where the interviewer's judgment of one quality overshadows all others."
+              },
+              {
+                "id": "hr-q17",
+                "question": "What is 'Management by Objectives' (MBO)?",
+                "options": ["Managers doing all the work", "Setting specific goals jointly between managers and employees", "Having no goals", "Only checking profits"],
+                "correctOptionIndex": 1,
+                "explanation": "MBO improves motivation and clarity by involving employees in the goal-setting process."
+              },
+              {
+                "id": "hr-q18",
+                "question": "Human Capital refers to:",
+                "options": ["The money in the company bank", "The value of employees' skills, knowledge, and experience", "The number of robots", "The head office building"],
+                "correctOptionIndex": 1,
+                "explanation": "Human capital recognizes that employees are assets whose value can be increased through training."
+              },
+              {
+                "id": "hr-q19",
+                "question": "A 'Grievance' is:",
+                "options": ["A happy event", "A formal complaint by an employee about their work or treatment", "A government tax", "A meeting for new staff"],
+                "correctOptionIndex": 1,
+                "explanation": "Handling grievances effectively is crucial for maintaining good employee relations."
+              },
+              {
+                "id": "hr-q20",
+                "question": "What is 'Succession Planning'?",
+                "options": ["Planning for a party", "Identifying and developing future leaders to replace old ones", "Planning to sell the company", "Hiring more interns"],
+                "correctOptionIndex": 1,
+                "explanation": "Succession planning ensures the company has talent ready to fill key roles when people leave or retire."
+              }
+            ]
+          }
         }
       ]
     },
@@ -1858,17 +3279,441 @@
         {
           "id": "edpm-ch3",
           "name": "Leadership in Education",
-          "questions": []
+  "questions": [
+    {
+      "id": "led-q1",
+      "question": "What is the fundamental difference between management and leadership in a school setting?",
+      "options": ["Management is for teachers, leadership is for principals", "Management focuses on processes and stability, while leadership focuses on vision and change", "Leadership is about punishment, management is about rewards", "There is no difference between them"],
+      "correctOptionIndex": 1,
+      "explanation": "Management ensures the school runs efficiently (doing things right), while leadership inspires a shared vision and direction (doing the right things)."
+    },
+    {
+      "id": "led-q2",
+      "question": "Which leadership theory suggests that leaders are born with certain innate qualities, not made?",
+      "options": ["Behavioral Theory", "Contingency Theory", "Great Man (Trait) Theory", "Situational Theory"],
+      "correctOptionIndex": 2,
+      "explanation": "The Trait Theory assumes that leadership depends on personal qualities like intelligence, confidence, and charisma that one is born with."
+    },
+    {
+      "id": "led-q3",
+      "question": "Transformational Leadership in education is characterized by:",
+      "options": ["Maintaining the status quo", "Using rewards and punishments for every task", "Inspiring and motivating staff to achieve extraordinary goals and personal growth", "Strict adherence to old rules"],
+      "correctOptionIndex": 2,
+      "explanation": "Transformational leaders focus on changing the school culture and empowering followers to become leaders themselves."
+    },
+    {
+      "id": "led-q4",
+      "question": "Which leadership style is most effective when working with a team of highly experienced and self-motivated professional teachers?",
+      "options": ["Autocratic", "Laissez-faire (Delegative)", "Dictatorial", "Coercive"],
+      "correctOptionIndex": 1,
+      "explanation": "Laissez-faire leadership works well with experts who require minimal guidance and value autonomy."
+    },
+    {
+      "id": "led-q5",
+      "question": "Transactional Leadership relies primarily on:",
+      "options": ["Moral values", "Inspiration", "Exchanges (rewards for performance and penalties for failure)", "Long-term vision"],
+      "correctOptionIndex": 2,
+      "explanation": "Transactional leadership is based on a 'give and take' relationship between the leader and the followers."
+    },
+    {
+      "id": "led-q6",
+      "question": "The 'Situational Leadership' model suggests that a leader should adjust their style based on:",
+      "options": ["The weather", "The maturity and readiness level of the followers", "The principal's mood", "The school's location"],
+      "correctOptionIndex": 1,
+      "explanation": "Situational leadership (Hersey-Blanchard) emphasizes that there is no 'one size fits all' style; it depends on the task and staff readiness."
+    },
+    {
+      "id": "led-q7",
+      "question": "What is 'Distributed Leadership' in a school?",
+      "options": ["Giving all power to the guard", "Sharing leadership responsibilities across various individuals and levels in the school", "The principal working 24 hours a day", "Sending all teachers to another school"],
+      "correctOptionIndex": 1,
+      "explanation": "Distributed leadership recognizes that expertise is spread throughout the school and encourages teacher leadership."
+    },
+    {
+      "id": "led-q8",
+      "question": "Which of the following is a key component of 'Emotional Intelligence' (EI) in leadership?",
+      "options": ["High IQ in mathematics", "Self-awareness and empathy", "Technical programming skills", "Physical strength"],
+      "correctOptionIndex": 1,
+      "explanation": "Empathy and self-regulation are critical for managing relationships and school morale effectively."
+    },
+    {
+      "id": "led-q9",
+      "question": "In Fiedler’s Contingency Model, the effectiveness of a leader depends on:",
+      "options": ["The leader's age", "The match between the leader's style and the situational favorableness", "The number of students", "The school's budget"],
+      "correctOptionIndex": 1,
+      "explanation": "Fiedler argues that certain styles work better in specific situations (highly structured vs. unstructured)."
+    },
+    {
+      "id": "led-q10",
+      "question": "What is the first step in the 'Change Process' (according to Kurt Lewin)?",
+      "options": ["Moving (Changing)", "Unfreezing", "Refreezing", "Evaluating"],
+      "correctOptionIndex": 1,
+      "explanation": "Unfreezing involves preparing the organization to accept that change is necessary by breaking down existing beliefs."
+    },
+    {
+      "id": "led-q11",
+      "question": "Which type of power is based on the leader's specialized knowledge or skills?",
+      "options": ["Legitimate Power", "Coercive Power", "Expert Power", "Reward Power"],
+      "correctOptionIndex": 2,
+      "explanation": "Followers comply because they respect the leader's expertise in a particular area."
+    },
+    {
+      "id": "led-q12",
+      "question": "Legitimate power comes from:",
+      "options": ["Being liked by everyone", "The leader's formal position or office in the hierarchy", "Giving out gifts", "Threatening others"],
+      "correctOptionIndex": 1,
+      "explanation": "Also known as positional power, it is granted by the organization's structure."
+    },
+    {
+      "id": "led-q13",
+      "question": "A leader who acts as a 'Servant Leader' prioritizes:",
+      "options": ["Their own career growth", "The needs of their followers and the community", "Strict control of the budget", "Acquiring more titles"],
+      "correctOptionIndex": 1,
+      "explanation": "Servant leadership focuses on serving others first to help them develop and perform as highly as possible."
+    },
+    {
+      "id": "led-q14",
+      "question": "The 'Path-Goal Theory' suggests that a leader’s main job is to:",
+      "options": ["Block the students' path", "Clarify the path to help followers reach their goals and remove obstacles", "Make the path as difficult as possible", "Stay in the office"],
+      "correctOptionIndex": 1,
+      "explanation": "Leaders motivate followers by ensuring the path to rewards is clear and reachable."
+    },
+    {
+      "id": "led-q15",
+      "question": "Which leadership skill involves the ability to think strategically and see the 'big picture' of the school system?",
+      "options": ["Technical Skill", "Human Skill", "Conceptual Skill", "Writing Skill"],
+      "correctOptionIndex": 2,
+      "explanation": "Conceptual skills are vital for top-level leaders to understand complex relationships and long-term planning."
+    },
+    {
+      "id": "led-q16",
+      "question": "Resistance to change in schools is often caused by:",
+      "options": ["Fear of the unknown and loss of status", "Too much free time", "Having no opinions", "High salaries"],
+      "correctOptionIndex": 0,
+      "explanation": "Psychological factors and fear of losing comfort zones are major barriers to innovation."
+    },
+    {
+      "id": "led-q17",
+      "question": "In the 'Managerial Grid' (Blake and Mouton), a 9,9 leader shows:",
+      "options": ["Low concern for people, low concern for production", "High concern for people, low concern for production", "High concern for people, high concern for production", "Medium concern for both"],
+      "correctOptionIndex": 2,
+      "explanation": "The 9,9 style (Team Management) is considered the most effective by balancing both people and tasks."
+    },
+    {
+      "id": "led-q18",
+      "question": "Which leadership style involves the leader and followers working as partners to make decisions?",
+      "options": ["Participative (Democratic)", "Dictatorial", "Monarchical", "Bureaucratic"],
+      "correctOptionIndex": 0,
+      "explanation": "Participative leadership improves decision quality and increases staff commitment."
+    },
+    {
+      "id": "led-q19",
+      "question": "The concept of 'Referent Power' is based on:",
+      "options": ["The ability to fire someone", "The followers' admiration and desire to identify with the leader", "Having many degrees", "Knowing the law"],
+      "correctOptionIndex": 1,
+      "explanation": "Referent power is driven by charisma and personal likability."
+    },
+    {
+      "id": "led-q20",
+      "question": "Ethical leadership in education requires:",
+      "options": ["Hiding truth from parents", "Integrity, fairness, and putting student welfare first", "Focusing only on profit", "Making decisions based on personal friendship"],
+      "correctOptionIndex": 1,
+      "explanation": "Ethical leaders serve as role models and build trust through consistent moral behavior."
+    }
+  ]
+
         },
         {
           "id": "edpm-ch4",
-          "name": "Curriculum Management",
-          "questions": []
+          "name": "Curriculum Management",                 
+  "questions": [
+    {
+      "id": "curr-q1",
+      "question": "What is the definition of 'Curriculum' in its broadest sense?",
+      "options": ["A list of textbooks", "All the learning experiences planned and guided by the school", "The school's physical infrastructure", "The national exam schedule"],
+      "correctOptionIndex": 1,
+      "explanation": "Curriculum includes not just subjects, but all planned activities, interactions, and experiences students have under the school's guidance."
+    },
+    {
+      "id": "curr-q2",
+      "question": "The 'Hidden Curriculum' refers to:",
+      "options": ["The subjects that are not tested", "The unintended lessons, values, and perspectives students learn in school", "The curriculum for special needs students", "The locked files in the principal's office"],
+      "correctOptionIndex": 1,
+      "explanation": "The hidden curriculum consists of social norms and values students pick up from the school environment and culture."
+    },
+    {
+      "id": "curr-q3",
+      "question": "Which stage of curriculum development involves identifying the needs of the learners and society?",
+      "options": ["Curriculum Implementation", "Situation Analysis (Needs Assessment)", "Curriculum Evaluation", "Curriculum Design"],
+      "correctOptionIndex": 1,
+      "explanation": "Situation analysis is the first step, where planners study the learners, society, and subject matter to determine what needs to be taught."
+    },
+    {
+      "id": "curr-q4",
+      "question": "A 'Subject-Centered' curriculum design focuses primarily on:",
+      "options": ["The interests of the student", "The logical organization of academic disciplines", "Solving community problems", "Vocational training"],
+      "correctOptionIndex": 1,
+      "explanation": "This traditional design organizes content based on separate subjects like Math, History, and Science."
+    },
+    {
+      "id": "curr-q5",
+      "question": "Which curriculum design prioritizes the student's needs, interests, and experiences?",
+      "options": ["Subject-Centered Design", "Learner-Centered Design", "Problem-Centered Design", "Core Curriculum Design"],
+      "correctOptionIndex": 1,
+      "explanation": "Learner-centered design places the student at the heart of the educational process."
+    },
+    {
+      "id": "curr-q6",
+      "question": "What is 'Curriculum Implementation'?",
+      "options": ["Writing the curriculum document", "The process of putting the planned curriculum into practice in the classroom", "Evaluating the students' grades", "Printing textbooks"],
+      "correctOptionIndex": 1,
+      "explanation": "Implementation is the most critical stage where teachers interact with students using the curriculum materials."
+    },
+    {
+      "id": "curr-q7",
+      "question": "In curriculum organization, 'Sequence' refers to:",
+      "options": ["Repeating the same topic every year", "The order in which content is presented over time", "The breadth of the content", "Connecting different subjects together"],
+      "correctOptionIndex": 1,
+      "explanation": "Sequence ensures that learning follows a logical flow (e.g., from simple to complex)."
+    },
+    {
+      "id": "curr-q8",
+      "question": "What is 'Curriculum Integration'?",
+      "options": ["Focusing on only one subject", "Connecting different subject areas to help students see the relationship between them", "Separating students by ability", "Ending the school day early"],
+      "correctOptionIndex": 1,
+      "explanation": "Integration breaks down the walls between subjects to provide a more holistic learning experience."
+    },
+    {
+      "id": "curr-q9",
+      "question": "The process of making judgments about the value or worth of a curriculum is called:",
+      "options": ["Curriculum Design", "Curriculum Planning", "Curriculum Evaluation", "Curriculum Dissemination"],
+      "correctOptionIndex": 2,
+      "explanation": "Evaluation determines if the curriculum is achieving its goals and if it needs revision."
+    },
+    {
+      "id": "curr-q10",
+      "question": "Who is the primary 'Implementer' of the curriculum?",
+      "options": ["The Minister of Education", "The Classroom Teacher", "The Textbook Author", "The School Guard"],
+      "correctOptionIndex": 1,
+      "explanation": "Teachers are the front-line agents who translate the planned curriculum into actual learning."
+    },
+    {
+      "id": "curr-q11",
+      "question": "What is 'Formative Evaluation' in curriculum?",
+      "options": ["Evaluation done at the very end of the year", "Evaluation conducted during the development and implementation process to improve it", "Testing only the smartest students", "Measuring the school's budget"],
+      "correctOptionIndex": 1,
+      "explanation": "Formative evaluation provides ongoing feedback to make adjustments before the curriculum is finalized."
+    },
+    {
+      "id": "curr-q12",
+      "question": "Which model of curriculum development starts with the teacher and moves up to national levels?",
+      "options": ["Top-down (Administrative) Model", "Grassroots (Taba) Model", "Demonstration Model", "Systemic Model"],
+      "correctOptionIndex": 1,
+      "explanation": "Hilda Taba’s Grassroots model argues that those who teach the curriculum (teachers) should design it."
+    },
+    {
+      "id": "curr-q13",
+      "question": "The 'Scope' of the curriculum refers to:",
+      "options": ["The time taken to teach a lesson", "የይዘቱ ስፋትና ጥልቀት (The breadth and depth of the content)", "The number of teachers in the school", "The size of the classroom"],
+      "correctOptionIndex": 1,
+      "explanation": "Scope defines the boundaries of what will be taught at a particular level."
+    },
+    {
+      "id": "curr-q14",
+      "question": "What is 'Summative Evaluation'?",
+      "options": ["Evaluation done during the first week", "Evaluation performed at the end of a program to determine its overall effectiveness", "Evaluating the teacher's dress code", "Counting the number of chairs"],
+      "correctOptionIndex": 1,
+      "explanation": "Summative evaluation (like an exit exam) assesses the final outcome of the learning process."
+    },
+    {
+      "id": "curr-q15",
+      "question": "Which 'Foundation of Curriculum' deals with how students learn and develop?",
+      "options": ["Philosophical Foundation", "Psychological Foundation", "Sociological Foundation", "Historical Foundation"],
+      "correctOptionIndex": 1,
+      "explanation": "Psychology informs planners about student readiness, motivation, and learning styles."
+    },
+    {
+      "id": "curr-q16",
+      "question": "The 'Spiral Curriculum' involves:",
+      "options": ["Teaching a topic only once and never again", "Revisiting topics at increasing levels of complexity in different grades", "Teaching students in a circle", "Focusing only on sports"],
+      "correctOptionIndex": 1,
+      "explanation": "The spiral approach (Jerome Bruner) reinforces learning by returning to core concepts over time."
+    },
+    {
+      "id": "curr-q17",
+      "question": "What is 'Curriculum Dissemination'?",
+      "options": ["Burning old textbooks", "Communicating and distributing the new curriculum and materials to schools", "Changing the school's name", "Increasing student fees"],
+      "correctOptionIndex": 1,
+      "explanation": "Dissemination ensures that teachers and administrators are aware of and prepared for curriculum changes."
+    },
+    {
+      "id": "curr-q18",
+      "question": "The philosophical foundation that emphasizes teaching 'timeless truths' and classic literature is:",
+      "options": ["Progressivism", "Perennialism", "Essentialism", "Existentialism"],
+      "correctOptionIndex": 1,
+      "explanation": "Perennialists believe education should focus on ideas that have lasted for centuries."
+    },
+    {
+      "id": "curr-q19",
+      "question": "In the Tyler Rationale, what is the first fundamental question in curriculum planning?",
+      "options": ["How can we evaluate?", "What educational purposes should the school seek to attain?", "What materials do we need?", "How do we organize experiences?"],
+      "correctOptionIndex": 1,
+      "explanation": "Ralph Tyler argued that all planning must begin with clearly defined objectives."
+    },
+    {
+      "id": "curr-q20",
+      "question": "What is a 'Syllabus'?",
+      "options": ["The same thing as a curriculum", "A summary or outline of a specific course or subject", "The school rules and regulations", "A list of teacher names"],
+      "correctOptionIndex": 1,
+      "explanation": "A syllabus is a more specific document than a curriculum, focusing on a single subject."
+    }
+  ]
         },
         {
           "id": "edpm-ch5",
-          "name": "Educational Finance",
-          "questions": []
+          "name": "Educational Finance",         
+          "questions": [
+    {
+      "id": "fin-q1",
+      "question": "What is the primary concern of Educational Finance?",
+      "options": ["Printing money for schools", "The mobilization, allocation, and efficient use of resources for education", "Reducing teacher salaries", "Building expensive offices"],
+      "correctOptionIndex": 1,
+      "explanation": "Educational finance focuses on how money is raised (mobilized), how it is distributed (allocated), and how it is managed to achieve educational goals."
+    },
+    {
+      "id": "fin-q2",
+      "question": "Education is often considered a 'Public Good' because:",
+      "options": ["It is free for everyone", "It provides benefits to both the individual and society as a whole", "It is only provided by the government", "It does not cost any money"],
+      "correctOptionIndex": 1,
+      "explanation": "Because education creates positive externalities (like lower crime and higher economic growth), it is seen as a benefit to the entire public."
+    },
+    {
+      "id": "fin-q3",
+      "question": "What is 'Unit Cost' in education?",
+      "options": ["The total cost of building a school", "The average expenditure per student in a given period", "The cost of one textbook", "The salary of one teacher"],
+      "correctOptionIndex": 1,
+      "explanation": "Unit cost (cost per pupil) is calculated by dividing the total educational expenditure by the number of students enrolled."
+    },
+    {
+      "id": "fin-q4",
+      "question": "Which type of educational expenditure includes items that are consumed within a year, such as chalk and paper?",
+      "options": ["Capital Expenditure", "Recurrent (Operating) Expenditure", "Fixed Expenditure", "Hidden Expenditure"],
+      "correctOptionIndex": 1,
+      "explanation": "Recurrent expenditures are ongoing costs for items that need to be replaced frequently, including salaries and supplies."
+    },
+    {
+      "id": "fin-q5",
+      "question": "What is 'Capital Expenditure' in a school context?",
+      "options": ["Spending on teacher salaries", "Spending on long-term assets like buildings, land, and heavy equipment", "Spending on electricity bills", "Spending on student lunches"],
+      "correctOptionIndex": 1,
+      "explanation": "Capital expenditures are investments in assets that provide benefits for many years."
+    },
+    {
+      "id": "fin-q6",
+      "question": "The concept of 'Educational Equity' in finance refers to:",
+      "options": ["Giving everyone the exact same amount of money", "Distributing resources based on the specific needs of students and regions", "Charging all students the same fee", "Spending only on high-performing schools"],
+      "correctOptionIndex": 1,
+      "explanation": "Equity means ensuring that disadvantaged students or regions receive more support to achieve fair outcomes."
+    },
+    {
+      "id": "fin-q7",
+      "question": "What is a 'School Budget'?",
+      "options": ["A history of past spending", "A financial plan estimating projected income and expenses for a future period", "A bank statement", "A list of student names"],
+      "correctOptionIndex": 1,
+      "explanation": "A budget is a tool for planning and control, translating educational objectives into financial terms."
+    },
+    {
+      "id": "fin-q8",
+      "question": "Which of the following is an 'Internal' source of school funding?",
+      "options": ["Foreign aid", "Community contributions and income-generating activities", "World Bank loans", "Federal government grants"],
+      "correctOptionIndex": 1,
+      "explanation": "Internal sources are funds raised within the school or local community."
+    },
+    {
+      "id": "fin-q9",
+      "question": "What does 'Cost-Effectiveness Analysis' in education compare?",
+      "options": ["The price of two different textbooks", "The cost of a program versus its non-monetary outcomes (e.g., student test scores)", "The salaries of two principals", "The number of students in two schools"],
+      "correctOptionIndex": 1,
+      "explanation": "It helps planners decide which alternative achieves the best educational result at the lowest cost."
+    },
+    {
+      "id": "fin-q10",
+      "question": "Which budgeting method starts from zero every year and requires justification for all expenses?",
+      "options": ["Incremental Budgeting", "Zero-Based Budgeting (ZBB)", "Line-Item Budgeting", "Program Budgeting"],
+      "correctOptionIndex": 1,
+      "explanation": "ZBB forces managers to justify every penny in the budget rather than just adding to last year's figures."
+    },
+    {
+      "id": "fin-q11",
+      "question": "What is 'Opportunity Cost' in educational finance?",
+      "options": ["The actual price of a school building", "The value of the next best alternative given up (e.g., wages lost while studying)", "The cost of school uniforms", "Government tax revenue"],
+      "correctOptionIndex": 1,
+      "explanation": "Opportunity cost represents the 'hidden' cost of choosing one path over another."
+    },
+    {
+      "id": "fin-q12",
+      "question": "A 'Grant' is a type of funding that:",
+      "options": ["Must be paid back with interest", "Does not need to be paid back if used for the intended purpose", "Is only given to private schools", "Is illegal in most countries"],
+      "correctOptionIndex": 1,
+      "explanation": "Grants are non-repayable funds provided by government or organizations to support education."
+    },
+    {
+      "id": "fin-q13",
+      "question": "Which financial principle requires that all funds received must be accounted for and used as intended?",
+      "options": ["Efficiency", "Accountability", "Flexibility", "Secrecy"],
+      "correctOptionIndex": 1,
+      "explanation": "Accountability ensures transparency and prevents the misuse of educational resources."
+    },
+    {
+      "id": "fin-q14",
+      "question": "What is the main advantage of 'Decentralized' educational financing?",
+      "options": ["All decisions are made in the capital city", "It allows local communities to have more control and ownership over school funds", "It is easier for the central government to hide money", "It eliminates the need for a budget"],
+      "correctOptionIndex": 1,
+      "explanation": "Decentralization brings decision-making closer to the people who are directly affected by the services."
+    },
+    {
+      "id": "fin-q15",
+      "question": "In education, 'Efficiency' is defined as:",
+      "options": ["Spending as much money as possible", "Achieving the maximum output from a given level of input", "Building only one school for the whole country", "Having a very small number of students"],
+      "correctOptionIndex": 1,
+      "explanation": "Efficiency is about minimizing waste and maximizing results."
+    },
+    {
+      "id": "fin-q16",
+      "question": "What is a 'Unit Cost of a Graduate'?",
+      "options": ["The price of a graduation gown", "The total cost of a cycle (e.g., 4 years) divided by the number of successful graduates", "The salary of a new graduate", "The cost of the graduation ceremony"],
+      "correctOptionIndex": 1,
+      "explanation": "This measure accounts for wastage (dropouts and repeaters) in the system."
+    },
+    {
+      "id": "fin-q17",
+      "question": "Which of the following is a 'Direct' cost of education to a family?",
+      "options": ["Loss of farm labor by the child", "Tuition fees and school supplies", "Taxes paid to the government", "Travel time to the school"],
+      "correctOptionIndex": 1,
+      "explanation": "Direct costs are out-of-pocket expenses specifically for schooling."
+    },
+    {
+      "id": "fin-q18",
+      "question": "What is 'Audit' in school finance?",
+      "options": ["Buying new furniture", "An independent examination of financial records to verify accuracy and compliance", "Applying for a loan", "Counting the number of students"],
+      "correctOptionIndex": 1,
+      "explanation": "Auditing is a key part of financial control and transparency."
+    },
+    {
+      "id": "fin-q19",
+      "question": "Income-generating activities in schools are intended to:",
+      "options": ["Turn the school into a factory", "Supplement the budget and promote self-reliance", "Replace the need for teachers", "Make the principal rich"],
+      "correctOptionIndex": 1,
+      "explanation": "Schools may engage in farming, poultry, or workshops to raise extra funds."
+    },
+    {
+      "id": "fin-q20",
+      "question": "Which budgeting type lists specific items like 'Electricity', 'Water', and 'Stationery'?",
+      "options": ["Program Budgeting", "Line-Item Budgeting", "Performance Budgeting", "Zero-Based Budgeting"],
+      "correctOptionIndex": 1,
+      "explanation": "Line-item budgeting is the traditional method that focuses on inputs and control."
+    }
+  ]
         }
       ]
     },
@@ -1878,28 +3723,733 @@
       "chapters": [
         {
           "id": "econ-ch1",
-          "name": "Microeconomics",
-          "questions": []
+          "name": "Microeconomics",       
+            "questions": [
+              {
+                "id": "mic-q1",
+                "question": "The 'Law of Demand' states that, other things being equal:",
+                "options": ["As price rises, demand rises", "As price rises, quantity demanded falls", "As income rises, demand falls", "As price falls, quantity demanded falls"],
+                "correctOptionIndex": 1,
+                "explanation": "There is an inverse relationship between price and quantity demanded."
+              },
+              {
+                "id": "mic-q2",
+                "question": "Which of the following causes a movement along the demand curve rather than a shift?",
+                "options": ["Change in consumer income", "Change in the price of the good itself", "Change in tastes and preferences", "Change in the price of substitutes"],
+                "correctOptionIndex": 1,
+                "explanation": "A change in the price of the good itself causes a change in 'quantity demanded' (movement), while other factors shift the entire curve."
+              },
+              {
+                "id": "mic-q3",
+                "question": "If the Price Elasticity of Demand is greater than 1 (|Ed| > 1), the demand is said to be:",
+                "options": ["Inelastic", "Unitary elastic", "Elastic", "Perfectly inelastic"],
+                "correctOptionIndex": 2,
+                "explanation": "Elastic demand means consumers are highly responsive to price changes."
+              },
+              {
+                "id": "mic-q4",
+                "question": "An 'Inferior Good' is a good for which demand decreases when:",
+                "options": ["Price increases", "Price decreases", "Consumer income increases", "Consumer income decreases"],
+                "correctOptionIndex": 2,
+                "explanation": "As people get richer, they buy less of inferior goods (like low-quality generic products) and switch to normal/luxury goods."
+              },
+              {
+                "id": "mic-q5",
+                "question": "The point where the quantity demanded equals the quantity supplied is called:",
+                "options": ["Surplus", "Shortage", "Equilibrium", "Elasticity"],
+                "correctOptionIndex": 2,
+                "explanation": "At equilibrium, there is no pressure for the price to change."
+              },
+              {
+                "id": "mic-q6",
+                "question": "The 'Law of Diminishing Marginal Utility' states that:",
+                "options": ["Total utility decreases as more of a good is consumed", "The additional satisfaction from consuming one more unit decreases as total consumption increases", "Prices always fall over time", "Consumers always want more of everything"],
+                "correctOptionIndex": 1,
+                "explanation": "The more you consume of a specific item, the less extra joy you get from the next unit."
+              },
+              {
+                "id": "mic-q7",
+                "question": "What is an 'Indifference Curve'?",
+                "options": ["A curve showing different levels of total utility", "A curve showing combinations of two goods that give the consumer the same level of satisfaction", "A curve showing the relationship between income and demand", "A curve showing the cost of production"],
+                "correctOptionIndex": 1,
+                "explanation": "The consumer is 'indifferent' between any two points on the same curve because they provide equal utility."
+              },
+              {
+                "id": "mic-q8",
+                "question": "In the short run, 'Fixed Costs' are costs that:",
+                "options": ["Change with the level of output", "Do not change regardless of the level of output", "Are always zero", "Only apply to labor"],
+                "correctOptionIndex": 1,
+                "explanation": "Fixed costs (like rent) must be paid even if the firm produces zero output."
+              },
+              {
+                "id": "mic-q9",
+                "question": "A firm maximizes profit where:",
+                "options": ["Marginal Revenue (MR) = Marginal Cost (MC)", "Total Revenue is at its minimum", "Average Cost is lowest", "Price is highest"],
+                "correctOptionIndex": 0,
+                "explanation": "The profit-maximizing rule for any firm is to produce up to the point where MR equals MC."
+              },
+              {
+                "id": "mic-q10",
+                "question": "Which market structure has many small firms, identical products, and easy entry/exit?",
+                "options": ["Monopoly", "Oligopoly", "Perfect Competition", "Monopolistic Competition"],
+                "correctOptionIndex": 2,
+                "explanation": "In perfect competition, firms are 'price takers' and cannot influence the market price."
+              },
+              {
+                "id": "mic-q11",
+                "question": "A 'Monopoly' market is characterized by:",
+                "options": ["Many sellers", "A single seller of a product with no close substitutes", "A few large firms", "Free entry and exit"],
+                "correctOptionIndex": 1,
+                "explanation": "A monopolist has significant market power and faces the entire market demand curve."
+              },
+              {
+                "id": "mic-q12",
+                "question": "The 'Kinked Demand Curve' model is used to explain price rigidity in which market structure?",
+                "options": ["Perfect Competition", "Monopoly", "Oligopoly", "Monopolistic Competition"],
+                "correctOptionIndex": 2,
+                "explanation": "It explains why prices in an oligopoly (like telecom or airlines) tend to stay stable because firms expect rivals to follow price cuts but not price increases."
+              },
+              {
+                "id": "mic-q13",
+                "question": "Which of the following is a 'Price Floor'?",
+                "options": ["Rent control", "Minimum wage laws", "A maximum price set by the government", "Black market price"],
+                "correctOptionIndex": 1,
+                "explanation": "A price floor is a minimum legal price set above the equilibrium, often leading to a surplus (like unemployment in the labor market)."
+              },
+              {
+                "id": "mic-q14",
+                "question": "What is 'Opportunity Cost'?",
+                "options": ["The total money spent on a project", "The value of the next best alternative foregone", "The price of a product in the market", "The cost of labor only"],
+                "correctOptionIndex": 1,
+                "explanation": "Every economic choice involves a trade-off; the opportunity cost is what you give up to get something else."
+              },
+              {
+                "id": "mic-q15",
+                "question": "If the Cross-Price Elasticity of Demand between two goods is positive, the goods are:",
+                "options": ["Substitutes", "Complements", "Inferior goods", "Normal goods"],
+                "correctOptionIndex": 0,
+                "explanation": "If the price of tea rises, the demand for coffee (a substitute) rises."
+              },
+              {
+                "id": "mic-q16",
+                "question": "A firm in Monopolistic Competition produces a product that is:",
+                "options": ["Identical to others", "Differentiated (similar but not identical)", "A unique product with no substitutes", "A raw material"],
+                "correctOptionIndex": 1,
+                "explanation": "Think of restaurants or clothing brands; they are similar but use branding to differentiate."
+              },
+              {
+                "id": "mic-q17",
+                "question": "The 'Production Possibility Curve' (PPC) shows:",
+                "options": ["The maximum combinations of two goods an economy can produce given its resources", "The level of inflation", "The demand for products", "The distribution of wealth"],
+                "correctOptionIndex": 0,
+                "explanation": "The PPC illustrates scarcity, choice, and opportunity cost."
+              },
+              {
+                "id": "mic-q18",
+                "question": "In the 'Stage II' of production, what happens to the Marginal Product (MP)?",
+                "options": ["It is increasing", "It is positive but decreasing", "It is negative", "It is zero"],
+                "correctOptionIndex": 1,
+                "explanation": "Firms prefer to operate in Stage II, where the additional output from each worker is still adding to the total but at a decreasing rate."
+              },
+              {
+                "id": "mic-q19",
+                "question": "What happens to a budget line if the consumer's income increases (prices constant)?",
+                "options": ["It shifts inward", "It shifts outward (to the right)", "It rotates", "It stays the same"],
+                "correctOptionIndex": 1,
+                "explanation": "An increase in income allows the consumer to buy more of both goods, shifting the line parallel to the right."
+              },
+              {
+                "id": "mic-q20",
+                "question": "Economic profit is calculated as:",
+                "options": ["Total Revenue - Explicit Costs", "Total Revenue - (Explicit Costs + Implicit Costs)", "Total Revenue - Taxes", "Total Revenue - Fixed Costs"],
+                "correctOptionIndex": 1,
+                "explanation": "Unlike accounting profit, economic profit considers both out-of-pocket costs and opportunity costs."
+              }
+            ]          
         },
         {
           "id": "econ-ch2",
-          "name": "Macroeconomics",
-          "questions": []
+          "name": "Macroeconomics",     
+            "questions": [
+              {
+                "id": "mac-q1",
+                "question": "What is the primary focus of Macroeconomics?",
+                "options": ["Individual consumer behavior", "The behavior of the economy as a whole", "Decision making by a single firm", "Price of a specific product"],
+                "correctOptionIndex": 1,
+                "explanation": "Macroeconomics studies aggregate variables like national income, total employment, and general price levels."
+              },
+              {
+                "id": "mac-q2",
+                "question": "Gross Domestic Product (GDP) measures the market value of:",
+                "options": ["All goods and services produced in an economy", "All final goods and services produced within a country's borders in a specific period", "All intermediate goods used in production", "Only goods exported to other countries"],
+                "correctOptionIndex": 1,
+                "explanation": "GDP focuses on 'final' goods to avoid double counting and must be produced within the geographical boundaries of the country."
+              },
+              {
+                "id": "mac-q3",
+                "question": "The formula for GDP using the Expenditure Approach is:",
+                "options": ["C + I + G + (X + M)", "C + I + G + (X - M)", "C + S + T", "Wages + Rent + Interest + Profit"],
+                "correctOptionIndex": 1,
+                "explanation": "GDP = Consumption + Investment + Government Spending + Net Exports (Exports - Imports)."
+              },
+              {
+                "id": "mac-q4",
+                "question": "Which type of GDP is calculated using constant base-year prices to remove the effects of inflation?",
+                "options": ["Nominal GDP", "Real GDP", "Potential GDP", "Per Capita GDP"],
+                "correctOptionIndex": 1,
+                "explanation": "Real GDP provides a more accurate measure of economic growth because it reflects changes in actual production volume."
+              },
+              {
+                "id": "mac-q5",
+                "question": "The 'Business Cycle' refers to:",
+                "options": ["The life cycle of a product", "The alternating periods of economic expansion and recession", "The process of starting a business", "The seasonal changes in the stock market"],
+                "correctOptionIndex": 1,
+                "explanation": "The business cycle consists of four phases: Expansion, Peak, Contraction (Recession), and Trough."
+              },
+              {
+                "id": "mac-q6",
+                "question": "What is 'Inflation'?",
+                "options": ["A decrease in the general price level", "A persistent increase in the general price level of goods and services", "A decrease in the money supply", "High unemployment rates"],
+                "correctOptionIndex": 1,
+                "explanation": "Inflation reduces the purchasing power of money over time."
+              },
+              {
+                "id": "mac-q7",
+                "question": "Which type of unemployment occurs when workers are in between jobs or looking for their first job?",
+                "options": ["Cyclical Unemployment", "Structural Unemployment", "Frictional Unemployment", "Seasonal Unemployment"],
+                "correctOptionIndex": 2,
+                "explanation": "Frictional unemployment is usually short-term and is considered a natural part of a healthy labor market."
+              },
+              {
+                "id": "mac-q8",
+                "question": "Unemployment caused by a mismatch between workers' skills and the requirements of available jobs is called:",
+                "options": ["Frictional", "Structural", "Cyclical", "Disguised"],
+                "correctOptionIndex": 1,
+                "explanation": "Structural unemployment often results from technological changes or shifts in the economy."
+              },
+              {
+                "id": "mac-q9",
+                "question": "The 'Consumer Price Index' (CPI) is primarily used to measure:",
+                "options": ["Economic growth", "The unemployment rate", "The rate of inflation", "Government debt"],
+                "correctOptionIndex": 2,
+                "explanation": "CPI tracks the changes in the price of a 'basket' of goods and services typically purchased by households."
+              },
+              {
+                "id": "mac-q10",
+                "question": "Which of the following is a tool of 'Fiscal Policy'?",
+                "options": ["Changing interest rates", "Open market operations", "Government spending and taxation", "Controlling the reserve requirement"],
+                "correctOptionIndex": 2,
+                "explanation": "Fiscal policy is managed by the government (Ministry of Finance) to influence the economy."
+              },
+              {
+                "id": "mac-q11",
+                "question": "What is the primary objective of 'Monetary Policy'?",
+                "options": ["Building infrastructure", "Managing the money supply and interest rates to achieve price stability", "Setting the national minimum wage", "Regulating international trade"],
+                "correctOptionIndex": 1,
+                "explanation": "Monetary policy is typically controlled by the Central Bank (e.g., National Bank of Ethiopia)."
+              },
+              {
+                "id": "mac-q12",
+                "question": "An 'Expansionary' fiscal policy involves:",
+                "options": ["Increasing taxes and decreasing spending", "Decreasing taxes and increasing government spending", "Increasing interest rates", "Reducing the money supply"],
+                "correctOptionIndex": 1,
+                "explanation": "Expansionary policy is used during a recession to stimulate demand and increase GDP."
+              },
+              {
+                "id": "mac-q13",
+                "question": "The 'Phillips Curve' shows the short-run relationship between:",
+                "options": ["Inflation and Unemployment", "Price and Quantity", "Income and Consumption", "Savings and Investment"],
+                "correctOptionIndex": 0,
+                "explanation": "Historically, it suggests an inverse relationship: when inflation is high, unemployment tends to be low, and vice versa."
+              },
+              {
+                "id": "mac-q14",
+                "question": "What is 'Stagflation'?",
+                "options": ["Low inflation and low unemployment", "High inflation and high economic growth", "High inflation combined with high unemployment and stagnant demand", "A period of rapid economic growth"],
+                "correctOptionIndex": 2,
+                "explanation": "Stagflation is a difficult situation for policymakers as tools used to fix inflation often worsen unemployment."
+              },
+              {
+                "id": "mac-q15",
+                "question": "The 'Multiplier Effect' suggests that:",
+                "options": ["Inflation doubles every year", "An initial change in spending leads to a larger final increase in national income", "Taxes should always be multiplied by two", "Population growth leads to poverty"],
+                "correctOptionIndex": 1,
+                "explanation": "Because one person's spending becomes another's income, the total impact on GDP is larger than the original injection."
+              },
+              {
+                "id": "mac-q16",
+                "question": "What happens to the Aggregate Demand (AD) curve if the government increases personal income taxes?",
+                "options": ["It shifts to the right", "It shifts to the left", "It stays the same", "It becomes a vertical line"],
+                "correctOptionIndex": 1,
+                "explanation": "Higher taxes reduce disposable income, leading to lower consumption and a decrease in Aggregate Demand."
+              },
+              {
+                "id": "mac-q17",
+                "question": "The 'Law of Comparative Advantage' suggests that countries should:",
+                "options": ["Produce everything they need themselves", "Specialize in producing goods for which they have the lowest opportunity cost", "Only export luxury goods", "Tax all imports heavily"],
+                "correctOptionIndex": 1,
+                "explanation": "This theory forms the basis for international trade, showing that trade benefits all parties involved."
+              },
+              {
+                "id": "mac-q18",
+                "question": "What is a 'Budget Deficit'?",
+                "options": ["When government revenue exceeds spending", "When government spending exceeds its tax revenue", "When a country imports more than it exports", "When the central bank runs out of gold"],
+                "correctOptionIndex": 1,
+                "explanation": "Deficits are usually financed by borrowing, which adds to the national debt."
+              },
+              {
+                "id": "mac-q19",
+                "question": "Which of the following is considered 'M1' money supply?",
+                "options": ["Savings accounts", "Currency in circulation and checkable deposits", "Real estate assets", "Government bonds"],
+                "correctOptionIndex": 1,
+                "explanation": "M1 is the most liquid form of money used for daily transactions."
+              },
+              {
+                "id": "mac-q20",
+                "question": "The 'Say's Law' of classical economics states that:",
+                "options": ["Demand creates its own supply", "Supply creates its own demand", "Government must control the economy", "Prices are always 'sticky'"],
+                "correctOptionIndex": 1,
+                "explanation": "Classical economists believed that the act of producing goods generates enough income to purchase them, ensuring full employment in the long run."
+              }
+            ] 
         },
         {
           "id": "econ-ch3",
           "name": "Development Economics",
-          "questions": []
+            "questions": [
+              {
+                "id": "dev-q1",
+                "question": "What is the primary difference between 'Economic Growth' and 'Economic Development'?",
+                "options": ["They are the same thing", "Growth is a quantitative increase in GDP, while Development includes qualitative improvements in life", "Growth is for poor countries, Development is for rich countries", "Development only refers to industrialization"],
+                "correctOptionIndex": 1,
+                "explanation": "Economic growth measures output (GDP), whereas development focuses on structural changes, poverty reduction, and improved health/education."
+              },
+              {
+                "id": "dev-q2",
+                "question": "The 'Human Development Index' (HDI) is based on which three dimensions?",
+                "options": ["Income, Wealth, and Taxes", "Life Expectancy, Education, and GNI per capita", "Population, Area, and GDP", "Exports, Imports, and Inflation"],
+                "correctOptionIndex": 1,
+                "explanation": "HDI was created by the UNDP to measure development beyond just monetary income."
+              },
+              {
+                "id": "dev-q3",
+                "question": "In Rostow's 'Stages of Economic Growth', which stage is characterized by rapid industrialization and high investment rates?",
+                "options": ["Traditional Society", "Pre-conditions for Take-off", "Take-off", "Drive to Maturity"],
+                "correctOptionIndex": 2,
+                "explanation": "The 'Take-off' stage is the critical period when resistance to steady growth is finally overcome."
+              },
+              {
+                "id": "dev-q4",
+                "question": "The 'Harrod-Domar Model' suggests that economic growth depends on:",
+                "options": ["Population growth", "The level of savings and the capital-output ratio", "The number of universities", "Foreign exchange rates"],
+                "correctOptionIndex": 1,
+                "explanation": "According to this model, higher savings and lower capital-output ratios lead to faster growth."
+              },
+              {
+                "id": "dev-q5",
+                "question": "The 'Lorenz Curve' is used to measure:",
+                "options": ["Inflation", "Economic growth", "Income inequality", "Poverty levels"],
+                "correctOptionIndex": 2,
+                "explanation": "The Lorenz Curve shows the cumulative percentage of income received by cumulative percentages of the population."
+              },
+              {
+                "id": "dev-q6",
+                "question": "What does a 'Gini Coefficient' of 0 represent?",
+                "options": ["Perfect Inequality", "Perfect Equality", "High Poverty", "Economic Boom"],
+                "correctOptionIndex": 1,
+                "explanation": "A Gini coefficient of 0 means everyone has exactly the same income; 1 (or 100%) means one person has all the income."
+              },
+              {
+                "id": "dev-q7",
+                "question": "The 'Lewis Dual-Sector Model' explains the transition of labor from:",
+                "options": ["Industry to Agriculture", "Traditional (Subsistence) sector to Modern (Industrial) sector", "Urban to Rural areas", "Public sector to Private sector"],
+                "correctOptionIndex": 1,
+                "explanation": "Lewis argued that surplus labor from the traditional sector can be moved to industry without reducing food production."
+              },
+              {
+                "id": "dev-q8",
+                "question": "What is 'Absolute Poverty'?",
+                "options": ["Being poorer than your neighbor", "A situation where a person cannot meet basic needs for survival (food, water, shelter)", "Having a low-paying job", "Living in a developing country"],
+                "correctOptionIndex": 1,
+                "explanation": "Absolute poverty is measured against a fixed standard or 'poverty line' (e.g., $2.15 a day)."
+              },
+              {
+                "id": "dev-q9",
+                "question": "The 'Vicious Cycle of Poverty' suggests that poor countries remain poor because:",
+                "options": ["They don't want to work", "Low income leads to low savings, which leads to low investment and low productivity", "They have too many resources", "They export too much"],
+                "correctOptionIndex": 1,
+                "explanation": "This cycle explains how poverty acts as a barrier to the capital formation needed for growth."
+              },
+              {
+                "id": "dev-q10",
+                "question": "Which development theory emphasizes that 'underdevelopment' is caused by the exploitation of poor countries by rich countries?",
+                "options": ["Linear-Stages Model", "Dependency Theory", "Neoclassical Theory", "Endogenous Growth Theory"],
+                "correctOptionIndex": 1,
+                "explanation": "Dependency theory argues that resources flow from the 'periphery' (poor states) to the 'core' (wealthy states)."
+              },
+              {
+                "id": "dev-q11",
+                "question": "The 'Environmental Kuznets Curve' suggests that as an economy develops:",
+                "options": ["Pollution increases forever", "Pollution decreases first, then increases", "Pollution increases at first but decreases after a certain level of income is reached", "Development has no effect on the environment"],
+                "correctOptionIndex": 2,
+                "explanation": "It suggests an inverted U-shaped relationship between economic growth and environmental degradation."
+              },
+              {
+                "id": "dev-q12",
+                "question": "What is 'Sustainable Development'?",
+                "options": ["Development that lasts for one year", "Development that meets the needs of the present without compromising the ability of future generations to meet theirs", "Increasing GDP at any cost", "Focusing only on renewable energy"],
+                "correctOptionIndex": 1,
+                "explanation": "This concept balances economic, social, and environmental goals for long-term survival."
+              },
+              {
+                "id": "dev-q13",
+                "question": "The 'Big Push' theory argues that development requires:",
+                "options": ["Small, gradual changes", "A massive investment in many sectors at once to overcome obstacles", "Closing the country to all trade", "Focusing only on agriculture"],
+                "correctOptionIndex": 1,
+                "explanation": "Proposed by Rosenstein-Rodan, it emphasizes that bit-by-bit investment will not break the cycle of underdevelopment."
+              },
+              {
+                "id": "dev-q14",
+                "question": "What is 'Demographic Dividend'?",
+                "options": ["The money people get for having children", "Economic growth potential that results from shifts in a population’s age structure (more working-age people)", "A tax on large families", "The number of elderly people in a country"],
+                "correctOptionIndex": 1,
+                "explanation": "Countries benefit when their working-age population is larger than the dependent population (children and elderly)."
+              },
+              {
+                "id": "dev-q15",
+                "question": "A 'Dual Economy' is characterized by:",
+                "options": ["Two different currencies", "The coexistence of a modern industrial sector and a traditional agricultural sector", "Two presidents", "High exports and high imports"],
+                "correctOptionIndex": 1,
+                "explanation": "Dualism is common in developing nations where advanced technology exists alongside primitive methods."
+              },
+              {
+                "id": "dev-q16",
+                "question": "The 'Prebisch-Singer Hypothesis' argues that:",
+                "options": ["Trade is always good for everyone", "The price of primary commodities (exports of poor countries) tends to decline relative to manufactured goods over time", "Poor countries should only produce coffee", "Technology will fix all problems"],
+                "correctOptionIndex": 1,
+                "explanation": "This suggests that developing countries face 'deteriorating terms of trade'."
+              },
+              {
+                "id": "dev-q17",
+                "question": "Which of the following is a 'Non-economic' factor of development?",
+                "options": ["Capital accumulation", "Political stability and institutional quality", "Natural resources", "Labor supply"],
+                "correctOptionIndex": 1,
+                "explanation": "Institutions, culture, and governance are crucial 'non-economic' pillars of growth."
+              },
+              {
+                "id": "dev-q18",
+                "question": "In the 'Solow Growth Model', long-term growth is primarily driven by:",
+                "options": ["More labor", "Technological progress", "Higher consumption", "Foreign aid"],
+                "correctOptionIndex": 1,
+                "explanation": "Solow argued that capital accumulation alone cannot sustain growth forever due to diminishing returns; technology is the key."
+              },
+              {
+                "id": "dev-q19",
+                "question": "What is 'Import Substitution Industrialization' (ISI)?",
+                "options": ["Exporting raw materials", "Replacing foreign imports with domestic production", "Allowing free trade with no taxes", "Moving factories to other countries"],
+                "correctOptionIndex": 1,
+                "explanation": "ISI was a strategy used by many developing countries to protect local industries and reduce dependency."
+              },
+              {
+                "id": "dev-q20",
+                "question": "The 'Brain Drain' refers to:",
+                "options": ["A disease", "The migration of highly skilled and educated people from developing countries to developed countries", "The loss of memory in old age", "Spending too much on education"],
+                "correctOptionIndex": 1,
+                "explanation": "This results in a loss of human capital for the home country."
+              }
+            ]       
         },
         {
           "id": "econ-ch4",
           "name": "Public Finance",
-          "questions": []
+            "questions": [
+              {
+                "id": "pub-q1",
+                "question": "What is the primary objective of Public Finance?",
+                "options": ["To maximize the profit of state-owned banks", "To manage the government's revenue, expenditure, and debt to achieve social welfare", "To print more money whenever needed", "To control the private spending of citizens"],
+                "correctOptionIndex": 1,
+                "explanation": "Public finance deals with the role of the government in the economy, focusing on resource allocation, distribution, and stabilization."
+              },
+              {
+                "id": "pub-q2",
+                "question": "A 'Progressive Tax' is a system where:",
+                "options": ["Everyone pays the same amount of tax", "The tax rate increases as the taxpayer's income increases", "Poor people pay a higher percentage of their income than rich people", "The tax rate stays constant regardless of income"],
+                "correctOptionIndex": 1,
+                "explanation": "Progressive taxation (like personal income tax in Ethiopia) aims for vertical equity by taxing higher earners at higher rates."
+              },
+              {
+                "id": "pub-q3",
+                "question": "Which of the following is an example of a 'Direct Tax'?",
+                "options": ["Value Added Tax (VAT)", "Excise Tax", "Personal Income Tax", "Customs Duty"],
+                "correctOptionIndex": 2,
+                "explanation": "Direct taxes are paid directly by the individual or organization to the government and cannot be shifted to someone else."
+              },
+              {
+                "id": "pub-q4",
+                "question": "The 'Ability to Pay' principle of taxation suggests that:",
+                "options": ["People should pay taxes based on the benefits they receive from the government", "Tax burden should be distributed according to a person's financial capacity", "Only people with jobs should pay taxes", "Taxes should be voluntary"],
+                "correctOptionIndex": 1,
+                "explanation": "This principle argues that those with greater wealth/income should contribute more to public expenses."
+              },
+              {
+                "id": "pub-q5",
+                "question": "What is 'Market Failure'?",
+                "options": ["When a shop closes down", "When the free market fails to allocate resources efficiently on its own", "When the stock market crashes", "When government taxes are too high"],
+                "correctOptionIndex": 1,
+                "explanation": "Market failures (like externalities and public goods) justify government intervention in the economy."
+              },
+              {
+                "id": "pub-q6",
+                "question": "Which of the following is a characteristic of a 'Pure Public Good'?",
+                "options": ["Excludable and Rivalrous", "Non-excludable and Non-rivalrous", "Sold in the supermarket", "Provided only to those who pay"],
+                "correctOptionIndex": 1,
+                "explanation": "Non-excludable means you can't stop people from using it; non-rivalrous means one person's use doesn't reduce availability for others (e.g., National Defense)."
+              },
+              {
+                "id": "pub-q7",
+                "question": "What is an 'Externality'?",
+                "options": ["A tax on imports", "A cost or benefit of a transaction that affects a third party who did not choose to incur it", "The interest paid on foreign debt", "A type of government subsidy"],
+                "correctOptionIndex": 1,
+                "explanation": "Pollution is a negative externality, while education is a positive externality."
+              },
+              {
+                "id": "pub-q8",
+                "question": "A 'Regressive Tax' is one where:",
+                "options": ["High-income earners pay a higher percentage", "Low-income earners pay a higher percentage of their income than high-income earners", "The tax rate is zero", "Only businesses pay"],
+                "correctOptionIndex": 1,
+                "explanation": "Indirect taxes like VAT are often considered regressive because the tax amount is the same regardless of the buyer's income level."
+              },
+              {
+                "id": "pub-q9",
+                "question": "What is 'Fiscal Deficit'?",
+                "options": ["When the government earns more than it spends", "The gap between total government expenditure and its total non-borrowed receipts", "The total amount of gold held by the central bank", "The difference between exports and imports"],
+                "correctOptionIndex": 1,
+                "explanation": "A fiscal deficit indicates the total borrowing requirements of the government."
+              },
+              {
+                "id": "pub-q10",
+                "question": "The 'Laffer Curve' shows the relationship between:",
+                "options": ["Inflation and unemployment", "Tax rates and total tax revenue", "Income and consumption", "Government spending and GDP"],
+                "correctOptionIndex": 1,
+                "explanation": "It suggests that there is an optimal tax rate that maximizes revenue; too high a rate can actually discourage work and reduce revenue."
+              },
+              {
+                "id": "pub-q11",
+                "question": "What is 'Public Debt'?",
+                "options": ["Money owed by private citizens", "The total amount of money borrowed by the government to meet its expenditures", "The amount of money people owe to banks", "The cost of printing currency"],
+                "correctOptionIndex": 1,
+                "explanation": "Public debt can be internal (borrowed from citizens/banks) or external (borrowed from foreign entities)."
+              },
+              {
+                "id": "pub-q12",
+                "question": "Which of the following is a 'Transfer Payment'?",
+                "options": ["Salary paid to a soldier", "Social security benefits or pensions paid without any direct service in return", "Payment for building a road", "Purchase of office computers"],
+                "correctOptionIndex": 1,
+                "explanation": "Transfer payments redistribute income but are not payments for current goods or services."
+              },
+              {
+                "id": "pub-q13",
+                "question": "What is the purpose of 'Program Budgeting'?",
+                "options": ["To list every single pen and pencil bought", "To allocate funds based on specific programs and their expected outcomes", "To keep the budget a secret", "To spend money as quickly as possible"],
+                "correctOptionIndex": 1,
+                "explanation": "Program budgeting focuses on the 'outputs' and goals of spending rather than just 'inputs'."
+              },
+              {
+                "id": "pub-q14",
+                "question": "The 'Crowding Out Effect' occurs when:",
+                "options": ["There are too many people in a bank", "Heavy government borrowing increases interest rates and reduces private investment", "Taxes are abolished", "The government stops spending"],
+                "correctOptionIndex": 1,
+                "explanation": "When the government competes for loans, it can drive up costs for private businesses."
+              },
+              {
+                "id": "pub-q15",
+                "question": "What is 'Tax Incidence'?",
+                "options": ["The history of tax laws", "The study of who actually bears the final burden of a tax", "The process of collecting taxes", "The rate of tax evasion"],
+                "correctOptionIndex": 1,
+                "explanation": "While a shopkeeper pays VAT to the government, the tax incidence (burden) usually falls on the consumer."
+              },
+              {
+                "id": "pub-q16",
+                "question": "Which branch of government is typically responsible for 'Fiscal Policy'?",
+                "options": ["The Central Bank", "The Executive branch (Ministry of Finance)", "The Judiciary", "The Police"],
+                "correctOptionIndex": 1,
+                "explanation": "Fiscal policy involves government taxing and spending decisions."
+              },
+              {
+                "id": "pub-q17",
+                "question": "What are 'Merit Goods'?",
+                "options": ["Goods that are bad for people", "Goods that the government encourages consumption of because they are beneficial (e.g., vaccines)", "Goods that only the rich can buy", "Illegal goods"],
+                "correctOptionIndex": 1,
+                "explanation": "Governments often provide or subsidize merit goods because individuals might under-consume them if left to the market."
+              },
+              {
+                "id": "pub-q18",
+                "question": "The 'Benefit Principle' of taxation states that:",
+                "options": ["People should pay taxes in proportion to the benefits they receive from public services", "Taxes should be as low as possible", "Only rich people benefit from taxes", "Taxes should be used only for entertainment"],
+                "correctOptionIndex": 0,
+                "explanation": "A common example is a fuel tax used specifically to fund road maintenance."
+              },
+              {
+                "id": "pub-q19",
+                "question": "What is 'Deadweight Loss' in taxation?",
+                "options": ["The cost of hiring tax collectors", "The loss of economic efficiency that occurs when a tax distorts market outcomes", "Money stolen from the tax office", "A tax on deceased people"],
+                "correctOptionIndex": 1,
+                "explanation": "Taxes can change behavior (like discouraging work or trade), leading to a loss in total social surplus."
+              },
+              {
+                "id": "pub-q20",
+                "question": "What does 'Vertical Equity' in taxation mean?",
+                "options": ["People in the same income level pay the same tax", "People with higher ability to pay should pay more tax than those with lower ability", "All taxes should be indirect", "Taxes should only be collected in cities"],
+                "correctOptionIndex": 1,
+                "explanation": "Vertical equity justifies progressive tax systems."
+              }
+            ]
         },
         {
           "id": "econ-ch5",
           "name": "International Economics",
-          "questions": []
+            "questions": [
+              {
+                "id": "int-q1",
+                "question": "The 'Mercantilist' view of trade emphasized that a country's wealth is measured by:",
+                "options": ["Its level of human development", "Its holdings of precious metals (gold and silver)", "The quality of its infrastructure", "Its total population"],
+                "correctOptionIndex": 1,
+                "explanation": "Mercantilists believed in maintaining a trade surplus (Exports > Imports) to accumulate gold."
+              },
+              {
+                "id": "int-q2",
+                "question": "According to Adam Smith’s theory of 'Absolute Advantage', countries should:",
+                "options": ["Produce everything they need", "Specialize in the product they can produce more efficiently than any other country", "Tax all imports to protect local jobs", "Only trade with neighboring countries"],
+                "correctOptionIndex": 1,
+                "explanation": "Smith argued that specialization and trade lead to higher global production and consumption."
+              },
+              {
+                "id": "int-q3",
+                "question": "David Ricardo’s 'Comparative Advantage' theory states that trade is beneficial even if one country is less efficient in all goods, provided it specializes in the good with the:",
+                "options": ["Highest market price", "Lowest opportunity cost", "Highest labor requirement", "Lowest export tax"],
+                "correctOptionIndex": 1,
+                "explanation": "Comparative advantage is the basis for most modern trade theory, focusing on relative efficiency."
+              },
+              {
+                "id": "int-q4",
+                "question": "The 'Heckscher-Ohlin (H-O) Theory' suggests that a country will export goods that use:",
+                "options": ["The most advanced technology", "Its abundant and cheap factors of production", "The most expensive raw materials", "Only skilled labor"],
+                "correctOptionIndex": 1,
+                "explanation": "Also known as the factor-proportions theory, it links trade patterns to a country's resources (e.g., land, labor, capital)."
+              },
+              {
+                "id": "int-q5",
+                "question": "What is a 'Tariff'?",
+                "options": ["A limit on the quantity of goods imported", "A tax imposed on imported goods", "A government payment to local exporters", "A total ban on trade with a specific country"],
+                "correctOptionIndex": 1,
+                "explanation": "Tariffs are used to raise government revenue and protect domestic industries from foreign competition."
+              },
+              {
+                "id": "int-q6",
+                "question": "An 'Import Quota' is a non-tariff barrier that:",
+                "options": ["Sets a minimum price for imports", "Limits the physical quantity of a good that can be imported", "Requires all imports to be high quality", "Encourages people to buy foreign goods"],
+                "correctOptionIndex": 1,
+                "explanation": "Quotas directly restrict the volume of trade, often leading to higher domestic prices."
+              },
+              {
+                "id": "int-q7",
+                "question": "What is 'Dumping' in international trade?",
+                "options": ["Throwing trash in the ocean", "Selling a product in a foreign market at a price lower than its cost of production or its home market price", "Exporting only high-quality goods", "Buying goods from a poor country"],
+                "correctOptionIndex": 1,
+                "explanation": "Dumping is considered an unfair trade practice and often leads to anti-dumping duties."
+              },
+              {
+                "id": "int-q8",
+                "question": "The 'Balance of Payments' (BOP) is a record of:",
+                "options": ["Only the government's foreign debt", "All economic transactions between residents of a country and the rest of the world", "The physical weight of all exports", "The number of tourists visiting a country"],
+                "correctOptionIndex": 1,
+                "explanation": "The BOP includes the Current Account, Capital Account, and Financial Account."
+              },
+              {
+                "id": "int-q9",
+                "question": "The 'Current Account' in the BOP includes:",
+                "options": ["Foreign direct investment", "Trade in goods, services, and primary/secondary income", "Buying of foreign factories", "Central bank gold reserves"],
+                "correctOptionIndex": 1,
+                "explanation": "The trade balance (exports minus imports of goods) is the largest part of the current account."
+              },
+              {
+                "id": "int-q10",
+                "question": "What does a 'Depreciation' of a currency mean?",
+                "options": ["The currency's value increases relative to others", "The currency's value decreases in terms of foreign currency", "The currency becomes illegal", "The currency is printed on cheaper paper"],
+                "correctOptionIndex": 1,
+                "explanation": "When the Birr depreciates, it takes more Birr to buy one US Dollar, making exports cheaper and imports more expensive."
+              },
+              {
+                "id": "int-q11",
+                "question": "In a 'Fixed Exchange Rate' system, the value of a currency is determined by:",
+                "options": ["Market demand and supply", "The government or central bank", "The United Nations", "Commercial banks"],
+                "correctOptionIndex": 1,
+                "explanation": "The central bank intervenes to keep the exchange rate at a specific target level."
+              },
+              {
+                "id": "int-q12",
+                "question": "What is 'Foreign Direct Investment' (FDI)?",
+                "options": ["Buying a few shares in a foreign stock market", "An investment made by a firm or individual in one country into business interests in another country", "A loan from the World Bank", "A gift from a foreign government"],
+                "correctOptionIndex": 1,
+                "explanation": "FDI involves a lasting interest and significant control over a foreign enterprise."
+              },
+              {
+                "id": "int-q13",
+                "question": "The 'Leontief Paradox' challenged which trade theory?",
+                "options": ["Absolute Advantage", "Heckscher-Ohlin Theory", "Mercantilism", "Comparative Advantage"],
+                "correctOptionIndex": 1,
+                "explanation": "Leontief found that the US (a capital-abundant country) was exporting labor-intensive goods, contradicting the H-O theory."
+              },
+              {
+                "id": "int-q14",
+                "question": "What is the 'Terms of Trade' (TOT)?",
+                "options": ["The laws governing trade", "The ratio of an index of export prices to an index of import prices", "The time it takes for a ship to cross the ocean", "The number of languages spoken in trade"],
+                "correctOptionIndex": 1,
+                "explanation": "An improvement in TOT means a country can buy more imports for the same amount of exports."
+              },
+              {
+                "id": "int-q15",
+                "question": "The 'Infant Industry Argument' suggests that:",
+                "options": ["Only children should work in factories", "New domestic industries need temporary protection from foreign competition to grow", "Old industries should be closed down", "Countries should only produce toys"],
+                "correctOptionIndex": 1,
+                "explanation": "This is a common justification for tariffs in developing countries."
+              },
+              {
+                "id": "int-q16",
+                "question": "Which international organization is responsible for negotiating trade agreements and resolving disputes?",
+                "options": ["The World Bank", "The International Monetary Fund (IMF)", "The World Trade Organization (WTO)", "The European Union"],
+                "correctOptionIndex": 2,
+                "explanation": "The WTO aims to promote free trade and ensure trade flows smoothly and predictably."
+              },
+              {
+                "id": "int-q17",
+                "question": "What is a 'Free Trade Area'?",
+                "options": ["An area where everything is free to take", "A group of countries that have eliminated internal trade barriers but keep their own external tariffs", "A country with no taxes", "A global market for gold"],
+                "correctOptionIndex": 1,
+                "explanation": "Examples include COMESA or the African Continental Free Trade Area (AfCFTA)."
+              },
+              {
+                "id": "int-q18",
+                "question": "The 'J-Curve' effect describes the tendency for a country's trade balance to:",
+                "options": ["Improve immediately after a devaluation", "Worsen initially and then improve following a currency devaluation", "Stay the same forever", "Improve and then collapse"],
+                "correctOptionIndex": 1,
+                "explanation": "In the short run, higher import prices worsen the deficit before export volumes have time to increase."
+              },
+              {
+                "id": "int-q19",
+                "question": "What is 'Purchasing Power Parity' (PPP)?",
+                "options": ["A party for rich people", "A theory that exchange rates between currencies are in equilibrium when their purchasing power is the same in each country", "The ability of a country to print money", "A type of foreign aid"],
+                "correctOptionIndex": 1,
+                "explanation": "PPP is often used to compare living standards across countries more accurately than nominal exchange rates."
+              },
+              {
+                "id": "int-q20",
+                "question": "The 'Capital Account' in the BOP mainly records:",
+                "options": ["Trade in coffee and khat", "Transactions involving the transfer of ownership of fixed assets and non-financial assets", "Tourism income", "Interest on savings"],
+                "correctOptionIndex": 1,
+                "explanation": "It includes items like debt forgiveness and the transfer of assets by migrants."
+              }
+            ]
         }
       ]
     }
