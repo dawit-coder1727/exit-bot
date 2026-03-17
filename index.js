@@ -241,34 +241,38 @@ bot.start(async (ctx) => {
 // Select department
 bot.action(/^dept:/, async (ctx) => {
   try {
-      if (!ctx.callbackQuery || !ctx.callbackQuery.data || !ctx.from) return;
+    if (!ctx.callbackQuery || !ctx.callbackQuery.data || !ctx.from) return;
 
-      const [, deptId] = ctx.callbackQuery.data.split(':');
-      const department = getDepartmentById(deptId);
+    const [, deptId] = ctx.callbackQuery.data.split(':');
+    const department = getDepartmentById(deptId);
 
-      if (!department) {
-          await ctx.answerCbQuery('Department not found');
-          return;
+    if (!department) {
+      await ctx.answerCbQuery('Department not found');
+      return;
+    }
+
+    const session = sessionStore.getSession(ctx.from.id);
+    session.departmentId = deptId;
+    session.chapterId = null;
+    session.currentQuestionIndex = 0;
+    session.score = 0;
+    session.totalQuestions = 0;
+    sessionStore.saveSession(ctx.from.id, session);
+
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(
+      `Selected: *${department.name}*\n\nNow choose a chapter:`,
+      {
+        parse_mode: 'Markdown',
+        reply_markup: buildChaptersKeyboard(deptId),
       }
-
-      await ctx.answerCbQuery();
-
-      const session = sessionStore.getSession(ctx.from.id);
-      session.departmentId = deptId;
-      session.chapterId = null;
-      session.currentQuestionIndex = 0;
-      session.score = 0;
-      session.totalQuestions = 0;
-      sessionStore.saveSession(ctx.from.id, session);
-
-      await ctx.editMessageText(`Selected Department: *${department.name}*\n\nPlease select a chapter:`, {
-          parse_mode: 'Markdown',
-          ...buildChaptersKeyboard(deptId)
-      });
-
+    );
   } catch (err) {
-      console.error('Error in department selection:', err);
-      await ctx.reply('Something went wrong. Please try /start again.');
+    console.error('Error in dept action:', err);
+    try {
+      await ctx.answerCbQuery('Something went wrong.');
+    } catch (_) {}
+    await ctx.reply('😕 Something went wrong while selecting the department. Please use /start and try again.');
   }
 });
 
