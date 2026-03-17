@@ -181,14 +181,35 @@ async function sendQuestion(ctx, session) {
     }
 
     const questionNumber = session.currentQuestionIndex + 1;
-    const questionText = `Question ${questionNumber}/${session.totalQuestions}\n\n${question.question}`;
+    const escapeHtml = (s) =>
+      String(s ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
 
-    await ctx.reply(questionText, {
-      reply_markup: buildOptionsKeyboard(
-        session.departmentId,
-        session.chapterId,
-        session.currentQuestionIndex
-      ),
+    const letters = ['A', 'B', 'C', 'D'];
+    const options = Array.isArray(question.options) ? question.options.slice(0, 4) : [];
+    const optionsText = options
+      .map((opt, idx) => `<b>${letters[idx]}.</b> ${escapeHtml(opt || `Option ${idx + 1}`)}`)
+      .join('\n');
+
+    const questionText = [
+      `Question ${questionNumber}/${session.totalQuestions}`,
+      '',
+      escapeHtml(question.question),
+      optionsText ? '' : null,
+      optionsText || null,
+    ]
+      .filter((v) => v !== null)
+      .join('\n');
+
+    let buttons = options.map((_, idx) => Markup.button.callback(letters[idx], `ans:${idx}`));
+    if (!buttons.length) buttons = [Markup.button.callback('No options', 'noop')];
+
+    await ctx.replyWithHTML(questionText, {
+      reply_markup: Markup.inlineKeyboard([buttons]).reply_markup,
     });
   } catch (err) {
     console.error('Error in sendQuestion:', err);
