@@ -181,15 +181,18 @@ async function sendQuestion(ctx, session) {
     }
 
     const questionNumber = session.currentQuestionIndex + 1;
-    const questionText = `Question ${questionNumber}/${session.totalQuestions}\n\n${question.question}`;
-
-    await ctx.reply(questionText, {
-      reply_markup: buildOptionsKeyboard(
-        session.departmentId,
-        session.chapterId,
-        session.currentQuestionIndex
-      ),
+    const labels = ['A', 'B', 'C', 'D'];
+    let fullQuestionText = `Question ${questionNumber}/${session.totalQuestions}\n\n${question.question}\n\n`;
+    
+    question.options.forEach((opt, index) => {
+      fullQuestionText += `<b>${labels[index]}.</b> ${opt}\n`;
     });
+
+    const buttons = question.options.map((_, index) => {
+      return Markup.button.callback(labels[index], `answer:${index}`);
+    });
+
+    await ctx.replyWithHTML(fullQuestionText, Markup.inlineKeyboard([buttons]));
   } catch (err) {
     console.error('Error in sendQuestion:', err);
     await ctx.reply('😕 Something went wrong while sending the question. Please try /start.');
