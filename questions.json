@@ -741,14 +741,6 @@
         }
       ]
     },
-    {
-      "id": "bus-mgt",
-      "name": "Business Management",
-      "chapters": [
-        {
-          "id": "bm-ch1",
-          "name": "Principles of Management",
-          "questions": 
           {
             "id": "mgmt",
             "name": "Business Management",
@@ -898,9 +890,7 @@
                     "explanation": "Autocratic leaders maintain total control and do not seek input from subordinates."
                   }
                 ]
-              }
-            ]
-          }
+              
         },
         {
           "id": "bm-ch2",
