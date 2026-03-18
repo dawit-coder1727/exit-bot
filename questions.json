@@ -889,17 +889,13 @@
                     "correctOptionIndex": 1,
                     "explanation": "Autocratic leaders maintain total control and do not seek input from subordinates."
                   }
-                ]
-              
+                ] 
         },
         {
           "id": "bm-ch2",
           "name": "Organizational Behavior",
           "questions": 
-          {
-            "id": "mgmt-ch2",
-            "name": "Chapter 2: Organizational Behavior",
-            "questions": [
+          [
               {
                 "id": "ob-q1",
                 "question": "What is the primary goal of Organizational Behavior (OB)?",
@@ -1041,16 +1037,12 @@
                 "explanation": "Committed employees have a strong sense of loyalty and a desire to remain a member of the organization."
               }
             ]
-          }
         },
         {
           "id": "bm-ch3",
           "name": "Strategic Management",
           "questions": 
-          {
-            "id": "mgmt-ch3",
-            "name": "Chapter 3: Strategic Management",
-            "questions": [
+          [
               {
                 "id": "st-q1",
                 "question": "What is the primary purpose of Strategic Management?",
@@ -1192,16 +1184,12 @@
                 "explanation": "The four perspectives are Financial, Customer, Internal Processes, and Learning & Growth."
               }
             ]
-          }
         },
         {
           "id": "bm-ch4",
           "name": "Operations Management",
           "questions": 
-          {
-            "id": "mgmt-ch4",
-            "name": "Chapter 4: Operations Management",
-            "questions": [
+             [
               {
                 "id": "op-q1",
                 "question": "What is the primary goal of Operations Management?",
@@ -1343,16 +1331,12 @@
                 "explanation": "Lead time is the latency between the initiation and completion of a process (e.g., from order to delivery)."
               }
             ]
-          }
         },
         {
           "id": "bm-ch5",
           "name": "Human Resource Management",
           "questions": 
-          {
-            "id": "mgmt-ch5",
-            "name": "Chapter 5: Human Resource Management",
-            "questions": [
+           [
               {
                 "id": "hr-q1",
                 "question": "What is the main goal of Human Resource Management?",
@@ -1495,7 +1479,6 @@
               }
             ]
           }
-        }
       ]
     },
     {
